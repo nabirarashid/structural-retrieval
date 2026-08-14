@@ -39,7 +39,7 @@ from spend_tracker import HardStopExceeded, SessionSpendGuard, record_call, spen
 
 SEED = 42
 N_PILOT = 250
-CACHE_PATH = "utility_curve_glm_cache.jsonl"
+CACHE_PATH = "utility_curve_cache/utility_curve_glm_cache.jsonl"
 
 SOLVER_MODEL = "glm-5.2-fp8"
 SOLVER_BASE_URL = _read_env_var("MANTIS_LLM_BASE_URL")

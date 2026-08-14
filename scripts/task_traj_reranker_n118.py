@@ -31,8 +31,8 @@ from step5_llm_reranker import (
     GRADER_A_MODEL, JUDGE_MAX_TOKENS,
 )
 
-OLD_CACHE_PATH = "step5_llm_reranker_cache.jsonl"
-NEW_CACHE_PATH = "step5_llm_reranker_cache_n118.jsonl"
+OLD_CACHE_PATH = "trajectory_reranker_cache/step5_llm_reranker_cache.jsonl"
+NEW_CACHE_PATH = "trajectory_reranker_cache/step5_llm_reranker_cache_n118.jsonl"
 REPO = "/tmp/proced_mem_bench_check"
 WORKERS = 8
 

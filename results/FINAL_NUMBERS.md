@@ -181,7 +181,7 @@ throughout this document on this basis (see baseline retrieval above).
 **Setup**: DeepSeek-v4-flash solver (native API), Grader A = gemini-3.1-flash-lite (real cost),
 Grader B = glm-5.2-fp8 (free), no tiebreaker — disagreement reported, not adjudicated. Target
 n=250, landed at n=210/condition (630 jobs total) after filtering to queries with a usable reference
-solution (`scripts/run_utility_curve_deepseek.py`, `utility_curve_deepseek_cache.jsonl`,
+solution (`scripts/run_utility_curve_deepseek.py`, `utility_curve_cache/utility_curve_deepseek_cache.jsonl`,
 `results/utility_curve_deepseek.json`).
 
 **Truncation rate, solver, 32,768-token cap — still substantial, not resolved:**
@@ -218,7 +218,7 @@ kept for reference only, not citable as a clean result:
 - Truncated answers score 15–35 points worse than complete answers, every condition
 - Gold condition: raw reported 63.6% accuracy, **82.9%** restricted to non-truncated answers only
 
-**GLM solver run — stalled, abandoned, not reused** (`utility_curve_glm_cache.jsonl`, 307/630 jobs:
+**GLM solver run — stalled, abandoned, not reused** (`utility_curve_cache/utility_curve_glm_cache.jsonl`, 307/630 jobs:
 210 `none` + 97 `dumb` + 0 `gold`): stalled 4x under sustained shared-lab-endpoint load (6.5h for 49%
 completion vs. ~1.6h predicted). Kept as a partial cache, explicitly not topped up or reused —
 DeepSeek run used instead. No GLM-vs-DeepSeek solver comparison was ever computed on the overlap.

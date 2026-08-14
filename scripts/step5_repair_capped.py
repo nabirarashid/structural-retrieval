@@ -56,7 +56,7 @@ trajectories = {t["task_instance_id"]: t for t in d["trajectories"]}
 qd = json.load(open(f"{REPO}/procedural_memory_benchmark/benchmark/data/query_bank.json"))
 queries = {q["query_id"]: q for q in qd["queries"]}
 
-cache_path = "step5_llm_reranker_cache.jsonl"
+cache_path = "trajectory_reranker_cache/step5_llm_reranker_cache.jsonl"
 records = [json.loads(l) for l in open(cache_path)]
 by_key = {(r["embedder"], r["judge"], r["query_id"]): (i, r) for i, r in enumerate(records)}
 

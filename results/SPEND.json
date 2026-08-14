@@ -1,5 +1,5 @@
 {
-  "gemini": 8.450327049999991,
+  "gemini": 8.451607549999991,
   "deepseek": 3.4937302399999997,
   "claude": 0.0,
   "reconstruction_note": "Revised 2026-08-11 with exact call counts from every Gemini-billed cache file (3100 flash-lite reranker calls + 625 flash-preview grader calls + 118,108 gemini-embedding-001 items) and real token measurements: reranker/grader prompt sizes sampled directly from the actual cached candidates/queries, RAG-pilot grader input sized using the REAL mean solver-completion length (measured via GLM's free /tokenize endpoint: 5496 tokens/call for the original pilot, 4519 for the narrowed pilot -- this was the missing piece in the first pass, which used a rougher guess for grader input size). Range $6.32-$6.99 USD, midpoint $6.65. By model: flash-lite (terse+CoT reranker+validation) $2.85-$3.26, flash-preview (RAG pilot grading only) $1.87-$1.89, gemini-embedding-001 $1.61-$1.84. At ~1.37-1.40 CAD/USD this converts to ~$9.58-$9.79 CAD, which closes almost the entire gap against the user-reported $9.85 CAD (previous rough pass left an unexplained gap; that gap is now attributed to underestimating grader input size, not to an uncached/re-run failure mode). All spend recorded from 2026-08-11 onward in this file is exact, from real API-reported usage, not estimated.",
@@ -17751,6 +17751,15 @@
       "output_tokens": 1,
       "cost": 0.0008645,
       "note": "traj-n118 MiniLM-L6-v2/new_77"
+    },
+    {
+      "ts": 1786742005.499818,
+      "model": "gemini-3.1-flash-lite",
+      "provider": "gemini",
+      "input_tokens": 5116,
+      "output_tokens": 1,
+      "cost": 0.0012805,
+      "note": "traj-n118 probe labembed-Qwen3-8B/easy_1"
     }
   ]
 }

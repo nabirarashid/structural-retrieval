@@ -52,7 +52,7 @@ from spend_tracker import HardStopExceeded, SessionSpendGuard, record_call, spen
 
 SEED = 42
 N_PILOT = 250
-CACHE_PATH = "utility_curve_deepseek_cache.jsonl"
+CACHE_PATH = "utility_curve_cache/utility_curve_deepseek_cache.jsonl"
 
 SOLVER_MODEL = "deepseek-v4-flash"
 SOLVER_CAP = 32768

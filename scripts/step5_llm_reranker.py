@@ -143,7 +143,7 @@ def main():
     sims = mini_q @ mini_traj.T
     rankings["MiniLM-L6-v2"] = {query_ids[qi]: [traj_ids[i] for i in np.argsort(-sims[qi])[:10]] for qi in range(len(query_ids))}
 
-    cache_path = "step5_llm_reranker_cache.jsonl"
+    cache_path = "trajectory_reranker_cache/step5_llm_reranker_cache.jsonl"
     cache = {}
     import os
     if os.path.exists(cache_path):

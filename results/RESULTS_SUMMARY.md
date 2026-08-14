@@ -229,7 +229,7 @@ domain (`gemini-3.1-flash-lite` and `glm-5.2-fp8`, temp 0, ignore-the-object ins
 all 118 queries' top-10 candidates from all three embedders — 708 judge calls total
 (`scripts/task_traj_reranker_n118.py`, `results/task_traj_reranker_n118.json`). 236 of the 708 calls
 (the 40 original queries × 3 embedders × 2 judges) were reused from the earlier n=40 pilot
-(`step5_llm_reranker_cache.jsonl`) after verifying byte-identical query IDs, STRICT tiers, and
+(`trajectory_reranker_cache/step5_llm_reranker_cache.jsonl`) after verifying byte-identical query IDs, STRICT tiers, and
 top-10 rankings — except MiniLM, whose top-10s are recomputed fresh each run (not memmap-cached
 like the other two embedders) and shifted on 4 of 120 old-cache entries after a routine-maintenance
 package update in this session (see below); those 4 were discarded and re-queried rather than trusted
@@ -429,7 +429,7 @@ not narrowed or widened by a third data point that was never obtained.
 | §3.3–3.4 | `scripts/task1_full_rerun.py` (dumb reranker + surface-form sections) | `results/task1_expanded_full_results.json` |
 | §3.4b | `scripts/task2a_tier_robustness.py` | `results/task2a_tier_robustness.json` |
 | §3.5 | `scripts/task2b_bootstrap_cis.py` | `results/task2b_bootstrap_cis.json` (`trajectory_pooled_n118`) |
-| §3.6 | `scripts/task_traj_reranker_n118.py` | `results/task_traj_reranker_n118.json`, `step5_llm_reranker_cache_n118.jsonl` |
+| §3.6 | `scripts/task_traj_reranker_n118.py` | `results/task_traj_reranker_n118.json`, `trajectory_reranker_cache/step5_llm_reranker_cache_n118.jsonl` |
 | §4 | `scripts/task3_deepseek_third_judge.py` (built, run partially as a probe, not completed — infeasibility established via direct API probing rather than the full script) | none (no full run occurred) |
 
 Fixed `seed=42` throughout the math domain (unchanged from `RETRIEVAL_WRITEUP.md`); the trajectory

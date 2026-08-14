@@ -102,9 +102,9 @@ Mirrors `results/paper_draft_v3.md`'s own section numbers.
 | §5 lexical control + verb/noun ablation | `scripts/task1_full_rerun.py`, `scripts/mechanism_ablation.py` | `results/task1_expanded_full_results.json`, `mechanism_ablation_results.json` |
 | §5 Table 5, LLM reranking + judge reversal | `scripts/task_traj_reranker_n118.py` | `results/task_traj_reranker_n118.json` |
 | §5 label verification | `scripts/classify_agentinstruct_task_types.py` | `results/agentinstruct_task_type_labels.json`, `*_review_sample.json` |
-| §6 downstream utility curve | `scripts/run_utility_curve_deepseek.py` | `results/utility_curve_deepseek.json`, `utility_curve_deepseek_cache.jsonl` |
+| §6 downstream utility curve | `scripts/run_utility_curve_deepseek.py` | `results/utility_curve_deepseek.json`, `utility_curve_cache/utility_curve_deepseek_cache.jsonl` |
 | §6 superseded 6-condition pilot | `scripts/run_rag_pilot.py` | `results/rag_pilot.md` (correction banner), `_discarded_glm_solver_pilots/` |
-| §6 abandoned GLM solver run | `scripts/run_utility_curve_glm.py` | `utility_curve_glm_cache.jsonl` (partial, unused) |
+| §6 abandoned GLM solver run | `scripts/run_utility_curve_glm.py` | `utility_curve_cache/utility_curve_glm_cache.jsonl` (partial, unused) |
 | §8 integrity incidents | no single script — see `results/JOURNEY_LOG.md` for the dated diagnosis of each, and `results/FINAL_NUMBERS.md` §4 for the one-line summary of all eight |
 | Attempted, abandoned third judge | `scripts/task3_deepseek_third_judge.py` | none — infeasibility established by direct probing, not a full run |
 
@@ -116,9 +116,19 @@ and `results/RETRIEVAL_WRITEUP.md` are the narrative writeups the digest was che
 
 ## Data
 
-This repository does not vendor either source dataset — `data/` and `MathNet/` (a reference clone of
-the MathNet paper's own repository) are both gitignored, and no dataset files are committed anywhere
-in this repo (verified directly: a full-history `git log` and working-tree scan turn up none).
+This repository does not vendor **either** source dataset, and the two are excluded by two different
+mechanisms — worth stating plainly rather than leaving to infer:
+
+- **MathNet-Retrieve** (math domain): raw data lives in `data/` *inside* this repo's working tree,
+  and is excluded via `.gitignore`. A reference clone of the MathNet paper's own repository
+  (`MathNet/`, images/README only) is gitignored the same way.
+- **Procedural-memory / ALFWorld trajectories** (trajectory domain): the raw corpus is never inside
+  this repo's directory tree in the first place — every trajectory script reads it from a local
+  scratch path (`/tmp/proced_mem_bench_check/...` in the scripts as committed), entirely outside
+  `embedding-benchmark/`. It was never a candidate for tracking, not just excluded after the fact.
+
+No dataset files from either source are committed anywhere in this repo (verified directly: a
+full-history `git log` and a working-tree scan of every file, not just tracked ones, turn up none).
 
 **Known gap, found by the clean-clone test, not yet closed:** neither domain currently has a fetch
 script in this repository. `src/data.py` expects `data/{easy,medium,hard}/{corpus.jsonl,
