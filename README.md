@@ -54,21 +54,30 @@ endpoint. Every other result in the paper uses only publicly-obtainable API acce
 `results/*.json` and `results/*.md` are committed, final, and readable/citable with nothing but a
 text editor. `results/FINAL_NUMBERS.md` is the flat digest of all of them; start there.
 
-**No script in `scripts/` runs end-to-end without at least some credentials**, including the ones
-that only do statistics (bootstrap CIs, failure taxonomies, contamination tables). This is a real
-constraint, not an oversight: every such script recomputes its numbers from raw embeddings
-(`embeddings_cache/`) and/or per-query judge/grader responses (`*.jsonl` caches), and both are
-gitignored — too large to vendor (`embeddings_cache/` alone is multiple GB) and, for the `*.jsonl`
-caches, because they embed the source datasets' own query/problem text in their cached prompts,
-which isn't ours to redistribute. `VectorCache` (`src/vector_cache.py`) never auto-fetches a missing
-embedding; every embedding has to be computed once via a live API call before any downstream script
-can read it back. The one partial exception is `all-MiniLM-L6-v2`, which embeds locally with no API
-key — but every script that uses it also builds rankings for the other two embedders in the same
-pass, so it still needs at least `GEMINI_API_KEY` (or `DEEPINFRA_API_KEY`) to complete a run.
+**No script in `scripts/` runs end-to-end on a clean clone, and not only because of credentials.**
+Verified directly (`git clone` into a scratch directory, fresh venv, no `.env`): the very first thing
+every script needs is the raw source data under `data/` (math) or the trajectory corpus fetched into
+a local path (`/tmp/proced_mem_bench_check/...` in the scripts as committed) — both gitignored
+correctly (they're the upstream datasets, not ours to vendor), but **this repository does not
+currently contain a script that fetches or rebuilds either one.** `src/data.py` and every trajectory
+script that reads from that scratch path assume the data is already sitting there; neither auto-
+downloads it. This was found by the clean-clone test, not assumed — see "Data" below for exactly
+what's missing and what a fresh setup needs to do about it before anything runs.
 
-Practically: to regenerate any specific number from scratch, get `GEMINI_API_KEY` (cheapest path —
-it covers embeddings, one reranker judge, and one grader) and expect the relevant script to spend a
-small amount rebuilding the caches it needs before it produces new output. Total historical spend
+Once `data/` exists, the next blocker is credentials: every script recomputes its numbers from raw
+embeddings (`embeddings_cache/`) and/or per-query judge/grader responses (`*.jsonl` caches), both
+gitignored (too large to vendor, and the `*.jsonl` caches embed the source datasets' own query/
+problem text in their cached prompts, which isn't ours to redistribute either). `VectorCache`
+(`src/vector_cache.py`) never auto-fetches a missing embedding — every embedding has to be computed
+once via a live API call before any downstream script can read it back. The one partial exception is
+`all-MiniLM-L6-v2`, which embeds locally with no API key — but every script that uses it also builds
+rankings for the other two embedders in the same pass, so it still needs at least `GEMINI_API_KEY`
+(or `DEEPINFRA_API_KEY`) to complete a run.
+
+Practically: to regenerate any specific number from scratch, first populate `data/` (see "Data"),
+then get `GEMINI_API_KEY` (cheapest path — it covers embeddings, one reranker judge, and one grader)
+and expect the relevant script to spend a small amount rebuilding the caches it needs before it
+produces new output. Total historical spend
 for every result in this repo was $11.94 (`results/SPEND.json`); no single script comes close to
 that.
 
@@ -107,13 +116,34 @@ and `results/RETRIEVAL_WRITEUP.md` are the narrative writeups the digest was che
 
 ## Data
 
-This repository does not vendor either source dataset. `data/` and `MathNet/` (a reference clone of
-the MathNet paper's own repository) are gitignored; running the math-domain scripts downloads
-MathNet-Retrieve directly from its Hugging Face dataset repo on first use. The trajectory domain's
-corpus is fetched into a local scratch path from the released procedural-memory-benchmark repository
-(see `scripts/task1_expand_queries.py`'s header for the exact source). Both datasets remain governed
-by their own licenses, not this repository's — see `results/paper_draft_v3.md`'s References for full
-citations:
+This repository does not vendor either source dataset — `data/` and `MathNet/` (a reference clone of
+the MathNet paper's own repository) are both gitignored, and no dataset files are committed anywhere
+in this repo (verified directly: a full-history `git log` and working-tree scan turn up none).
+
+**Known gap, found by the clean-clone test, not yet closed:** neither domain currently has a fetch
+script in this repository. `src/data.py` expects `data/{easy,medium,hard}/{corpus.jsonl,
+queries.jsonl,qrels/test.tsv}` (BEIR format) to already exist; the trajectory scripts expect the
+released procedural-memory-benchmark repo already checked out at a local scratch path. Neither is
+downloaded automatically. Until a fetch/build script is added:
+
+- **Math**: the raw MathNet dataset is on Hugging Face at
+  [`ShadenA/MathNet`](https://huggingface.co/datasets/ShadenA/MathNet) (`datasets` library,
+  `load_dataset("ShadenA/MathNet", split="train")`). The BEIR-format retrieval split used by this
+  project's `data/` directory (`::eq::`/`::nm::`-suffixed corpus IDs, tiered `easy`/`medium`/`hard`
+  query sets) was built from that raw dataset at some earlier point in this project, but the
+  conversion script itself was not found in this repository during this pass and needs to be either
+  recovered or rewritten before `data/` can be regenerated from a clean clone.
+- **Trajectories**: the source is the released procedural-memory benchmark from Ishant and Krishnan
+  (2025) (arXiv:2511.21730) — no repository URL for it was found anywhere in this codebase either;
+  check the paper itself for the release link.
+
+**Do not guess at either script** — get the exact HF dataset config / release URL from the paper
+authors or the papers themselves before writing a fetch step, rather than reconstructing the BEIR
+split's exact tiering/ID scheme by inference, which risks silently producing different data from
+what every number in this repository was computed against.
+
+Once obtained, both datasets remain governed by their own licenses, not this repository's — see
+`results/paper_draft_v3.md`'s References for full citations:
 
 - MathNet-Retrieve: Alshammari et al., *MathNet*, ICLR 2026 (arXiv:2604.18584)
 - Procedural-memory benchmark / ALFWorld trajectories: Ishant and Krishnan (2025) (arXiv:2511.21730), building on Shridhar et al., *ALFWorld*, ICLR 2021 (arXiv:2010.03768)
