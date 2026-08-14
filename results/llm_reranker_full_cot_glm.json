@@ -1,0 +1,186 @@
+[
+  {
+    "judge": "glm-5.2-fp8",
+    "prompt": "cot",
+    "provider": "gemini",
+    "tier": "easy",
+    "n_queries": 500,
+    "orig_hit1": 0.122,
+    "orig_hit10": 0.976,
+    "llm_reranked_hit1": 0.176,
+    "n_unparsed_responses": 2,
+    "recoverable_gap": 0.854,
+    "gap_closed": 0.05399999999999999,
+    "share_of_recoverable_gap_closed": 0.063231850117096,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 7,
+        "orig_hit1_pct": 12.280701754385964,
+        "llm_hit1_n": 11,
+        "llm_hit1_pct": 19.298245614035086
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 14,
+        "orig_hit1_pct": 16.470588235294116,
+        "llm_hit1_n": 18,
+        "llm_hit1_pct": 21.176470588235293
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 40,
+        "orig_hit1_pct": 11.1731843575419,
+        "llm_hit1_n": 59,
+        "llm_hit1_pct": 16.480446927374302
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 11,
+      "well_known_llm_hit1_pct": 19.298245614035086,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 77,
+      "rest_llm_hit1_pct": 17.381489841986454
+    },
+    "elapsed_seconds": 3729.7477786540985
+  },
+  {
+    "judge": "glm-5.2-fp8",
+    "prompt": "cot",
+    "provider": "gemini",
+    "tier": "hard",
+    "n_queries": 500,
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.554,
+    "llm_reranked_hit1": 0.092,
+    "n_unparsed_responses": 2,
+    "recoverable_gap": 0.554,
+    "gap_closed": 0.092,
+    "share_of_recoverable_gap_closed": 0.16606498194945846,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 7,
+        "llm_hit1_pct": 12.280701754385964
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 7,
+        "llm_hit1_pct": 8.235294117647058
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 32,
+        "llm_hit1_pct": 8.938547486033519
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 7,
+      "well_known_llm_hit1_pct": 12.280701754385964,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 39,
+      "rest_llm_hit1_pct": 8.803611738148984
+    },
+    "elapsed_seconds": 12070.206586122513
+  },
+  {
+    "judge": "glm-5.2-fp8",
+    "prompt": "cot",
+    "provider": "deepinfra",
+    "tier": "easy",
+    "n_queries": 500,
+    "orig_hit1": 0.086,
+    "orig_hit10": 0.952,
+    "llm_reranked_hit1": 0.21,
+    "n_unparsed_responses": 0,
+    "recoverable_gap": 0.866,
+    "gap_closed": 0.124,
+    "share_of_recoverable_gap_closed": 0.14318706697459585,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 6,
+        "orig_hit1_pct": 10.526315789473683,
+        "llm_hit1_n": 9,
+        "llm_hit1_pct": 15.789473684210526
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 12,
+        "orig_hit1_pct": 14.117647058823529,
+        "llm_hit1_n": 21,
+        "llm_hit1_pct": 24.705882352941178
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 25,
+        "orig_hit1_pct": 6.983240223463687,
+        "llm_hit1_n": 75,
+        "llm_hit1_pct": 20.949720670391063
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 9,
+      "well_known_llm_hit1_pct": 15.789473684210526,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 96,
+      "rest_llm_hit1_pct": 21.670428893905193
+    },
+    "elapsed_seconds": 4399.264734983444
+  },
+  {
+    "judge": "glm-5.2-fp8",
+    "prompt": "cot",
+    "provider": "deepinfra",
+    "tier": "hard",
+    "n_queries": 500,
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.21,
+    "llm_reranked_hit1": 0.046,
+    "n_unparsed_responses": 3,
+    "recoverable_gap": 0.21,
+    "gap_closed": 0.046,
+    "share_of_recoverable_gap_closed": 0.21904761904761905,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 4,
+        "llm_hit1_pct": 7.017543859649122
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 5,
+        "llm_hit1_pct": 5.88235294117647
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 14,
+        "llm_hit1_pct": 3.910614525139665
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 4,
+      "well_known_llm_hit1_pct": 7.017543859649122,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 19,
+      "rest_llm_hit1_pct": 4.288939051918736
+    },
+    "elapsed_seconds": 11040.167441129684
+  }
+]

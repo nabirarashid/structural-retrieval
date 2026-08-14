@@ -1,0 +1,3553 @@
+{
+  "provider": "gemini",
+  "tier": "hard",
+  "seed": 42,
+  "n_queries": 500,
+  "corpus_size": 117088,
+  "strict_recall_beir": {
+    "NDCG@1": 0.0,
+    "NDCG@5": 0.03958,
+    "NDCG@10": 0.19432,
+    "MAP@1": 0.0,
+    "MAP@5": 0.02103,
+    "MAP@10": 0.08966,
+    "Recall@1": 0.0,
+    "Recall@5": 0.1,
+    "Recall@10": 0.554,
+    "P@1": 0.0,
+    "P@5": 0.02,
+    "P@10": 0.0554
+  },
+  "lenient_recall_beir": {
+    "NDCG@1": 0.148,
+    "NDCG@5": 0.40792,
+    "NDCG@10": 0.51219,
+    "MAP@1": 0.04933,
+    "MAP@5": 0.25292,
+    "MAP@10": 0.34226,
+    "Recall@1": 0.04933,
+    "Recall@5": 0.596,
+    "Recall@10": 0.81467,
+    "P@1": 0.148,
+    "P@5": 0.3576,
+    "P@10": 0.2444
+  },
+  "strict_hit": {
+    "Hit@1": 0.0,
+    "Hit@5": 0.1,
+    "Hit@10": 0.554
+  },
+  "lenient_hit": {
+    "Hit@1": 0.148,
+    "Hit@5": 0.972,
+    "Hit@10": 1.0
+  },
+  "failure_categories": {
+    "own_nm_near_miss": 420,
+    "sibling_eq_variant": 74,
+    "other_base_item": 6
+  },
+  "failure_details": [
+    {
+      "query_id": "sau_2012_bb6608",
+      "gold_id": "sau_2012_bb6608::eq::hard",
+      "top1_id": "sau_2012_bb6608::nm::0",
+      "top1_score": 0.8599216938018799,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2019_7792eb",
+      "gold_id": "bra_2019_7792eb::eq::hard",
+      "top1_id": "bra_2019_7792eb::nm::1",
+      "top1_score": 0.9049228429794312,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "arg_2022_6b9544",
+      "gold_id": "arg_2022_6b9544::eq::hard",
+      "top1_id": "arg_2022_6b9544::nm::1",
+      "top1_score": 0.8671687245368958,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "tur_2008_22f4a1",
+      "gold_id": "tur_2008_22f4a1::eq::hard",
+      "top1_id": "tur_2008_22f4a1::eq::easy",
+      "top1_score": 0.8867124915122986,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "fra_2014_eb9ec4",
+      "gold_id": "fra_2014_eb9ec4::eq::hard",
+      "top1_id": "fra_2014_eb9ec4::nm::2",
+      "top1_score": 0.8975703716278076,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2014_70c877",
+      "gold_id": "esp_2014_70c877::eq::hard",
+      "top1_id": "esp_2014_70c877::nm::0",
+      "top1_score": 0.8606296181678772,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "cze_2015_b5b7e8",
+      "gold_id": "cze_2015_b5b7e8::eq::hard",
+      "top1_id": "cze_2015_b5b7e8::nm::0",
+      "top1_score": 0.8945580124855042,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2009_f506f3",
+      "gold_id": "btw_2009_f506f3::eq::hard",
+      "top1_id": "btw_2009_f506f3::nm::0",
+      "top1_score": 0.8596193790435791,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2023_c9c438",
+      "gold_id": "svn_2023_c9c438::eq::hard",
+      "top1_id": "svn_2023_c9c438::nm::2",
+      "top1_score": 0.8877035975456238,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2011_b56a3c",
+      "gold_id": "bra_2011_b56a3c::eq::hard",
+      "top1_id": "bra_2011_b56a3c::nm::2",
+      "top1_score": 0.9227132797241211,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "srb_2016_cab572",
+      "gold_id": "srb_2016_cab572::eq::hard",
+      "top1_id": "srb_2016_cab572::nm::1",
+      "top1_score": 0.8557614088058472,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "tur_2005_8995de",
+      "gold_id": "tur_2005_8995de::eq::hard",
+      "top1_id": "tur_2005_8995de::nm::1",
+      "top1_score": 0.8519411683082581,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_bf3907",
+      "gold_id": "usa_bf3907::eq::hard",
+      "top1_id": "usa_bf3907::nm::0",
+      "top1_score": 0.8713679313659668,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2018_6bbe71",
+      "gold_id": "phl_2018_6bbe71::eq::hard",
+      "top1_id": "phl_2018_6bbe71::nm::0",
+      "top1_score": 0.8796506524085999,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_1981_b295c4",
+      "gold_id": "bra_1981_b295c4::eq::hard",
+      "top1_id": "bra_1981_b295c4::nm::0",
+      "top1_score": 0.8672977685928345,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2016_aa455c",
+      "gold_id": "rou_2016_aa455c::eq::hard",
+      "top1_id": "rou_2016_aa455c::eq::easy",
+      "top1_score": 0.903434693813324,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "ita_2022_c4f22e",
+      "gold_id": "ita_2022_c4f22e::eq::hard",
+      "top1_id": "ita_2022_c4f22e::eq::easy",
+      "top1_score": 0.8781404495239258,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "aut_2017_cda974",
+      "gold_id": "aut_2017_cda974::eq::hard",
+      "top1_id": "aut_2017_cda974::nm::0",
+      "top1_score": 0.868257999420166,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "aut_2015_a6c7a5",
+      "gold_id": "aut_2015_a6c7a5::eq::hard",
+      "top1_id": "aut_2015_a6c7a5::nm::2",
+      "top1_score": 0.9074668884277344,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2006_8d2661",
+      "gold_id": "bra_2006_8d2661::eq::hard",
+      "top1_id": "bra_2006_8d2661::nm::1",
+      "top1_score": 0.8692546486854553,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "cps_2007_938124",
+      "gold_id": "cps_2007_938124::eq::hard",
+      "top1_id": "cps_2007_938124::eq::easy",
+      "top1_score": 0.8785608410835266,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "deu_2022_49eeeb",
+      "gold_id": "deu_2022_49eeeb::eq::hard",
+      "top1_id": "deu_2022_49eeeb::eq::medium",
+      "top1_score": 0.8944854140281677,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "nld_2014_bb808a",
+      "gold_id": "nld_2014_bb808a::eq::hard",
+      "top1_id": "nld_2014_bb808a::nm::1",
+      "top1_score": 0.8816246390342712,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2018_ef30d1",
+      "gold_id": "rou_2018_ef30d1::eq::hard",
+      "top1_id": "rou_2018_ef30d1::nm::0",
+      "top1_score": 0.8964259624481201,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "aut_2010_84bd9f",
+      "gold_id": "aut_2010_84bd9f::eq::hard",
+      "top1_id": "aut_2010_84bd9f::nm::1",
+      "top1_score": 0.883030116558075,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "pol_33dd51",
+      "gold_id": "pol_33dd51::eq::hard",
+      "top1_id": "pol_33dd51::nm::0",
+      "top1_score": 0.8906453847885132,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2007_ce1f06",
+      "gold_id": "chn_2007_ce1f06::eq::hard",
+      "top1_id": "chn_2007_ce1f06::nm::1",
+      "top1_score": 0.9017720818519592,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2012_1b8ca4",
+      "gold_id": "svn_2012_1b8ca4::eq::hard",
+      "top1_id": "svn_2012_1b8ca4::nm::0",
+      "top1_score": 0.8778500556945801,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2018_94e647",
+      "gold_id": "sau_2018_94e647::eq::hard",
+      "top1_id": "sau_2018_94e647::nm::0",
+      "top1_score": 0.8862420916557312,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sun_1992_189880",
+      "gold_id": "sun_1992_189880::eq::hard",
+      "top1_id": "sun_1992_189880::nm::2",
+      "top1_score": 0.9087878465652466,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2018_3c46c6",
+      "gold_id": "phl_2018_3c46c6::eq::hard",
+      "top1_id": "phl_2018_3c46c6::nm::1",
+      "top1_score": 0.8729286789894104,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2019_ca00be",
+      "gold_id": "ita_2019_ca00be::eq::hard",
+      "top1_id": "ita_2019_ca00be::nm::2",
+      "top1_score": 0.8821660876274109,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "cps_2025_408f83",
+      "gold_id": "cps_2025_408f83::eq::hard",
+      "top1_id": "cps_2025_408f83::nm::1",
+      "top1_score": 0.885586142539978,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "jpn_2022_e889ae",
+      "gold_id": "jpn_2022_e889ae::eq::hard",
+      "top1_id": "jpn_2022_e889ae::nm::1",
+      "top1_score": 0.8495678901672363,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2016_686c2a",
+      "gold_id": "rou_2016_686c2a::eq::hard",
+      "top1_id": "rou_2016_686c2a::nm::1",
+      "top1_score": 0.8761188983917236,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2017_7e57ef",
+      "gold_id": "fra_2017_7e57ef::eq::hard",
+      "top1_id": "fra_2017_7e57ef::nm::1",
+      "top1_score": 0.911319375038147,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2002_60a383",
+      "gold_id": "usa_2002_60a383::eq::hard",
+      "top1_id": "usa_2002_60a383::nm::0",
+      "top1_score": 0.8877457976341248,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2021_94884c",
+      "gold_id": "usa_2021_94884c::eq::hard",
+      "top1_id": "usa_2021_94884c::nm::0",
+      "top1_score": 0.9050716757774353,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "arg_2003_66ca90",
+      "gold_id": "arg_2003_66ca90::eq::hard",
+      "top1_id": "arg_2003_66ca90::eq::easy",
+      "top1_score": 0.8813905715942383,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "twn_2016_781f66",
+      "gold_id": "twn_2016_781f66::eq::hard",
+      "top1_id": "twn_2016_781f66::nm::0",
+      "top1_score": 0.8692948818206787,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_1999_d52900",
+      "gold_id": "usa_1999_d52900::eq::hard",
+      "top1_id": "usa_1999_4262a8::nm::2",
+      "top1_score": 0.9225108623504639,
+      "category": "other_base_item"
+    },
+    {
+      "query_id": "bxm_2016_1a69a2",
+      "gold_id": "bxm_2016_1a69a2::eq::hard",
+      "top1_id": "bxm_2016_1a69a2::eq::medium",
+      "top1_score": 0.8765271902084351,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "sun_1988_f1a0a2",
+      "gold_id": "sun_1988_f1a0a2::eq::hard",
+      "top1_id": "sun_1988_f1a0a2::nm::0",
+      "top1_score": 0.8622510433197021,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2023_7eb613",
+      "gold_id": "ita_2023_7eb613::eq::hard",
+      "top1_id": "ita_2023_7eb613::eq::easy",
+      "top1_score": 0.8821682929992676,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "hrv_2017_cf6317",
+      "gold_id": "hrv_2017_cf6317::eq::hard",
+      "top1_id": "hrv_2017_cf6317::eq::easy",
+      "top1_score": 0.891303539276123,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "fra_2017_5e08cd",
+      "gold_id": "fra_2017_5e08cd::eq::hard",
+      "top1_id": "fra_2017_5e08cd::nm::2",
+      "top1_score": 0.8977022171020508,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2020_cf3108",
+      "gold_id": "btw_2020_cf3108::eq::hard",
+      "top1_id": "btw_2020_cf3108::nm::1",
+      "top1_score": 0.8814626932144165,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2023_200f9d",
+      "gold_id": "chn_2023_200f9d::eq::hard",
+      "top1_id": "chn_2023_200f9d::nm::1",
+      "top1_score": 0.8815895318984985,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2021_0b56a2",
+      "gold_id": "twn_2021_0b56a2::eq::hard",
+      "top1_id": "twn_2021_0b56a2::eq::easy",
+      "top1_score": 0.8643356561660767,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "hrv_2015_cd9748",
+      "gold_id": "hrv_2015_cd9748::eq::hard",
+      "top1_id": "hrv_2015_cd9748::nm::1",
+      "top1_score": 0.8751938343048096,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2011_7f1503",
+      "gold_id": "bra_2011_7f1503::eq::hard",
+      "top1_id": "bra_2011_7f1503::nm::0",
+      "top1_score": 0.8729950189590454,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2006_53f5d2",
+      "gold_id": "bra_2006_53f5d2::eq::hard",
+      "top1_id": "bra_2006_53f5d2::eq::easy",
+      "top1_score": 0.8260667324066162,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "irl_2020_08cfba",
+      "gold_id": "irl_2020_08cfba::eq::hard",
+      "top1_id": "irl_2020_08cfba::nm::0",
+      "top1_score": 0.8532595634460449,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2008_fd2ad0",
+      "gold_id": "bra_2008_fd2ad0::eq::hard",
+      "top1_id": "bra_2008_fd2ad0::eq::easy",
+      "top1_score": 0.8955545425415039,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "imo_2022_264ed6",
+      "gold_id": "imo_2022_264ed6::eq::hard",
+      "top1_id": "imo_2022_264ed6::nm::0",
+      "top1_score": 0.8509795069694519,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2015_90c5e9",
+      "gold_id": "usa_2015_90c5e9::eq::hard",
+      "top1_id": "usa_2015_90c5e9::nm::2",
+      "top1_score": 0.9180217981338501,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hrv_2019_1f7461",
+      "gold_id": "hrv_2019_1f7461::eq::hard",
+      "top1_id": "hrv_2019_1f7461::nm::0",
+      "top1_score": 0.8478282690048218,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2019_4c4706",
+      "gold_id": "rou_2019_4c4706::eq::hard",
+      "top1_id": "rou_2019_4c4706::nm::2",
+      "top1_score": 0.8570089340209961,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2020_c34127",
+      "gold_id": "est_2020_c34127::eq::hard",
+      "top1_id": "est_2020_c34127::nm::1",
+      "top1_score": 0.908996045589447,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2001_265cfd",
+      "gold_id": "usa_2001_265cfd::eq::hard",
+      "top1_id": "usa_2001_265cfd::nm::2",
+      "top1_score": 0.8986117839813232,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2006_dd89a8",
+      "gold_id": "bgr_2006_dd89a8::eq::hard",
+      "top1_id": "bgr_2006_dd89a8::nm::1",
+      "top1_score": 0.8662397861480713,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2017_f1ad76",
+      "gold_id": "svn_2017_f1ad76::eq::hard",
+      "top1_id": "svn_2017_f1ad76::eq::easy",
+      "top1_score": 0.8636372089385986,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "mem_2013_2c6272",
+      "gold_id": "mem_2013_2c6272::eq::hard",
+      "top1_id": "mem_2013_2c6272::nm::1",
+      "top1_score": 0.8719980716705322,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2012_f849af",
+      "gold_id": "phl_2012_f849af::eq::hard",
+      "top1_id": "phl_2012_f849af::nm::1",
+      "top1_score": 0.867484450340271,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_ea2c2e",
+      "gold_id": "bra_ea2c2e::eq::hard",
+      "top1_id": "bra_ea2c2e::nm::0",
+      "top1_score": 0.8772012591362,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2017_a2bbe2",
+      "gold_id": "irl_2017_a2bbe2::eq::hard",
+      "top1_id": "irl_2017_a2bbe2::eq::easy",
+      "top1_score": 0.8899806141853333,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "bmo_2013_7c99a8",
+      "gold_id": "bmo_2013_7c99a8::eq::hard",
+      "top1_id": "bmo_2013_7c99a8::nm::1",
+      "top1_score": 0.8665615916252136,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2022_021442",
+      "gold_id": "phl_2022_021442::eq::hard",
+      "top1_id": "phl_2022_021442::nm::0",
+      "top1_score": 0.893944263458252,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2024_e9a632",
+      "gold_id": "fra_2024_e9a632::eq::hard",
+      "top1_id": "fra_2024_e9a632::nm::1",
+      "top1_score": 0.8640355467796326,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2009_d324ec",
+      "gold_id": "usa_2009_d324ec::eq::hard",
+      "top1_id": "usa_2009_d324ec::eq::easy",
+      "top1_score": 0.8598644137382507,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "rus_2014_8cc355",
+      "gold_id": "rus_2014_8cc355::eq::hard",
+      "top1_id": "rus_2014_8cc355::nm::2",
+      "top1_score": 0.8991867303848267,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2025_360dd0",
+      "gold_id": "rou_2025_360dd0::eq::hard",
+      "top1_id": "rou_2025_360dd0::nm::0",
+      "top1_score": 0.8961457014083862,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2b10fd",
+      "gold_id": "usa_2b10fd::eq::hard",
+      "top1_id": "usa_2b10fd::nm::1",
+      "top1_score": 0.8558634519577026,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2019_8f24dd",
+      "gold_id": "usa_2019_8f24dd::eq::hard",
+      "top1_id": "usa_2019_8f24dd::nm::0",
+      "top1_score": 0.8781924843788147,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ind_2004_68692d",
+      "gold_id": "ind_2004_68692d::eq::hard",
+      "top1_id": "ind_2004_68692d::nm::0",
+      "top1_score": 0.8982534408569336,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2013_db6357",
+      "gold_id": "rou_2013_db6357::eq::hard",
+      "top1_id": "rou_2013_db6357::nm::2",
+      "top1_score": 0.892098605632782,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2003_aa9c3a",
+      "gold_id": "chn_2003_aa9c3a::eq::hard",
+      "top1_id": "chn_2003_aa9c3a::nm::0",
+      "top1_score": 0.8625780940055847,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2004_1c5f42",
+      "gold_id": "svn_2004_1c5f42::eq::hard",
+      "top1_id": "svn_2004_1c5f42::nm::2",
+      "top1_score": 0.8842559456825256,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2017_5e2b8f",
+      "gold_id": "blr_2017_5e2b8f::eq::hard",
+      "top1_id": "blr_2017_5e2b8f::nm::0",
+      "top1_score": 0.8998859524726868,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2007_dcc809",
+      "gold_id": "bgr_2007_dcc809::eq::hard",
+      "top1_id": "bgr_2007_dcc809::nm::1",
+      "top1_score": 0.9145861268043518,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2022_fd8c15",
+      "gold_id": "sau_2022_fd8c15::eq::hard",
+      "top1_id": "sau_2022_fd8c15::nm::1",
+      "top1_score": 0.8530336618423462,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "cze_2025_7cae1e",
+      "gold_id": "cze_2025_7cae1e::eq::hard",
+      "top1_id": "cze_2025_7cae1e::nm::1",
+      "top1_score": 0.881760835647583,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2006_3b8ded",
+      "gold_id": "ukr_2006_3b8ded::eq::hard",
+      "top1_id": "ukr_2006_3b8ded::nm::2",
+      "top1_score": 0.9064962267875671,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2023_b07f87",
+      "gold_id": "fra_2023_b07f87::eq::hard",
+      "top1_id": "fra_2023_b07f87::nm::0",
+      "top1_score": 0.9452089667320251,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bmo_2015_81c11b",
+      "gold_id": "bmo_2015_81c11b::eq::hard",
+      "top1_id": "bmo_2015_81c11b::nm::0",
+      "top1_score": 0.8727278113365173,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2017_c93be8",
+      "gold_id": "usa_2017_c93be8::eq::hard",
+      "top1_id": "usa_2017_c93be8::nm::2",
+      "top1_score": 0.8785943984985352,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "egm_2012_84a668",
+      "gold_id": "egm_2012_84a668::eq::hard",
+      "top1_id": "egm_2012_84a668::nm::0",
+      "top1_score": 0.8783142566680908,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2021_1ec831",
+      "gold_id": "usa_2021_1ec831::eq::hard",
+      "top1_id": "usa_2021_1ec831::nm::1",
+      "top1_score": 0.9108140468597412,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2011_1e6397",
+      "gold_id": "bra_2011_1e6397::eq::hard",
+      "top1_id": "bra_2011_1e6397::nm::1",
+      "top1_score": 0.8921208381652832,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2020_212427",
+      "gold_id": "irl_2020_212427::eq::hard",
+      "top1_id": "irl_2020_212427::nm::0",
+      "top1_score": 0.8665823340415955,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2017_653715",
+      "gold_id": "fra_2017_653715::eq::hard",
+      "top1_id": "fra_2017_653715::nm::0",
+      "top1_score": 0.8490765690803528,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "kor_2015_d64066",
+      "gold_id": "kor_2015_d64066::eq::hard",
+      "top1_id": "kor_2015_d64066::nm::2",
+      "top1_score": 0.8892436623573303,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2010_903d74",
+      "gold_id": "sau_2010_903d74::eq::hard",
+      "top1_id": "btw_2019_5e6d53::nm::0",
+      "top1_score": 0.8505179286003113,
+      "category": "other_base_item"
+    },
+    {
+      "query_id": "usa_2011_4faded",
+      "gold_id": "usa_2011_4faded::eq::hard",
+      "top1_id": "usa_2011_4faded::nm::1",
+      "top1_score": 0.880914568901062,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ind_2010_7485ca",
+      "gold_id": "ind_2010_7485ca::eq::hard",
+      "top1_id": "ind_2010_7485ca::nm::0",
+      "top1_score": 0.8665754795074463,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "can_1977_568ea1",
+      "gold_id": "can_1977_568ea1::eq::hard",
+      "top1_id": "can_1977_568ea1::nm::2",
+      "top1_score": 0.8504335284233093,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2007_054158",
+      "gold_id": "irl_2007_054158::eq::hard",
+      "top1_id": "irl_2007_054158::nm::0",
+      "top1_score": 0.9052205085754395,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "imo_2015_bab8ff",
+      "gold_id": "imo_2015_bab8ff::eq::hard",
+      "top1_id": "imo_2015_bab8ff::nm::1",
+      "top1_score": 0.9060567617416382,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2013_d440fb",
+      "gold_id": "chn_2013_d440fb::eq::hard",
+      "top1_id": "chn_2013_d440fb::nm::1",
+      "top1_score": 0.884261429309845,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sgp_2016_27b7c4",
+      "gold_id": "sgp_2016_27b7c4::eq::hard",
+      "top1_id": "sgp_2016_27b7c4::nm::1",
+      "top1_score": 0.8808425664901733,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2022_b1f5fa",
+      "gold_id": "est_2022_b1f5fa::eq::hard",
+      "top1_id": "est_2022_b1f5fa::nm::0",
+      "top1_score": 0.8925596475601196,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sun_1992_c8f232",
+      "gold_id": "sun_1992_c8f232::eq::hard",
+      "top1_id": "sun_1992_c8f232::nm::2",
+      "top1_score": 0.858432412147522,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sun_1971_632128",
+      "gold_id": "sun_1971_632128::eq::hard",
+      "top1_id": "sun_1971_632128::nm::2",
+      "top1_score": 0.8876309394836426,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2017_6e7bdb",
+      "gold_id": "sau_2017_6e7bdb::eq::hard",
+      "top1_id": "sau_2017_6e7bdb::nm::0",
+      "top1_score": 0.8731041550636292,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2019_0fc437",
+      "gold_id": "blr_2019_0fc437::eq::hard",
+      "top1_id": "blr_2019_0fc437::nm::0",
+      "top1_score": 0.891319215297699,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2021_d62ad8",
+      "gold_id": "rou_2021_d62ad8::eq::hard",
+      "top1_id": "rou_2021_d62ad8::eq::easy",
+      "top1_score": 0.8647323250770569,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "sau_2010_1aa46e",
+      "gold_id": "sau_2010_1aa46e::eq::hard",
+      "top1_id": "sau_2010_1aa46e::nm::0",
+      "top1_score": 0.8589569926261902,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "can_2022_598ddb",
+      "gold_id": "can_2022_598ddb::eq::hard",
+      "top1_id": "can_2022_598ddb::nm::0",
+      "top1_score": 0.8554801344871521,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2011_a7009b",
+      "gold_id": "phl_2011_a7009b::eq::hard",
+      "top1_id": "phl_2011_a7009b::nm::1",
+      "top1_score": 0.8622251152992249,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2017_c4ee29",
+      "gold_id": "svn_2017_c4ee29::eq::hard",
+      "top1_id": "svn_2017_c4ee29::nm::1",
+      "top1_score": 0.8569399118423462,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2014_5d0e7d",
+      "gold_id": "esp_2014_5d0e7d::eq::hard",
+      "top1_id": "esp_2014_5d0e7d::eq::easy",
+      "top1_score": 0.8712002038955688,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "can_1980_b555b2",
+      "gold_id": "can_1980_b555b2::eq::hard",
+      "top1_id": "can_1980_b555b2::nm::1",
+      "top1_score": 0.882798433303833,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mem_2023_1807d4",
+      "gold_id": "mem_2023_1807d4::eq::hard",
+      "top1_id": "mem_2023_1807d4::nm::2",
+      "top1_score": 0.897137463092804,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2018_699a8b",
+      "gold_id": "irl_2018_699a8b::eq::hard",
+      "top1_id": "irl_2018_699a8b::nm::1",
+      "top1_score": 0.8841456174850464,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2025_9965b2",
+      "gold_id": "est_2025_9965b2::eq::hard",
+      "top1_id": "est_2025_9965b2::eq::easy",
+      "top1_score": 0.8961013555526733,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "sau_2013_069e8e",
+      "gold_id": "sau_2013_069e8e::eq::hard",
+      "top1_id": "sau_2013_069e8e::nm::0",
+      "top1_score": 0.8547316789627075,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sun_1977_473323",
+      "gold_id": "sun_1977_473323::eq::hard",
+      "top1_id": "sun_1977_473323::nm::2",
+      "top1_score": 0.9117549657821655,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_8ac5f7",
+      "gold_id": "phl_8ac5f7::eq::hard",
+      "top1_id": "phl_8ac5f7::nm::1",
+      "top1_score": 0.8774245977401733,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "cps_2013_d0b7fe",
+      "gold_id": "cps_2013_d0b7fe::eq::hard",
+      "top1_id": "cps_2013_d0b7fe::nm::2",
+      "top1_score": 0.8422369956970215,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sun_1972_6e8448",
+      "gold_id": "sun_1972_6e8448::eq::hard",
+      "top1_id": "sun_1972_6e8448::nm::2",
+      "top1_score": 0.9061009883880615,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hrv_2012_027a5f",
+      "gold_id": "hrv_2012_027a5f::eq::hard",
+      "top1_id": "hrv_2012_027a5f::nm::2",
+      "top1_score": 0.8533136248588562,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2014_2391ba",
+      "gold_id": "usa_2014_2391ba::eq::hard",
+      "top1_id": "usa_2014_2391ba::nm::0",
+      "top1_score": 0.9223647117614746,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2023_aba92a",
+      "gold_id": "twn_2023_aba92a::eq::hard",
+      "top1_id": "twn_2023_aba92a::nm::2",
+      "top1_score": 0.865627646446228,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2009_bf07fc",
+      "gold_id": "ukr_2009_bf07fc::eq::hard",
+      "top1_id": "ukr_2009_bf07fc::nm::1",
+      "top1_score": 0.8679051399230957,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2024_e72111",
+      "gold_id": "bgr_2024_e72111::eq::hard",
+      "top1_id": "bgr_2024_e72111::nm::1",
+      "top1_score": 0.8830556273460388,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "deu_2002_f3e121",
+      "gold_id": "deu_2002_f3e121::eq::hard",
+      "top1_id": "deu_2002_f3e121::nm::2",
+      "top1_score": 0.8839274048805237,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2007_7e0cdd",
+      "gold_id": "usa_2007_7e0cdd::eq::hard",
+      "top1_id": "usa_2007_7e0cdd::nm::1",
+      "top1_score": 0.8922155499458313,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "aut_2018_7c3c2e",
+      "gold_id": "aut_2018_7c3c2e::eq::hard",
+      "top1_id": "aut_2018_7c3c2e::nm::2",
+      "top1_score": 0.9166872501373291,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_1999_406ca0",
+      "gold_id": "usa_1999_406ca0::eq::hard",
+      "top1_id": "usa_1999_406ca0::nm::0",
+      "top1_score": 0.8995115756988525,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hkg_2018_fe1107",
+      "gold_id": "hkg_2018_fe1107::eq::hard",
+      "top1_id": "hkg_2018_fe1107::nm::2",
+      "top1_score": 0.8656132817268372,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_1999_561834",
+      "gold_id": "ita_1999_561834::eq::hard",
+      "top1_id": "ita_1999_561834::nm::2",
+      "top1_score": 0.9107773303985596,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2024_40341a",
+      "gold_id": "est_2024_40341a::eq::hard",
+      "top1_id": "est_2024_40341a::nm::2",
+      "top1_score": 0.896095335483551,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2015_1ded64",
+      "gold_id": "blr_2015_1ded64::eq::hard",
+      "top1_id": "blr_2015_1ded64::nm::0",
+      "top1_score": 0.8888118267059326,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2021_0b68e6",
+      "gold_id": "chn_2021_0b68e6::eq::hard",
+      "top1_id": "chn_2021_0b68e6::nm::2",
+      "top1_score": 0.8849179744720459,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "zaf_2016_fc6573",
+      "gold_id": "zaf_2016_fc6573::eq::hard",
+      "top1_id": "zaf_2016_fc6573::nm::2",
+      "top1_score": 0.8543221950531006,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2010_4b2dae",
+      "gold_id": "rou_2010_4b2dae::eq::hard",
+      "top1_id": "rou_2010_4b2dae::nm::0",
+      "top1_score": 0.8479262590408325,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2022_f4f10b",
+      "gold_id": "usa_2022_f4f10b::eq::hard",
+      "top1_id": "usa_2022_f4f10b::nm::2",
+      "top1_score": 0.8935508728027344,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2012_ea0855",
+      "gold_id": "svn_2012_ea0855::eq::hard",
+      "top1_id": "svn_2012_ea0855::nm::0",
+      "top1_score": 0.9019020795822144,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hkg_2017_5ff896",
+      "gold_id": "hkg_2017_5ff896::eq::hard",
+      "top1_id": "hkg_2017_5ff896::nm::1",
+      "top1_score": 0.8996300101280212,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2021_96c04e",
+      "gold_id": "chn_2021_96c04e::eq::hard",
+      "top1_id": "chn_2021_96c04e::eq::medium",
+      "top1_score": 0.8670130968093872,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "sau_2021_759a48",
+      "gold_id": "sau_2021_759a48::eq::hard",
+      "top1_id": "sau_2021_759a48::nm::2",
+      "top1_score": 0.9000767469406128,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mng_2025_905433",
+      "gold_id": "mng_2025_905433::eq::hard",
+      "top1_id": "mng_2025_905433::nm::2",
+      "top1_score": 0.8669179081916809,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irn_2022_959cf7",
+      "gold_id": "irn_2022_959cf7::eq::hard",
+      "top1_id": "irn_2022_959cf7::nm::1",
+      "top1_score": 0.8817479014396667,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2025_e105bb",
+      "gold_id": "usa_2025_e105bb::eq::hard",
+      "top1_id": "usa_2025_e105bb::nm::0",
+      "top1_score": 0.916649341583252,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "zhk_2015_2bdfcb",
+      "gold_id": "zhk_2015_2bdfcb::eq::hard",
+      "top1_id": "zhk_2015_2bdfcb::nm::2",
+      "top1_score": 0.8573422431945801,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2014_aa72e6",
+      "gold_id": "sau_2014_aa72e6::eq::hard",
+      "top1_id": "sau_2014_aa72e6::nm::1",
+      "top1_score": 0.8547707200050354,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mem_2008_68f04b",
+      "gold_id": "mem_2008_68f04b::eq::hard",
+      "top1_id": "mem_2008_68f04b::eq::easy",
+      "top1_score": 0.8811110258102417,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "btw_2011_8a1f3b",
+      "gold_id": "btw_2011_8a1f3b::eq::hard",
+      "top1_id": "btw_2011_8a1f3b::nm::1",
+      "top1_score": 0.8743528127670288,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2020_e68530",
+      "gold_id": "est_2020_e68530::eq::hard",
+      "top1_id": "est_2020_e68530::nm::0",
+      "top1_score": 0.9107952117919922,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2009_f82cf5",
+      "gold_id": "btw_2009_f82cf5::eq::hard",
+      "top1_id": "btw_2009_f82cf5::nm::1",
+      "top1_score": 0.8485279083251953,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2016_349aac",
+      "gold_id": "esp_2016_349aac::eq::hard",
+      "top1_id": "esp_2016_349aac::nm::0",
+      "top1_score": 0.867153525352478,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "tur_2013_e722b4",
+      "gold_id": "tur_2013_e722b4::eq::hard",
+      "top1_id": "tur_2013_e722b4::nm::2",
+      "top1_score": 0.8451628684997559,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "pol_3b038b",
+      "gold_id": "pol_3b038b::eq::hard",
+      "top1_id": "pol_3b038b::nm::0",
+      "top1_score": 0.8871054649353027,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2016_3b644a",
+      "gold_id": "phl_2016_3b644a::eq::hard",
+      "top1_id": "phl_2016_3b644a::nm::2",
+      "top1_score": 0.8712904453277588,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2018_79a0d1",
+      "gold_id": "est_2018_79a0d1::eq::hard",
+      "top1_id": "est_2018_79a0d1::nm::2",
+      "top1_score": 0.8843258023262024,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "tur_2018_aaf775",
+      "gold_id": "tur_2018_aaf775::eq::hard",
+      "top1_id": "tur_2018_aaf775::nm::2",
+      "top1_score": 0.9206953048706055,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2015_88fa53",
+      "gold_id": "rou_2015_88fa53::eq::hard",
+      "top1_id": "rou_2015_88fa53::nm::2",
+      "top1_score": 0.8859032392501831,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "jbm_2004_a95f43",
+      "gold_id": "jbm_2004_a95f43::eq::hard",
+      "top1_id": "jbm_2004_a95f43::nm::1",
+      "top1_score": 0.8633754253387451,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "vnm_2011_c8e35c",
+      "gold_id": "vnm_2011_c8e35c::eq::hard",
+      "top1_id": "vnm_2011_c8e35c::nm::0",
+      "top1_score": 0.8949106335639954,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2015_55f1c5",
+      "gold_id": "rou_2015_55f1c5::eq::hard",
+      "top1_id": "rou_2015_55f1c5::nm::1",
+      "top1_score": 0.8774937987327576,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irn_2025_912017",
+      "gold_id": "irn_2025_912017::eq::hard",
+      "top1_id": "irn_2025_912017::nm::0",
+      "top1_score": 0.8940898180007935,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ind_2005_9a0816",
+      "gold_id": "ind_2005_9a0816::eq::hard",
+      "top1_id": "ind_2005_9a0816::nm::1",
+      "top1_score": 0.8589836955070496,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "cps_2011_9f1d0a",
+      "gold_id": "cps_2011_9f1d0a::eq::hard",
+      "top1_id": "cps_2011_9f1d0a::nm::2",
+      "top1_score": 0.8636029958724976,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2009_420da0",
+      "gold_id": "btw_2009_420da0::eq::hard",
+      "top1_id": "btw_2009_420da0::nm::0",
+      "top1_score": 0.8984951972961426,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nld_2019_bfa655",
+      "gold_id": "nld_2019_bfa655::eq::hard",
+      "top1_id": "nld_2019_bfa655::nm::0",
+      "top1_score": 0.91727215051651,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mng_2023_bdf6e6",
+      "gold_id": "mng_2023_bdf6e6::eq::hard",
+      "top1_id": "mng_2023_bdf6e6::nm::0",
+      "top1_score": 0.8961017727851868,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2001_94bc6e",
+      "gold_id": "bra_2001_94bc6e::eq::hard",
+      "top1_id": "bra_2001_94bc6e::nm::0",
+      "top1_score": 0.8855626583099365,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2013_bda84b",
+      "gold_id": "twn_2013_bda84b::eq::hard",
+      "top1_id": "twn_2013_bda84b::nm::2",
+      "top1_score": 0.8566159009933472,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2009_724c09",
+      "gold_id": "bgr_2009_724c09::eq::hard",
+      "top1_id": "bgr_2009_724c09::nm::1",
+      "top1_score": 0.8925707936286926,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2019_60ef45",
+      "gold_id": "usa_2019_60ef45::eq::hard",
+      "top1_id": "usa_2019_60ef45::nm::0",
+      "top1_score": 0.8733407258987427,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2018_261d78",
+      "gold_id": "bra_2018_261d78::eq::hard",
+      "top1_id": "bra_2018_261d78::eq::easy",
+      "top1_score": 0.8853209614753723,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "btw_2019_63ac0f",
+      "gold_id": "btw_2019_63ac0f::eq::hard",
+      "top1_id": "btw_2019_63ac0f::nm::2",
+      "top1_score": 0.8725360631942749,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rus_2014_06bec6",
+      "gold_id": "rus_2014_06bec6::eq::hard",
+      "top1_id": "rus_2014_06bec6::nm::2",
+      "top1_score": 0.8765699863433838,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bxm_2019_a6c2be",
+      "gold_id": "bxm_2019_a6c2be::eq::hard",
+      "top1_id": "bxm_2019_a6c2be::nm::1",
+      "top1_score": 0.896891176700592,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2018_c3f456",
+      "gold_id": "ukr_2018_c3f456::eq::hard",
+      "top1_id": "ukr_2018_c3f456::nm::0",
+      "top1_score": 0.8497138023376465,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sun_1966_744b37",
+      "gold_id": "sun_1966_744b37::eq::hard",
+      "top1_id": "sun_1966_744b37::nm::0",
+      "top1_score": 0.9054590463638306,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2023_33da6e",
+      "gold_id": "ita_2023_33da6e::eq::hard",
+      "top1_id": "ita_2023_33da6e::nm::0",
+      "top1_score": 0.9153128266334534,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2017_c80c6e",
+      "gold_id": "rou_2017_c80c6e::eq::hard",
+      "top1_id": "rou_2017_c80c6e::eq::easy",
+      "top1_score": 0.866803765296936,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "blr_2013_98fe5f",
+      "gold_id": "blr_2013_98fe5f::eq::hard",
+      "top1_id": "blr_2013_98fe5f::nm::1",
+      "top1_score": 0.8986768126487732,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2024_67d5f9",
+      "gold_id": "irl_2024_67d5f9::eq::hard",
+      "top1_id": "irl_2024_67d5f9::nm::0",
+      "top1_score": 0.8601776361465454,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2021_890af1",
+      "gold_id": "irl_2021_890af1::eq::hard",
+      "top1_id": "irl_2021_890af1::nm::0",
+      "top1_score": 0.8592326641082764,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2017_a68306",
+      "gold_id": "rou_2017_a68306::eq::hard",
+      "top1_id": "rou_2017_a68306::nm::0",
+      "top1_score": 0.8635420799255371,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mkd_2009_5131ff",
+      "gold_id": "mkd_2009_5131ff::eq::hard",
+      "top1_id": "mkd_2009_5131ff::eq::easy",
+      "top1_score": 0.8700628280639648,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "phl_12a6b8",
+      "gold_id": "phl_12a6b8::eq::hard",
+      "top1_id": "phl_12a6b8::nm::2",
+      "top1_score": 0.8718323707580566,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_74f70d",
+      "gold_id": "esp_74f70d::eq::hard",
+      "top1_id": "esp_74f70d::nm::0",
+      "top1_score": 0.8673691153526306,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2022_a84691",
+      "gold_id": "phl_2022_a84691::eq::hard",
+      "top1_id": "phl_2022_a84691::eq::easy",
+      "top1_score": 0.8765483498573303,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "usa_2019_45f3bc",
+      "gold_id": "usa_2019_45f3bc::eq::hard",
+      "top1_id": "usa_2019_45f3bc::nm::0",
+      "top1_score": 0.8916081786155701,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "arg_2006_f7a61c",
+      "gold_id": "arg_2006_f7a61c::eq::hard",
+      "top1_id": "arg_2006_f7a61c::nm::1",
+      "top1_score": 0.867985725402832,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sun_1966_1694e1",
+      "gold_id": "sun_1966_1694e1::eq::hard",
+      "top1_id": "sun_1966_1694e1::nm::2",
+      "top1_score": 0.875381588935852,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2013_ff4a95",
+      "gold_id": "svn_2013_ff4a95::eq::hard",
+      "top1_id": "svn_2013_ff4a95::eq::easy",
+      "top1_score": 0.8613715767860413,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "bra_22c8b6",
+      "gold_id": "bra_22c8b6::eq::hard",
+      "top1_id": "bra_22c8b6::eq::easy",
+      "top1_score": 0.892458438873291,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "sun_1968_7a06dc",
+      "gold_id": "sun_1968_7a06dc::eq::hard",
+      "top1_id": "sun_1968_7a06dc::nm::1",
+      "top1_score": 0.8464770317077637,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2025_f0686a",
+      "gold_id": "usa_2025_f0686a::eq::hard",
+      "top1_id": "usa_2025_f0686a::nm::1",
+      "top1_score": 0.9211695194244385,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2013_84eb88",
+      "gold_id": "phl_2013_84eb88::eq::hard",
+      "top1_id": "phl_2013_84eb88::nm::1",
+      "top1_score": 0.879494309425354,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "tur_2023_a9aef7",
+      "gold_id": "tur_2023_a9aef7::eq::hard",
+      "top1_id": "tur_2023_a9aef7::eq::easy",
+      "top1_score": 0.8584486246109009,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "est_2022_a691fc",
+      "gold_id": "est_2022_a691fc::eq::hard",
+      "top1_id": "est_2022_a691fc::nm::2",
+      "top1_score": 0.9110060930252075,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2023_bd9486",
+      "gold_id": "twn_2023_bd9486::eq::hard",
+      "top1_id": "twn_2023_bd9486::nm::0",
+      "top1_score": 0.9073056578636169,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2013_c456d2",
+      "gold_id": "sau_2013_c456d2::eq::hard",
+      "top1_id": "sau_2013_c456d2::eq::easy",
+      "top1_score": 0.8674498796463013,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "hrv_2017_ca1c4d",
+      "gold_id": "hrv_2017_ca1c4d::eq::hard",
+      "top1_id": "hrv_2017_ca1c4d::nm::0",
+      "top1_score": 0.8611598014831543,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2019_997cb8",
+      "gold_id": "bra_2019_997cb8::eq::hard",
+      "top1_id": "bra_2019_997cb8::nm::1",
+      "top1_score": 0.894349992275238,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_23c269",
+      "gold_id": "fra_23c269::eq::hard",
+      "top1_id": "fra_23c269::nm::0",
+      "top1_score": 0.8600988388061523,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "jbm_2016_68ccc3",
+      "gold_id": "jbm_2016_68ccc3::eq::hard",
+      "top1_id": "jbm_2016_68ccc3::nm::2",
+      "top1_score": 0.9002507925033569,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2023_aaf831",
+      "gold_id": "btw_2023_aaf831::eq::hard",
+      "top1_id": "btw_2023_aaf831::nm::1",
+      "top1_score": 0.8815314173698425,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "kor_2023_878c28",
+      "gold_id": "kor_2023_878c28::eq::hard",
+      "top1_id": "kor_2023_878c28::nm::1",
+      "top1_score": 0.9185256958007812,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "apm_2015_af5968",
+      "gold_id": "apm_2015_af5968::eq::hard",
+      "top1_id": "apm_2015_af5968::nm::0",
+      "top1_score": 0.8921781778335571,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2014_76d4d9",
+      "gold_id": "svn_2014_76d4d9::eq::hard",
+      "top1_id": "svn_2014_76d4d9::nm::0",
+      "top1_score": 0.8999011516571045,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2022_d71635",
+      "gold_id": "usa_2022_d71635::eq::hard",
+      "top1_id": "usa_2022_d71635::nm::2",
+      "top1_score": 0.8483070135116577,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2013_aca3e1",
+      "gold_id": "svn_2013_aca3e1::eq::hard",
+      "top1_id": "svn_2013_aca3e1::nm::0",
+      "top1_score": 0.8744109869003296,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2020_029bbf",
+      "gold_id": "est_2020_029bbf::eq::hard",
+      "top1_id": "est_2020_029bbf::nm::2",
+      "top1_score": 0.8999773263931274,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mng_2025_edb540",
+      "gold_id": "mng_2025_edb540::eq::hard",
+      "top1_id": "mng_2025_edb540::nm::1",
+      "top1_score": 0.8811394572257996,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2019_9421a0",
+      "gold_id": "twn_2019_9421a0::eq::hard",
+      "top1_id": "twn_2019_9421a0::nm::1",
+      "top1_score": 0.895693838596344,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "che_2008_2cade5",
+      "gold_id": "che_2008_2cade5::eq::hard",
+      "top1_id": "che_2008_2cade5::nm::0",
+      "top1_score": 0.8987551331520081,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nld_2018_2eec56",
+      "gold_id": "nld_2018_2eec56::eq::hard",
+      "top1_id": "nld_2018_2eec56::nm::1",
+      "top1_score": 0.8571432828903198,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "zaf_2016_ddea36",
+      "gold_id": "zaf_2016_ddea36::eq::hard",
+      "top1_id": "zaf_2016_ddea36::nm::0",
+      "top1_score": 0.9245463013648987,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2015_3d2172",
+      "gold_id": "bra_2015_3d2172::eq::hard",
+      "top1_id": "bra_2015_3d2172::eq::easy",
+      "top1_score": 0.8753065466880798,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "usa_2021_c869fd",
+      "gold_id": "usa_2021_c869fd::eq::hard",
+      "top1_id": "usa_2021_c869fd::nm::1",
+      "top1_score": 0.9068472385406494,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rus_2010_d9daca",
+      "gold_id": "rus_2010_d9daca::eq::hard",
+      "top1_id": "rus_2010_d9daca::nm::0",
+      "top1_score": 0.876232385635376,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "grc_2011_7cb2fc",
+      "gold_id": "grc_2011_7cb2fc::eq::hard",
+      "top1_id": "grc_2011_7cb2fc::eq::easy",
+      "top1_score": 0.8290395736694336,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "usa_2013_d59424",
+      "gold_id": "usa_2013_d59424::eq::hard",
+      "top1_id": "usa_2013_d59424::nm::0",
+      "top1_score": 0.9227734804153442,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2012_83e7db",
+      "gold_id": "sau_2012_83e7db::eq::hard",
+      "top1_id": "sau_2012_83e7db::nm::1",
+      "top1_score": 0.8631041646003723,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2021_ae1261",
+      "gold_id": "rou_2021_ae1261::eq::hard",
+      "top1_id": "rou_2021_ae1261::nm::1",
+      "top1_score": 0.869960606098175,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2007_d207a8",
+      "gold_id": "chn_2007_d207a8::eq::hard",
+      "top1_id": "chn_2007_d207a8::nm::2",
+      "top1_score": 0.8566360473632812,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2011_cf120c",
+      "gold_id": "irl_2011_cf120c::eq::hard",
+      "top1_id": "irl_2011_cf120c::nm::1",
+      "top1_score": 0.8582487106323242,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2019_e30b5b",
+      "gold_id": "twn_2019_e30b5b::eq::hard",
+      "top1_id": "twn_2019_e30b5b::nm::2",
+      "top1_score": 0.9007025957107544,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "can_1972_8a3dc3",
+      "gold_id": "can_1972_8a3dc3::eq::hard",
+      "top1_id": "can_1972_8a3dc3::nm::1",
+      "top1_score": 0.849153995513916,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2016_6f5299",
+      "gold_id": "phl_2016_6f5299::eq::hard",
+      "top1_id": "phl_2016_6f5299::nm::1",
+      "top1_score": 0.851996660232544,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2010_fe4ab6",
+      "gold_id": "ukr_2010_fe4ab6::eq::hard",
+      "top1_id": "ukr_2010_fe4ab6::nm::0",
+      "top1_score": 0.8317104578018188,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2008_21ca23",
+      "gold_id": "phl_2008_21ca23::eq::hard",
+      "top1_id": "phl_2008_21ca23::nm::0",
+      "top1_score": 0.8806169033050537,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "apm_1993_5590e4",
+      "gold_id": "apm_1993_5590e4::eq::hard",
+      "top1_id": "apm_1993_5590e4::nm::0",
+      "top1_score": 0.8825943470001221,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2018_6988bf",
+      "gold_id": "rou_2018_6988bf::eq::hard",
+      "top1_id": "rou_2018_6988bf::nm::2",
+      "top1_score": 0.8561345934867859,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hrv_2011_f9589f",
+      "gold_id": "hrv_2011_f9589f::eq::hard",
+      "top1_id": "hrv_2011_7180c4::nm::0",
+      "top1_score": 0.8782362937927246,
+      "category": "other_base_item"
+    },
+    {
+      "query_id": "mng_2017_ecff04",
+      "gold_id": "mng_2017_ecff04::eq::hard",
+      "top1_id": "mng_2017_ecff04::nm::0",
+      "top1_score": 0.8957538604736328,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "arg_2013_11317f",
+      "gold_id": "arg_2013_11317f::eq::hard",
+      "top1_id": "arg_2013_11317f::eq::easy",
+      "top1_score": 0.8599618673324585,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "bra_2019_cb20cd",
+      "gold_id": "bra_2019_cb20cd::eq::hard",
+      "top1_id": "bra_2019_cb20cd::nm::1",
+      "top1_score": 0.8974263668060303,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ind_2007_e3aa55",
+      "gold_id": "ind_2007_e3aa55::eq::hard",
+      "top1_id": "ind_2007_e3aa55::nm::0",
+      "top1_score": 0.8567373752593994,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2023_bdfd6c",
+      "gold_id": "usa_2023_bdfd6c::eq::hard",
+      "top1_id": "usa_2023_bdfd6c::nm::1",
+      "top1_score": 0.9006757736206055,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2010_7bc726",
+      "gold_id": "usa_2010_7bc726::eq::hard",
+      "top1_id": "usa_2010_7bc726::nm::2",
+      "top1_score": 0.8935350179672241,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2001_02a051",
+      "gold_id": "usa_2001_02a051::eq::hard",
+      "top1_id": "usa_2001_02a051::nm::0",
+      "top1_score": 0.856396496295929,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hkg_2004_cef639",
+      "gold_id": "hkg_2004_cef639::eq::hard",
+      "top1_id": "hkg_2004_cef639::eq::medium",
+      "top1_score": 0.8133391737937927,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "esp_2004_5a9bd0",
+      "gold_id": "esp_2004_5a9bd0::eq::hard",
+      "top1_id": "esp_2004_5a9bd0::nm::2",
+      "top1_score": 0.8770670890808105,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2010_e127c0",
+      "gold_id": "blr_2010_e127c0::eq::hard",
+      "top1_id": "blr_2010_e127c0::nm::0",
+      "top1_score": 0.9311317801475525,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2008_fafe41",
+      "gold_id": "esp_2008_fafe41::eq::hard",
+      "top1_id": "esp_2008_fafe41::eq::easy",
+      "top1_score": 0.8777827024459839,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "usa_2023_7e5f3c",
+      "gold_id": "usa_2023_7e5f3c::eq::hard",
+      "top1_id": "usa_2023_7e5f3c::nm::2",
+      "top1_score": 0.8837591409683228,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2010_51571c",
+      "gold_id": "rou_2010_51571c::eq::hard",
+      "top1_id": "rou_2010_51571c::nm::2",
+      "top1_score": 0.8539305329322815,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bmo_2013_654e0d",
+      "gold_id": "bmo_2013_654e0d::eq::hard",
+      "top1_id": "bmo_2013_654e0d::nm::2",
+      "top1_score": 0.9225002527236938,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_0c1812",
+      "gold_id": "bra_0c1812::eq::hard",
+      "top1_id": "bra_0c1812::nm::2",
+      "top1_score": 0.8545921444892883,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2019_4c1675",
+      "gold_id": "svn_2019_4c1675::eq::hard",
+      "top1_id": "svn_2019_4c1675::eq::medium",
+      "top1_score": 0.8681203126907349,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "mng_2015_ca3361",
+      "gold_id": "mng_2015_ca3361::eq::hard",
+      "top1_id": "mng_2015_ca3361::eq::easy",
+      "top1_score": 0.8705698847770691,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "usa_2005_2ffd0c",
+      "gold_id": "usa_2005_2ffd0c::eq::hard",
+      "top1_id": "usa_2005_2ffd0c::nm::0",
+      "top1_score": 0.8472459316253662,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2016_f1ab92",
+      "gold_id": "blr_2016_f1ab92::eq::hard",
+      "top1_id": "blr_2016_f1ab92::nm::1",
+      "top1_score": 0.9126895666122437,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2018_49a1a6",
+      "gold_id": "twn_2018_49a1a6::eq::hard",
+      "top1_id": "twn_2018_49a1a6::eq::easy",
+      "top1_score": 0.8955433964729309,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "phl_2010_80a4c0",
+      "gold_id": "phl_2010_80a4c0::eq::hard",
+      "top1_id": "phl_2010_80a4c0::nm::2",
+      "top1_score": 0.8863662481307983,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2022_92b702",
+      "gold_id": "twn_2022_92b702::eq::hard",
+      "top1_id": "twn_2022_92b702::nm::2",
+      "top1_score": 0.8924558162689209,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_1990_99885a",
+      "gold_id": "btw_1990_99885a::eq::hard",
+      "top1_id": "btw_1990_99885a::nm::2",
+      "top1_score": 0.8699159026145935,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_1993_6ea448",
+      "gold_id": "btw_1993_6ea448::eq::hard",
+      "top1_id": "btw_1993_6ea448::nm::1",
+      "top1_score": 0.8822110891342163,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2022_b4c7ff",
+      "gold_id": "sau_2022_b4c7ff::eq::hard",
+      "top1_id": "sau_2022_b4c7ff::nm::1",
+      "top1_score": 0.8657424449920654,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mkd_2017_959e1a",
+      "gold_id": "mkd_2017_959e1a::eq::hard",
+      "top1_id": "mkd_2017_959e1a::nm::2",
+      "top1_score": 0.8610968589782715,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2020_984cc9",
+      "gold_id": "phl_2020_984cc9::eq::hard",
+      "top1_id": "phl_2020_984cc9::nm::2",
+      "top1_score": 0.8628988862037659,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "can_1988_b48e17",
+      "gold_id": "can_1988_b48e17::eq::hard",
+      "top1_id": "can_1988_b48e17::nm::1",
+      "top1_score": 0.8737833499908447,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2021_3deb2b",
+      "gold_id": "est_2021_3deb2b::eq::hard",
+      "top1_id": "est_2021_3deb2b::nm::2",
+      "top1_score": 0.9087505340576172,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nzl_2022_20ea9e",
+      "gold_id": "nzl_2022_20ea9e::eq::hard",
+      "top1_id": "nzl_2022_20ea9e::nm::1",
+      "top1_score": 0.8230919241905212,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2022_148fb8",
+      "gold_id": "usa_2022_148fb8::eq::hard",
+      "top1_id": "usa_2022_148fb8::nm::0",
+      "top1_score": 0.9109153151512146,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2019_e26fbc",
+      "gold_id": "rou_2019_e26fbc::eq::hard",
+      "top1_id": "rou_2019_e26fbc::nm::2",
+      "top1_score": 0.8783622980117798,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2024_513435",
+      "gold_id": "ita_2024_513435::eq::hard",
+      "top1_id": "ita_2024_513435::nm::1",
+      "top1_score": 0.894330620765686,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2021_37f22b",
+      "gold_id": "chn_2021_37f22b::eq::hard",
+      "top1_id": "chn_2021_37f22b::nm::1",
+      "top1_score": 0.8709057569503784,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2016_607521",
+      "gold_id": "phl_2016_607521::eq::hard",
+      "top1_id": "phl_2016_607521::nm::0",
+      "top1_score": 0.8746042847633362,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2013_7488ce",
+      "gold_id": "twn_2013_7488ce::eq::hard",
+      "top1_id": "twn_2013_7488ce::nm::1",
+      "top1_score": 0.8497502207756042,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2018_0ffd1e",
+      "gold_id": "svn_2018_0ffd1e::eq::hard",
+      "top1_id": "svn_2018_0ffd1e::eq::easy",
+      "top1_score": 0.8785213232040405,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "sun_1980_8a657a",
+      "gold_id": "sun_1980_8a657a::eq::hard",
+      "top1_id": "sun_1980_8a657a::nm::2",
+      "top1_score": 0.8586245179176331,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2009_10c363",
+      "gold_id": "chn_2009_10c363::eq::hard",
+      "top1_id": "chn_2009_10c363::nm::1",
+      "top1_score": 0.872635006904602,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2010_a050b9",
+      "gold_id": "svn_2010_a050b9::eq::hard",
+      "top1_id": "svn_2010_a050b9::nm::0",
+      "top1_score": 0.9031198620796204,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hkg_2014_5320f9",
+      "gold_id": "hkg_2014_5320f9::eq::hard",
+      "top1_id": "hkg_2014_5320f9::eq::easy",
+      "top1_score": 0.9053685069084167,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "irn_2025_300b39",
+      "gold_id": "irn_2025_300b39::eq::hard",
+      "top1_id": "irn_2025_300b39::nm::0",
+      "top1_score": 0.9082833528518677,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sgp_2023_4fac2a",
+      "gold_id": "sgp_2023_4fac2a::eq::hard",
+      "top1_id": "sgp_2023_4fac2a::nm::0",
+      "top1_score": 0.8341042399406433,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2011_517e7f",
+      "gold_id": "irl_2011_517e7f::eq::hard",
+      "top1_id": "irl_2011_517e7f::nm::1",
+      "top1_score": 0.8890683650970459,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "jpn_2006_b8b23e",
+      "gold_id": "jpn_2006_b8b23e::eq::hard",
+      "top1_id": "jpn_2006_b8b23e::nm::2",
+      "top1_score": 0.8931102156639099,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "vnm_2013_f0a024",
+      "gold_id": "vnm_2013_f0a024::eq::hard",
+      "top1_id": "vnm_2013_f0a024::eq::medium",
+      "top1_score": 0.8608084917068481,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "nld_2023_dbfeb9",
+      "gold_id": "nld_2023_dbfeb9::eq::hard",
+      "top1_id": "nld_2023_dbfeb9::nm::2",
+      "top1_score": 0.9183895587921143,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "kor_2007_5b3a67",
+      "gold_id": "kor_2007_5b3a67::eq::hard",
+      "top1_id": "kor_2007_5b3a67::nm::0",
+      "top1_score": 0.8774723410606384,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_a88a32",
+      "gold_id": "bra_a88a32::eq::hard",
+      "top1_id": "bra_a88a32::nm::0",
+      "top1_score": 0.9035320281982422,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2018_1670e9",
+      "gold_id": "esp_2018_1670e9::eq::hard",
+      "top1_id": "esp_2018_1670e9::nm::2",
+      "top1_score": 0.8740990161895752,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "cze_2017_79ebe8",
+      "gold_id": "cze_2017_79ebe8::eq::hard",
+      "top1_id": "cze_2017_79ebe8::nm::2",
+      "top1_score": 0.828655481338501,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2013_deb1eb",
+      "gold_id": "blr_2013_deb1eb::eq::hard",
+      "top1_id": "blr_2013_deb1eb::nm::0",
+      "top1_score": 0.8787082433700562,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hrv_2017_39f878",
+      "gold_id": "hrv_2017_39f878::eq::hard",
+      "top1_id": "hrv_2017_39f878::nm::0",
+      "top1_score": 0.87447589635849,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "arg_2016_5d445f",
+      "gold_id": "arg_2016_5d445f::eq::hard",
+      "top1_id": "arg_2016_5d445f::nm::2",
+      "top1_score": 0.9354832172393799,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2016_43c9ce",
+      "gold_id": "rou_2016_43c9ce::eq::hard",
+      "top1_id": "rou_2016_43c9ce::nm::2",
+      "top1_score": 0.8811508417129517,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2023_71eae6",
+      "gold_id": "phl_2023_71eae6::eq::hard",
+      "top1_id": "phl_2023_71eae6::eq::easy",
+      "top1_score": 0.8780384659767151,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "deu_2008_304253",
+      "gold_id": "deu_2008_304253::eq::hard",
+      "top1_id": "deu_2008_304253::nm::1",
+      "top1_score": 0.8811988830566406,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2016_49e35c",
+      "gold_id": "rou_2016_49e35c::eq::hard",
+      "top1_id": "rou_2016_1e498a::eq::easy",
+      "top1_score": 0.8857017159461975,
+      "category": "other_base_item"
+    },
+    {
+      "query_id": "cps_2024_441b5d",
+      "gold_id": "cps_2024_441b5d::eq::hard",
+      "top1_id": "cps_2024_441b5d::eq::medium",
+      "top1_score": 0.9108116030693054,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "arg_2003_ccb12f",
+      "gold_id": "arg_2003_ccb12f::eq::hard",
+      "top1_id": "arg_2003_ccb12f::eq::easy",
+      "top1_score": 0.9260175228118896,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "blr_2018_d94a4b",
+      "gold_id": "blr_2018_d94a4b::eq::hard",
+      "top1_id": "blr_2018_d94a4b::nm::1",
+      "top1_score": 0.8917732238769531,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2008_9760bd",
+      "gold_id": "svn_2008_9760bd::eq::hard",
+      "top1_id": "svn_2008_9760bd::nm::1",
+      "top1_score": 0.9019472002983093,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rus_2016_b5e53f",
+      "gold_id": "rus_2016_b5e53f::eq::hard",
+      "top1_id": "rus_2016_b5e53f::nm::0",
+      "top1_score": 0.8596705198287964,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2011_46bae0",
+      "gold_id": "blr_2011_46bae0::eq::hard",
+      "top1_id": "blr_2011_46bae0::eq::easy",
+      "top1_score": 0.8561753034591675,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "deu_2002_622e90",
+      "gold_id": "deu_2002_622e90::eq::hard",
+      "top1_id": "deu_2002_622e90::nm::2",
+      "top1_score": 0.9013781547546387,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2015_bfcee3",
+      "gold_id": "blr_2015_bfcee3::eq::hard",
+      "top1_id": "blr_2015_bfcee3::nm::2",
+      "top1_score": 0.8961846232414246,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "zaf_2012_af7ce8",
+      "gold_id": "zaf_2012_af7ce8::eq::hard",
+      "top1_id": "zaf_2012_af7ce8::nm::2",
+      "top1_score": 0.8586898446083069,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "aut_2017_596bb8",
+      "gold_id": "aut_2017_596bb8::eq::hard",
+      "top1_id": "aut_2017_596bb8::nm::2",
+      "top1_score": 0.8664356470108032,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2018_eab0f7",
+      "gold_id": "usa_2018_eab0f7::eq::hard",
+      "top1_id": "usa_2018_eab0f7::eq::easy",
+      "top1_score": 0.8939759135246277,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "hrv_2013_d43b51",
+      "gold_id": "hrv_2013_d43b51::eq::hard",
+      "top1_id": "hrv_2013_d43b51::nm::0",
+      "top1_score": 0.8929986953735352,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2018_c0c01f",
+      "gold_id": "blr_2018_c0c01f::eq::hard",
+      "top1_id": "blr_2018_c0c01f::nm::2",
+      "top1_score": 0.8997085094451904,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nld_2022_347c38",
+      "gold_id": "nld_2022_347c38::eq::hard",
+      "top1_id": "nld_2022_347c38::nm::0",
+      "top1_score": 0.8669285774230957,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_1999_871f1b",
+      "gold_id": "esp_1999_871f1b::eq::hard",
+      "top1_id": "esp_1999_871f1b::eq::easy",
+      "top1_score": 0.9089308977127075,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "fra_2017_91d39a",
+      "gold_id": "fra_2017_91d39a::eq::hard",
+      "top1_id": "fra_2017_91d39a::nm::1",
+      "top1_score": 0.8843553066253662,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sgp_2011_846227",
+      "gold_id": "sgp_2011_846227::eq::hard",
+      "top1_id": "sgp_2011_846227::nm::1",
+      "top1_score": 0.8750365972518921,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mng_2015_56b899",
+      "gold_id": "mng_2015_56b899::eq::hard",
+      "top1_id": "mng_2015_56b899::nm::2",
+      "top1_score": 0.856646716594696,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2022_2b0082",
+      "gold_id": "chn_2022_2b0082::eq::hard",
+      "top1_id": "chn_2022_2b0082::nm::0",
+      "top1_score": 0.8863478302955627,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2016_5f7068",
+      "gold_id": "phl_2016_5f7068::eq::hard",
+      "top1_id": "phl_2016_5f7068::nm::0",
+      "top1_score": 0.8595653772354126,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_1999_50da0d",
+      "gold_id": "btw_1999_50da0d::eq::hard",
+      "top1_id": "btw_1999_50da0d::eq::medium",
+      "top1_score": 0.8354583978652954,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "svn_2014_fa0c7f",
+      "gold_id": "svn_2014_fa0c7f::eq::hard",
+      "top1_id": "svn_2014_fa0c7f::nm::0",
+      "top1_score": 0.8855729103088379,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2024_e55ab8",
+      "gold_id": "usa_2024_e55ab8::eq::hard",
+      "top1_id": "usa_2024_e55ab8::nm::0",
+      "top1_score": 0.8495956063270569,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2011_5d5018",
+      "gold_id": "rou_2011_5d5018::eq::hard",
+      "top1_id": "rou_2011_5d5018::nm::0",
+      "top1_score": 0.8676667213439941,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2013_951cf8",
+      "gold_id": "rou_2013_951cf8::eq::hard",
+      "top1_id": "rou_2013_951cf8::eq::medium",
+      "top1_score": 0.8250467777252197,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "mkd_2014_399b88",
+      "gold_id": "mkd_2014_399b88::eq::hard",
+      "top1_id": "mkd_2014_399b88::nm::1",
+      "top1_score": 0.8499943614006042,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2013_1bc971",
+      "gold_id": "esp_2013_1bc971::eq::hard",
+      "top1_id": "esp_2013_1bc971::nm::0",
+      "top1_score": 0.8966953158378601,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2013_0686be",
+      "gold_id": "ukr_2013_0686be::eq::hard",
+      "top1_id": "ukr_2013_0686be::nm::2",
+      "top1_score": 0.9009497165679932,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mkd_2014_72acf4",
+      "gold_id": "mkd_2014_72acf4::eq::hard",
+      "top1_id": "mkd_2014_40b5b4::nm::1",
+      "top1_score": 0.8496881723403931,
+      "category": "other_base_item"
+    },
+    {
+      "query_id": "usa_2001_3c5b1b",
+      "gold_id": "usa_2001_3c5b1b::eq::hard",
+      "top1_id": "usa_2001_3c5b1b::eq::easy",
+      "top1_score": 0.8459488749504089,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "ita_2004_c9feb9",
+      "gold_id": "ita_2004_c9feb9::eq::hard",
+      "top1_id": "ita_2004_c9feb9::nm::1",
+      "top1_score": 0.8909482359886169,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "che_e20ecd",
+      "gold_id": "che_e20ecd::eq::hard",
+      "top1_id": "che_e20ecd::nm::1",
+      "top1_score": 0.8946900963783264,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2006_c6cf6d",
+      "gold_id": "bra_2006_c6cf6d::eq::hard",
+      "top1_id": "bra_2006_c6cf6d::eq::easy",
+      "top1_score": 0.8993434906005859,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "bra_2009_5d0609",
+      "gold_id": "bra_2009_5d0609::eq::hard",
+      "top1_id": "bra_2009_5d0609::nm::1",
+      "top1_score": 0.8883990049362183,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2022_7fac2d",
+      "gold_id": "sau_2022_7fac2d::eq::hard",
+      "top1_id": "sau_2022_7fac2d::nm::1",
+      "top1_score": 0.9033493399620056,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "jbm_2010_188f42",
+      "gold_id": "jbm_2010_188f42::eq::hard",
+      "top1_id": "jbm_2010_188f42::nm::0",
+      "top1_score": 0.8440607786178589,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "imo_2013_d960d1",
+      "gold_id": "imo_2013_d960d1::eq::hard",
+      "top1_id": "twn_2014_05b901::nm::1",
+      "top1_score": 0.8918880224227905,
+      "category": "other_base_item"
+    },
+    {
+      "query_id": "ita_3f2a61",
+      "gold_id": "ita_3f2a61::eq::hard",
+      "top1_id": "ita_3f2a61::eq::easy",
+      "top1_score": 0.8758413195610046,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "ita_2009_b6b372",
+      "gold_id": "ita_2009_b6b372::eq::hard",
+      "top1_id": "ita_2009_b6b372::eq::easy",
+      "top1_score": 0.8708967566490173,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "mkd_2009_0f7a73",
+      "gold_id": "mkd_2009_0f7a73::eq::hard",
+      "top1_id": "mkd_2009_0f7a73::nm::1",
+      "top1_score": 0.8566932678222656,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2020_504ab8",
+      "gold_id": "usa_2020_504ab8::eq::hard",
+      "top1_id": "usa_2020_504ab8::nm::0",
+      "top1_score": 0.8615178465843201,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2017_bf02b7",
+      "gold_id": "svn_2017_bf02b7::eq::hard",
+      "top1_id": "svn_2017_bf02b7::nm::0",
+      "top1_score": 0.8732269406318665,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2024_385c97",
+      "gold_id": "bgr_2024_385c97::eq::hard",
+      "top1_id": "bgr_2024_385c97::nm::0",
+      "top1_score": 0.9029539227485657,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "slk_2006_854ee6",
+      "gold_id": "slk_2006_854ee6::eq::hard",
+      "top1_id": "slk_2006_854ee6::nm::0",
+      "top1_score": 0.8397026658058167,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2019_b7fa4a",
+      "gold_id": "sau_2019_b7fa4a::eq::hard",
+      "top1_id": "sau_2019_b7fa4a::nm::0",
+      "top1_score": 0.8889433741569519,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2016_8ca126",
+      "gold_id": "sau_2016_8ca126::eq::hard",
+      "top1_id": "sau_2016_8ca126::nm::0",
+      "top1_score": 0.8960468769073486,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2010_581d9c",
+      "gold_id": "bra_2010_581d9c::eq::hard",
+      "top1_id": "bra_2010_581d9c::nm::2",
+      "top1_score": 0.893570065498352,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2011_f2e059",
+      "gold_id": "blr_2011_f2e059::eq::hard",
+      "top1_id": "blr_2011_f2e059::nm::0",
+      "top1_score": 0.856248676776886,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2000_9567dd",
+      "gold_id": "ita_2000_9567dd::eq::hard",
+      "top1_id": "ita_2000_9567dd::nm::0",
+      "top1_score": 0.8908334970474243,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2017_1c9591",
+      "gold_id": "svn_2017_1c9591::eq::hard",
+      "top1_id": "svn_2017_1c9591::eq::easy",
+      "top1_score": 0.9040198922157288,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "hrv_2017_92c075",
+      "gold_id": "hrv_2017_92c075::eq::hard",
+      "top1_id": "hrv_2017_92c075::nm::0",
+      "top1_score": 0.8646281361579895,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2022_58c019",
+      "gold_id": "ukr_2022_58c019::eq::hard",
+      "top1_id": "ukr_2022_58c019::nm::2",
+      "top1_score": 0.9008252620697021,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2019_8cdb69",
+      "gold_id": "usa_2019_8cdb69::eq::hard",
+      "top1_id": "usa_2019_8cdb69::nm::1",
+      "top1_score": 0.910747230052948,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2017_d16fef",
+      "gold_id": "bra_2017_d16fef::eq::hard",
+      "top1_id": "bra_2017_d16fef::eq::easy",
+      "top1_score": 0.8748580813407898,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "esp_2019_64c50a",
+      "gold_id": "esp_2019_64c50a::eq::hard",
+      "top1_id": "esp_2019_64c50a::nm::0",
+      "top1_score": 0.8659594655036926,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2003_0bb333",
+      "gold_id": "chn_2003_0bb333::eq::hard",
+      "top1_id": "chn_2003_0bb333::nm::0",
+      "top1_score": 0.9051969647407532,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "che_9e5ae6",
+      "gold_id": "che_9e5ae6::eq::hard",
+      "top1_id": "che_9e5ae6::eq::medium",
+      "top1_score": 0.8383601903915405,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "phl_2012_fc4416",
+      "gold_id": "phl_2012_fc4416::eq::hard",
+      "top1_id": "phl_2012_fc4416::eq::easy",
+      "top1_score": 0.8808683753013611,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "jpn_2021_d0f570",
+      "gold_id": "jpn_2021_d0f570::eq::hard",
+      "top1_id": "jpn_2021_d0f570::nm::1",
+      "top1_score": 0.9001503586769104,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2010_327e0f",
+      "gold_id": "btw_2010_327e0f::eq::hard",
+      "top1_id": "btw_2010_327e0f::nm::2",
+      "top1_score": 0.8351874351501465,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "che_2016_05094a",
+      "gold_id": "che_2016_05094a::eq::hard",
+      "top1_id": "che_2016_05094a::nm::2",
+      "top1_score": 0.8926424980163574,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2017_9a999a",
+      "gold_id": "fra_2017_9a999a::eq::hard",
+      "top1_id": "fra_2017_9a999a::nm::0",
+      "top1_score": 0.8730324506759644,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mem_2024_1c96e4",
+      "gold_id": "mem_2024_1c96e4::eq::hard",
+      "top1_id": "mem_2024_1c96e4::nm::0",
+      "top1_score": 0.8859789967536926,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2023_d7aa40",
+      "gold_id": "esp_2023_d7aa40::eq::hard",
+      "top1_id": "esp_2023_d7aa40::nm::0",
+      "top1_score": 0.918569028377533,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2022_8acc4b",
+      "gold_id": "usa_2022_8acc4b::eq::hard",
+      "top1_id": "usa_2022_8acc4b::nm::0",
+      "top1_score": 0.8882516026496887,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2022_16a67b",
+      "gold_id": "blr_2022_16a67b::eq::hard",
+      "top1_id": "blr_2022_16a67b::nm::2",
+      "top1_score": 0.8819071650505066,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "jpn_2010_869fd1",
+      "gold_id": "jpn_2010_869fd1::eq::hard",
+      "top1_id": "jpn_2010_869fd1::nm::1",
+      "top1_score": 0.8893935680389404,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2001_a49c5f",
+      "gold_id": "usa_2001_a49c5f::eq::hard",
+      "top1_id": "usa_2001_a49c5f::nm::2",
+      "top1_score": 0.8521341681480408,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2019_79c75f",
+      "gold_id": "usa_2019_79c75f::eq::hard",
+      "top1_id": "usa_2019_79c75f::eq::easy",
+      "top1_score": 0.9178375601768494,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "usa_2018_08b60d",
+      "gold_id": "usa_2018_08b60d::eq::hard",
+      "top1_id": "usa_2018_08b60d::nm::1",
+      "top1_score": 0.8914731740951538,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2020_ea3be3",
+      "gold_id": "phl_2020_ea3be3::eq::hard",
+      "top1_id": "phl_2020_ea3be3::nm::0",
+      "top1_score": 0.8957945108413696,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2010_3bfbf8",
+      "gold_id": "bra_2010_3bfbf8::eq::hard",
+      "top1_id": "bra_2010_3bfbf8::nm::0",
+      "top1_score": 0.9102308750152588,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2019_8e0e6f",
+      "gold_id": "bgr_2019_8e0e6f::eq::hard",
+      "top1_id": "bgr_2019_8e0e6f::nm::1",
+      "top1_score": 0.8840731382369995,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2019_6a8e6d",
+      "gold_id": "sau_2019_6a8e6d::eq::hard",
+      "top1_id": "sau_2019_6a8e6d::nm::1",
+      "top1_score": 0.8824670910835266,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2016_d79091",
+      "gold_id": "phl_2016_d79091::eq::hard",
+      "top1_id": "phl_2016_d79091::nm::0",
+      "top1_score": 0.8929847478866577,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2011_df5823",
+      "gold_id": "usa_2011_df5823::eq::hard",
+      "top1_id": "usa_2011_df5823::eq::easy",
+      "top1_score": 0.8703420162200928,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "arg_2008_c5023b",
+      "gold_id": "arg_2008_c5023b::eq::hard",
+      "top1_id": "arg_2008_c5023b::nm::2",
+      "top1_score": 0.8799224495887756,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2006_705e38",
+      "gold_id": "bra_2006_705e38::eq::hard",
+      "top1_id": "bra_2006_705e38::nm::0",
+      "top1_score": 0.8183563947677612,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2012_1aa0b3",
+      "gold_id": "twn_2012_1aa0b3::eq::hard",
+      "top1_id": "twn_2012_1aa0b3::nm::1",
+      "top1_score": 0.915137529373169,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2015_f08150",
+      "gold_id": "usa_2015_f08150::eq::hard",
+      "top1_id": "usa_2015_f08150::nm::0",
+      "top1_score": 0.8836258053779602,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_1989_08be3f",
+      "gold_id": "esp_1989_08be3f::eq::hard",
+      "top1_id": "esp_1989_08be3f::nm::2",
+      "top1_score": 0.8974722623825073,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "can_1994_86f95e",
+      "gold_id": "can_1994_86f95e::eq::hard",
+      "top1_id": "can_1994_86f95e::eq::easy",
+      "top1_score": 0.8603658676147461,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "ita_2004_37cdb5",
+      "gold_id": "ita_2004_37cdb5::eq::hard",
+      "top1_id": "ita_2004_37cdb5::eq::easy",
+      "top1_score": 0.8562091588973999,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "mng_2015_93eb76",
+      "gold_id": "mng_2015_93eb76::eq::hard",
+      "top1_id": "mng_2015_93eb76::nm::2",
+      "top1_score": 0.8662081360816956,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mng_2012_0dd53f",
+      "gold_id": "mng_2012_0dd53f::eq::hard",
+      "top1_id": "mng_2012_0dd53f::nm::0",
+      "top1_score": 0.8725264668464661,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2021_d67357",
+      "gold_id": "chn_2021_d67357::eq::hard",
+      "top1_id": "chn_2021_d67357::nm::1",
+      "top1_score": 0.9000939726829529,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2020_953c54",
+      "gold_id": "usa_2020_953c54::eq::hard",
+      "top1_id": "usa_2020_953c54::nm::0",
+      "top1_score": 0.8970767259597778,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_1999_220500",
+      "gold_id": "ita_1999_220500::eq::hard",
+      "top1_id": "ita_1999_220500::eq::medium",
+      "top1_score": 0.9030736088752747,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "vnm_2023_3e5eba",
+      "gold_id": "vnm_2023_3e5eba::eq::hard",
+      "top1_id": "vnm_2023_3e5eba::nm::1",
+      "top1_score": 0.871609091758728,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2011_287c6a",
+      "gold_id": "blr_2011_287c6a::eq::hard",
+      "top1_id": "blr_2011_287c6a::nm::1",
+      "top1_score": 0.8902667164802551,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "can_1986_2b4cb7",
+      "gold_id": "can_1986_2b4cb7::eq::hard",
+      "top1_id": "can_1986_2b4cb7::nm::1",
+      "top1_score": 0.8690508008003235,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irl_2018_32adb6",
+      "gold_id": "irl_2018_32adb6::eq::hard",
+      "top1_id": "irl_2018_32adb6::nm::0",
+      "top1_score": 0.8948827981948853,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "apm_2005_7d0af9",
+      "gold_id": "apm_2005_7d0af9::eq::hard",
+      "top1_id": "apm_2005_7d0af9::nm::0",
+      "top1_score": 0.8839770555496216,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irn_2017_6fa96a",
+      "gold_id": "irn_2017_6fa96a::eq::hard",
+      "top1_id": "irn_2017_6fa96a::nm::0",
+      "top1_score": 0.8761084675788879,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2021_66abc5",
+      "gold_id": "est_2021_66abc5::eq::hard",
+      "top1_id": "est_2021_66abc5::nm::1",
+      "top1_score": 0.8837401270866394,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2012_d2de4b",
+      "gold_id": "ukr_2012_d2de4b::eq::hard",
+      "top1_id": "ukr_2012_d2de4b::nm::2",
+      "top1_score": 0.8579158782958984,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2013_6472bc",
+      "gold_id": "ukr_2013_6472bc::eq::hard",
+      "top1_id": "ukr_2013_6472bc::nm::0",
+      "top1_score": 0.8051016330718994,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mda_2018_eabc4e",
+      "gold_id": "mda_2018_eabc4e::eq::hard",
+      "top1_id": "mda_2018_eabc4e::nm::0",
+      "top1_score": 0.8705754280090332,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2022_34d2cd",
+      "gold_id": "fra_2022_34d2cd::eq::hard",
+      "top1_id": "fra_2022_34d2cd::nm::1",
+      "top1_score": 0.876274585723877,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2024_10d89b",
+      "gold_id": "ita_2024_10d89b::eq::hard",
+      "top1_id": "ita_2024_10d89b::eq::easy",
+      "top1_score": 0.884803056716919,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "sun_1987_3b443f",
+      "gold_id": "sun_1987_3b443f::eq::hard",
+      "top1_id": "sun_1987_3b443f::nm::1",
+      "top1_score": 0.8786835670471191,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2018_6f397f",
+      "gold_id": "svn_2018_6f397f::eq::hard",
+      "top1_id": "svn_2018_6f397f::nm::0",
+      "top1_score": 0.8687989711761475,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ukr_2012_933d13",
+      "gold_id": "ukr_2012_933d13::eq::hard",
+      "top1_id": "ukr_2012_933d13::nm::1",
+      "top1_score": 0.8694065809249878,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_581b8c",
+      "gold_id": "phl_581b8c::eq::hard",
+      "top1_id": "phl_581b8c::nm::2",
+      "top1_score": 0.8639496564865112,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2023_22e150",
+      "gold_id": "sau_2023_22e150::eq::hard",
+      "top1_id": "sau_2023_22e150::nm::2",
+      "top1_score": 0.8681257367134094,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2013_35992a",
+      "gold_id": "svn_2013_35992a::eq::hard",
+      "top1_id": "svn_2013_35992a::eq::medium",
+      "top1_score": 0.8734248280525208,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "mng_2016_42e096",
+      "gold_id": "mng_2016_42e096::eq::hard",
+      "top1_id": "mng_2016_42e096::nm::0",
+      "top1_score": 0.8513456583023071,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2020_622384",
+      "gold_id": "btw_2020_622384::eq::hard",
+      "top1_id": "btw_2020_622384::eq::easy",
+      "top1_score": 0.8566292524337769,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "che_2023_f6e8df",
+      "gold_id": "che_2023_f6e8df::eq::hard",
+      "top1_id": "che_2023_f6e8df::nm::0",
+      "top1_score": 0.90669184923172,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_f0270a",
+      "gold_id": "fra_f0270a::eq::hard",
+      "top1_id": "fra_f0270a::nm::1",
+      "top1_score": 0.8534014225006104,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2025_5ae358",
+      "gold_id": "chn_2025_5ae358::eq::hard",
+      "top1_id": "chn_2025_5ae358::nm::1",
+      "top1_score": 0.9332597255706787,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2011_11f2f8",
+      "gold_id": "blr_2011_11f2f8::eq::hard",
+      "top1_id": "blr_2011_11f2f8::nm::0",
+      "top1_score": 0.8823813796043396,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2014_6243d1",
+      "gold_id": "rou_2014_6243d1::eq::hard",
+      "top1_id": "rou_2014_6243d1::nm::0",
+      "top1_score": 0.8364682197570801,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2022_be48b9",
+      "gold_id": "svn_2022_be48b9::eq::hard",
+      "top1_id": "svn_2022_be48b9::eq::easy",
+      "top1_score": 0.8868608474731445,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "phl_2017_5b0c80",
+      "gold_id": "phl_2017_5b0c80::eq::hard",
+      "top1_id": "phl_2017_5b0c80::nm::0",
+      "top1_score": 0.8368574976921082,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2012_2e8f13",
+      "gold_id": "blr_2012_2e8f13::eq::hard",
+      "top1_id": "blr_2012_2e8f13::nm::2",
+      "top1_score": 0.8702970743179321,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "tur_2019_f8b572",
+      "gold_id": "tur_2019_f8b572::eq::hard",
+      "top1_id": "tur_2019_f8b572::nm::0",
+      "top1_score": 0.8957208395004272,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hkg_2015_81569b",
+      "gold_id": "hkg_2015_81569b::eq::hard",
+      "top1_id": "hkg_2015_81569b::nm::0",
+      "top1_score": 0.8762558102607727,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2010_a0e556",
+      "gold_id": "blr_2010_a0e556::eq::hard",
+      "top1_id": "blr_2010_a0e556::nm::0",
+      "top1_score": 0.8708608746528625,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2017_c7cc0e",
+      "gold_id": "bgr_2017_c7cc0e::eq::hard",
+      "top1_id": "bgr_2017_c7cc0e::nm::1",
+      "top1_score": 0.8657178282737732,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2015_78431a",
+      "gold_id": "rou_2015_78431a::eq::hard",
+      "top1_id": "rou_2015_78431a::nm::0",
+      "top1_score": 0.8827452659606934,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mkd_2023_9344c6",
+      "gold_id": "mkd_2023_9344c6::eq::hard",
+      "top1_id": "mkd_2023_9344c6::nm::1",
+      "top1_score": 0.8601783514022827,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nld_2011_88cdbb",
+      "gold_id": "nld_2011_88cdbb::eq::hard",
+      "top1_id": "nld_2011_88cdbb::nm::1",
+      "top1_score": 0.8832955360412598,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2017_237231",
+      "gold_id": "usa_2017_237231::eq::hard",
+      "top1_id": "usa_2017_237231::nm::0",
+      "top1_score": 0.8677339553833008,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2008_a4beba",
+      "gold_id": "phl_2008_a4beba::eq::hard",
+      "top1_id": "phl_2008_a4beba::eq::easy",
+      "top1_score": 0.9167611002922058,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "btw_2023_3aa4d0",
+      "gold_id": "btw_2023_3aa4d0::eq::hard",
+      "top1_id": "btw_2023_3aa4d0::nm::2",
+      "top1_score": 0.9085325598716736,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2010_9552e4",
+      "gold_id": "blr_2010_9552e4::eq::hard",
+      "top1_id": "blr_2010_9552e4::nm::2",
+      "top1_score": 0.878792405128479,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nld_2018_b28662",
+      "gold_id": "nld_2018_b28662::eq::hard",
+      "top1_id": "nld_2018_b28662::nm::2",
+      "top1_score": 0.8834220767021179,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bmo_2016_29a5ba",
+      "gold_id": "bmo_2016_29a5ba::eq::hard",
+      "top1_id": "bmo_2016_29a5ba::nm::2",
+      "top1_score": 0.8628329634666443,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2016_ae1069",
+      "gold_id": "usa_2016_ae1069::eq::hard",
+      "top1_id": "usa_2016_ae1069::nm::0",
+      "top1_score": 0.8899102210998535,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "che_2018_7c425d",
+      "gold_id": "che_2018_7c425d::eq::hard",
+      "top1_id": "che_2018_7c425d::eq::easy",
+      "top1_score": 0.892266035079956,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "blr_2016_9916fb",
+      "gold_id": "blr_2016_9916fb::eq::hard",
+      "top1_id": "blr_2016_9916fb::nm::1",
+      "top1_score": 0.9121922254562378,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2017_6f6eed",
+      "gold_id": "rou_2017_6f6eed::eq::hard",
+      "top1_id": "rou_2017_6f6eed::nm::1",
+      "top1_score": 0.8694985508918762,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2016_3e26bf",
+      "gold_id": "blr_2016_3e26bf::eq::hard",
+      "top1_id": "blr_2016_3e26bf::nm::2",
+      "top1_score": 0.8638277053833008,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "srb_2008_bdf8a4",
+      "gold_id": "srb_2008_bdf8a4::eq::hard",
+      "top1_id": "srb_2008_bdf8a4::nm::1",
+      "top1_score": 0.8835042119026184,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2019_980611",
+      "gold_id": "usa_2019_980611::eq::hard",
+      "top1_id": "usa_2019_980611::nm::0",
+      "top1_score": 0.853642463684082,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_1985_417bfe",
+      "gold_id": "esp_1985_417bfe::eq::hard",
+      "top1_id": "esp_1985_417bfe::nm::1",
+      "top1_score": 0.8893942832946777,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2002_285528",
+      "gold_id": "ita_2002_285528::eq::hard",
+      "top1_id": "ita_2002_285528::eq::easy",
+      "top1_score": 0.886512041091919,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "bra_915486",
+      "gold_id": "bra_915486::eq::hard",
+      "top1_id": "bra_915486::nm::2",
+      "top1_score": 0.9040563106536865,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_9609ed",
+      "gold_id": "usa_9609ed::eq::hard",
+      "top1_id": "usa_9609ed::nm::2",
+      "top1_score": 0.8425569534301758,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2010_fc9def",
+      "gold_id": "rou_2010_fc9def::eq::hard",
+      "top1_id": "rou_2010_fc9def::nm::1",
+      "top1_score": 0.8716939687728882,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2015_8abec8",
+      "gold_id": "esp_2015_8abec8::eq::hard",
+      "top1_id": "esp_2015_8abec8::nm::0",
+      "top1_score": 0.8853886723518372,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2014_5b43ff",
+      "gold_id": "rou_2014_5b43ff::eq::hard",
+      "top1_id": "rou_2014_5b43ff::nm::1",
+      "top1_score": 0.8914176225662231,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2017_4b9d1a",
+      "gold_id": "rou_2017_4b9d1a::eq::hard",
+      "top1_id": "rou_2017_4b9d1a::nm::2",
+      "top1_score": 0.8514864444732666,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bgr_2005_5a9739",
+      "gold_id": "bgr_2005_5a9739::eq::hard",
+      "top1_id": "bgr_2005_5a9739::nm::2",
+      "top1_score": 0.8835570812225342,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2025_65fab9",
+      "gold_id": "rou_2025_65fab9::eq::hard",
+      "top1_id": "rou_2025_65fab9::nm::1",
+      "top1_score": 0.9071906805038452,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bmo_2020_b30252",
+      "gold_id": "bmo_2020_b30252::eq::hard",
+      "top1_id": "bmo_2020_b30252::nm::1",
+      "top1_score": 0.856563925743103,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ita_2019_89fce5",
+      "gold_id": "ita_2019_89fce5::eq::hard",
+      "top1_id": "ita_2019_89fce5::nm::0",
+      "top1_score": 0.8776006102561951,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2022_1f2124",
+      "gold_id": "sau_2022_1f2124::eq::hard",
+      "top1_id": "sau_2022_1f2124::nm::0",
+      "top1_score": 0.8777955174446106,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2015_5c18bc",
+      "gold_id": "rou_2015_5c18bc::eq::hard",
+      "top1_id": "rou_2015_5c18bc::nm::1",
+      "top1_score": 0.9095874428749084,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2004_6e709c",
+      "gold_id": "rou_2004_6e709c::eq::hard",
+      "top1_id": "rou_2004_6e709c::nm::1",
+      "top1_score": 0.8827213644981384,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nmo_1998_9cc106",
+      "gold_id": "nmo_1998_9cc106::eq::hard",
+      "top1_id": "nmo_1998_9cc106::nm::1",
+      "top1_score": 0.883170485496521,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hkg_2020_675e52",
+      "gold_id": "hkg_2020_675e52::eq::hard",
+      "top1_id": "hkg_2020_675e52::nm::1",
+      "top1_score": 0.8593642115592957,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2015_ad67d0",
+      "gold_id": "est_2015_ad67d0::eq::hard",
+      "top1_id": "est_2015_ad67d0::eq::medium",
+      "top1_score": 0.866755485534668,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "chn_2011_15e8f2",
+      "gold_id": "chn_2011_15e8f2::eq::hard",
+      "top1_id": "chn_2011_15e8f2::nm::1",
+      "top1_score": 0.8574763536453247,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sgp_2015_202a46",
+      "gold_id": "sgp_2015_202a46::eq::hard",
+      "top1_id": "sgp_2015_202a46::nm::2",
+      "top1_score": 0.8593827486038208,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2012_3825ad",
+      "gold_id": "svn_2012_3825ad::eq::hard",
+      "top1_id": "svn_2012_3825ad::nm::1",
+      "top1_score": 0.8643965721130371,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "hkg_2016_9acd7c",
+      "gold_id": "hkg_2016_9acd7c::eq::hard",
+      "top1_id": "hkg_2016_9acd7c::nm::0",
+      "top1_score": 0.8947800397872925,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "esp_2001_5bb5ea",
+      "gold_id": "esp_2001_5bb5ea::eq::hard",
+      "top1_id": "esp_2001_5bb5ea::nm::2",
+      "top1_score": 0.9017940759658813,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "est_2021_a836cb",
+      "gold_id": "est_2021_a836cb::eq::hard",
+      "top1_id": "est_2021_a836cb::nm::1",
+      "top1_score": 0.8840784430503845,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "irn_2022_bd1045",
+      "gold_id": "irn_2022_bd1045::eq::hard",
+      "top1_id": "irn_2022_bd1045::nm::1",
+      "top1_score": 0.8965063095092773,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_1996_d9a8a2",
+      "gold_id": "btw_1996_d9a8a2::eq::hard",
+      "top1_id": "btw_1996_d9a8a2::nm::2",
+      "top1_score": 0.8822224140167236,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2016_2d7119",
+      "gold_id": "sau_2016_2d7119::eq::hard",
+      "top1_id": "sau_2016_2d7119::nm::2",
+      "top1_score": 0.8786637783050537,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "grc_2014_c08711",
+      "gold_id": "grc_2014_c08711::eq::hard",
+      "top1_id": "grc_2014_c08711::nm::2",
+      "top1_score": 0.8574262857437134,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mda_2022_904c0c",
+      "gold_id": "mda_2022_904c0c::eq::hard",
+      "top1_id": "mda_2022_904c0c::eq::easy",
+      "top1_score": 0.8806516528129578,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "hkg_2020_087bd6",
+      "gold_id": "hkg_2020_087bd6::eq::hard",
+      "top1_id": "hkg_2020_087bd6::nm::2",
+      "top1_score": 0.901627779006958,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "twn_2011_021aba",
+      "gold_id": "twn_2011_021aba::eq::hard",
+      "top1_id": "twn_2011_021aba::eq::easy",
+      "top1_score": 0.8662159442901611,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "blr_2019_51cb32",
+      "gold_id": "blr_2019_51cb32::eq::hard",
+      "top1_id": "blr_2019_51cb32::nm::1",
+      "top1_score": 0.8971286416053772,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "arg_2005_a4f3e9",
+      "gold_id": "arg_2005_a4f3e9::eq::hard",
+      "top1_id": "arg_2005_a4f3e9::nm::1",
+      "top1_score": 0.8890902996063232,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "mda_2023_bfcba9",
+      "gold_id": "mda_2023_bfcba9::eq::hard",
+      "top1_id": "mda_2023_bfcba9::nm::1",
+      "top1_score": 0.8355586528778076,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2025_e60819",
+      "gold_id": "rou_2025_e60819::eq::hard",
+      "top1_id": "rou_2025_e60819::nm::1",
+      "top1_score": 0.8696303367614746,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "pol_a3130d",
+      "gold_id": "pol_a3130d::eq::hard",
+      "top1_id": "pol_a3130d::eq::easy",
+      "top1_score": 0.8778414726257324,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "bra_2010_cbce06",
+      "gold_id": "bra_2010_cbce06::eq::hard",
+      "top1_id": "bra_2010_cbce06::nm::0",
+      "top1_score": 0.8681419491767883,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "blr_2019_7bfde7",
+      "gold_id": "blr_2019_7bfde7::eq::hard",
+      "top1_id": "blr_2019_7bfde7::nm::0",
+      "top1_score": 0.8853973150253296,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2014_115806",
+      "gold_id": "phl_2014_115806::eq::hard",
+      "top1_id": "phl_2014_115806::nm::2",
+      "top1_score": 0.8943977952003479,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "chn_2021_bbc783",
+      "gold_id": "chn_2021_bbc783::eq::hard",
+      "top1_id": "chn_2021_bbc783::nm::1",
+      "top1_score": 0.8906440734863281,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "nld_2015_4915c0",
+      "gold_id": "nld_2015_4915c0::eq::hard",
+      "top1_id": "nld_2015_4915c0::nm::2",
+      "top1_score": 0.8765829205513,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2000_0103e2",
+      "gold_id": "btw_2000_0103e2::eq::hard",
+      "top1_id": "btw_2000_0103e2::nm::2",
+      "top1_score": 0.8821362257003784,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ibe_2001_94c52e",
+      "gold_id": "ibe_2001_94c52e::eq::hard",
+      "top1_id": "ibe_2001_94c52e::nm::1",
+      "top1_score": 0.865361213684082,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2024_5a63b0",
+      "gold_id": "usa_2024_5a63b0::eq::hard",
+      "top1_id": "usa_2024_5a63b0::eq::easy",
+      "top1_score": 0.8969218730926514,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "blr_2016_bc52de",
+      "gold_id": "blr_2016_bc52de::eq::hard",
+      "top1_id": "blr_2016_bc52de::eq::easy",
+      "top1_score": 0.8973914384841919,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "usa_2023_d982fa",
+      "gold_id": "usa_2023_d982fa::eq::hard",
+      "top1_id": "usa_2023_d982fa::eq::easy",
+      "top1_score": 0.9067752957344055,
+      "category": "sibling_eq_variant"
+    },
+    {
+      "query_id": "esp_2013_f8f954",
+      "gold_id": "esp_2013_f8f954::eq::hard",
+      "top1_id": "esp_2013_f8f954::nm::0",
+      "top1_score": 0.8426229357719421,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "ind_2024_3d5780",
+      "gold_id": "ind_2024_3d5780::eq::hard",
+      "top1_id": "ind_2024_3d5780::nm::0",
+      "top1_score": 0.8669381737709045,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2022_0c6157",
+      "gold_id": "fra_2022_0c6157::eq::hard",
+      "top1_id": "fra_2022_0c6157::nm::1",
+      "top1_score": 0.8602753281593323,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2023_73ec51",
+      "gold_id": "btw_2023_73ec51::eq::hard",
+      "top1_id": "btw_2023_73ec51::nm::1",
+      "top1_score": 0.8816521167755127,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "jpn_2006_d0e618",
+      "gold_id": "jpn_2006_d0e618::eq::hard",
+      "top1_id": "jpn_2006_d0e618::nm::1",
+      "top1_score": 0.8703020215034485,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2011_3e16f2",
+      "gold_id": "usa_2011_3e16f2::eq::hard",
+      "top1_id": "usa_2011_3e16f2::nm::2",
+      "top1_score": 0.8591497540473938,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2017_c0d02d",
+      "gold_id": "phl_2017_c0d02d::eq::hard",
+      "top1_id": "phl_2017_c0d02d::nm::1",
+      "top1_score": 0.8683289885520935,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "svn_2002_ed53ca",
+      "gold_id": "svn_2002_ed53ca::eq::hard",
+      "top1_id": "svn_2002_ed53ca::nm::0",
+      "top1_score": 0.8803759217262268,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "grc_2019_b945e2",
+      "gold_id": "grc_2019_b945e2::eq::hard",
+      "top1_id": "grc_2019_b945e2::nm::2",
+      "top1_score": 0.878671407699585,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2023_544ba7",
+      "gold_id": "rou_2023_544ba7::eq::hard",
+      "top1_id": "rou_2023_544ba7::nm::2",
+      "top1_score": 0.8852634429931641,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2019_e937ee",
+      "gold_id": "sau_2019_e937ee::eq::hard",
+      "top1_id": "sau_2019_e937ee::nm::0",
+      "top1_score": 0.8350809216499329,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_0761c6",
+      "gold_id": "phl_0761c6::eq::hard",
+      "top1_id": "phl_0761c6::nm::1",
+      "top1_score": 0.898876428604126,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "arg_2004_3c8cad",
+      "gold_id": "arg_2004_3c8cad::eq::hard",
+      "top1_id": "arg_2004_3c8cad::nm::1",
+      "top1_score": 0.8887102603912354,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2025_e0275b",
+      "gold_id": "sau_2025_e0275b::eq::hard",
+      "top1_id": "sau_2025_e0275b::nm::0",
+      "top1_score": 0.9008412957191467,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2005_847aff",
+      "gold_id": "usa_2005_847aff::eq::hard",
+      "top1_id": "usa_2005_847aff::nm::1",
+      "top1_score": 0.8164082765579224,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "phl_2023_fa73ce",
+      "gold_id": "phl_2023_fa73ce::eq::hard",
+      "top1_id": "phl_2023_fa73ce::nm::2",
+      "top1_score": 0.879361093044281,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "grc_2013_914651",
+      "gold_id": "grc_2013_914651::eq::hard",
+      "top1_id": "grc_2013_914651::nm::2",
+      "top1_score": 0.8787622451782227,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "sau_2023_866257",
+      "gold_id": "sau_2023_866257::eq::hard",
+      "top1_id": "sau_2023_866257::nm::1",
+      "top1_score": 0.8704790472984314,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2012_442108",
+      "gold_id": "bra_2012_442108::eq::hard",
+      "top1_id": "bra_2012_442108::nm::1",
+      "top1_score": 0.9182482957839966,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_2023_947de1",
+      "gold_id": "usa_2023_947de1::eq::hard",
+      "top1_id": "usa_2023_947de1::nm::2",
+      "top1_score": 0.8594273924827576,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2002_f8122d",
+      "gold_id": "btw_2002_f8122d::eq::hard",
+      "top1_id": "btw_2002_f8122d::nm::2",
+      "top1_score": 0.8685374855995178,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2ba33b",
+      "gold_id": "bra_2ba33b::eq::hard",
+      "top1_id": "bra_2ba33b::nm::1",
+      "top1_score": 0.8620098829269409,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "usa_8950e6",
+      "gold_id": "usa_8950e6::eq::hard",
+      "top1_id": "usa_8950e6::nm::0",
+      "top1_score": 0.8832070827484131,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "bra_2015_7f4174",
+      "gold_id": "bra_2015_7f4174::eq::hard",
+      "top1_id": "bra_2015_7f4174::nm::0",
+      "top1_score": 0.8976752758026123,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "tur_2010_611c91",
+      "gold_id": "tur_2010_611c91::eq::hard",
+      "top1_id": "tur_2010_611c91::nm::2",
+      "top1_score": 0.9037454128265381,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "btw_2020_c62b89",
+      "gold_id": "btw_2020_c62b89::eq::hard",
+      "top1_id": "btw_2020_c62b89::nm::2",
+      "top1_score": 0.8842570781707764,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2013_799b41",
+      "gold_id": "fra_2013_799b41::eq::hard",
+      "top1_id": "fra_2013_799b41::nm::0",
+      "top1_score": 0.8660271763801575,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "fra_2019_85275e",
+      "gold_id": "fra_2019_85275e::eq::hard",
+      "top1_id": "fra_2019_85275e::nm::2",
+      "top1_score": 0.8622472286224365,
+      "category": "own_nm_near_miss"
+    },
+    {
+      "query_id": "rou_2019_7c5864",
+      "gold_id": "rou_2019_7c5864::eq::hard",
+      "top1_id": "rou_2019_7c5864::nm::0",
+      "top1_score": 0.8563366532325745,
+      "category": "own_nm_near_miss"
+    }
+  ],
+  "elapsed_seconds": 37.39612793922424
+}

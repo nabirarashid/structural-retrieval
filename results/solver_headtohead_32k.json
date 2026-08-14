@@ -1,0 +1,576 @@
+{
+  "glm": [
+    {
+      "condition": "none",
+      "query_id": "sau_2012_bb6608",
+      "prompt_tokens": 79,
+      "completion_tokens": 15563,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 103.38606524467468
+    },
+    {
+      "condition": "dumb",
+      "query_id": "sau_2012_bb6608",
+      "prompt_tokens": 177,
+      "completion_tokens": 13896,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 89.29464912414551
+    },
+    {
+      "condition": "gold",
+      "query_id": "sau_2012_bb6608",
+      "prompt_tokens": 226,
+      "completion_tokens": 10434,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 66.25534105300903
+    },
+    {
+      "condition": "none",
+      "query_id": "bra_2019_7792eb",
+      "prompt_tokens": 185,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 188.66038513183594
+    },
+    {
+      "condition": "dumb",
+      "query_id": "bra_2019_7792eb",
+      "prompt_tokens": 341,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 331.5538339614868
+    },
+    {
+      "condition": "gold",
+      "query_id": "bra_2019_7792eb",
+      "prompt_tokens": 356,
+      "completion_tokens": 21625,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 141.5424690246582
+    },
+    {
+      "condition": "none",
+      "query_id": "arg_2022_6b9544",
+      "prompt_tokens": 175,
+      "completion_tokens": 3200,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 21.939964056015015
+    },
+    {
+      "condition": "dumb",
+      "query_id": "arg_2022_6b9544",
+      "prompt_tokens": 362,
+      "completion_tokens": 24200,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 162.3015580177307
+    },
+    {
+      "condition": "gold",
+      "query_id": "arg_2022_6b9544",
+      "prompt_tokens": 401,
+      "completion_tokens": 17218,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 120.03491401672363
+    },
+    {
+      "condition": "none",
+      "query_id": "tur_2008_22f4a1",
+      "prompt_tokens": 79,
+      "completion_tokens": 5178,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 34.83228302001953
+    },
+    {
+      "condition": "dumb",
+      "query_id": "tur_2008_22f4a1",
+      "prompt_tokens": 172,
+      "completion_tokens": 16456,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 112.32562518119812
+    },
+    {
+      "condition": "gold",
+      "query_id": "tur_2008_22f4a1",
+      "prompt_tokens": 223,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 213.99945211410522
+    },
+    {
+      "condition": "none",
+      "query_id": "fra_2014_eb9ec4",
+      "prompt_tokens": 214,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 295.2931866645813
+    },
+    {
+      "condition": "dumb",
+      "query_id": "fra_2014_eb9ec4",
+      "prompt_tokens": 461,
+      "completion_tokens": 24751,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 240.56608605384827
+    },
+    {
+      "condition": "gold",
+      "query_id": "fra_2014_eb9ec4",
+      "prompt_tokens": 450,
+      "completion_tokens": 2581,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 26.534712076187134
+    },
+    {
+      "condition": "none",
+      "query_id": "esp_2014_70c877",
+      "prompt_tokens": 70,
+      "completion_tokens": 2634,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 19.526161193847656
+    },
+    {
+      "condition": "dumb",
+      "query_id": "esp_2014_70c877",
+      "prompt_tokens": 159,
+      "completion_tokens": 3641,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 29.296924114227295
+    },
+    {
+      "condition": "gold",
+      "query_id": "esp_2014_70c877",
+      "prompt_tokens": 215,
+      "completion_tokens": 5458,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 44.850226163864136
+    },
+    {
+      "condition": "none",
+      "query_id": "btw_2009_f506f3",
+      "prompt_tokens": 77,
+      "completion_tokens": 545,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 5.132311105728149
+    },
+    {
+      "condition": "dumb",
+      "query_id": "btw_2009_f506f3",
+      "prompt_tokens": 170,
+      "completion_tokens": 11676,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 107.12906289100647
+    },
+    {
+      "condition": "gold",
+      "query_id": "btw_2009_f506f3",
+      "prompt_tokens": 243,
+      "completion_tokens": 16842,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 245.17940402030945
+    },
+    {
+      "condition": "none",
+      "query_id": "svn_2023_c9c438",
+      "prompt_tokens": 138,
+      "completion_tokens": 1007,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 10.758715867996216
+    },
+    {
+      "condition": "dumb",
+      "query_id": "svn_2023_c9c438",
+      "prompt_tokens": 271,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 279.26702189445496
+    },
+    {
+      "condition": "gold",
+      "query_id": "svn_2023_c9c438",
+      "prompt_tokens": 242,
+      "completion_tokens": 2128,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 21.63940405845642
+    },
+    {
+      "condition": "none",
+      "query_id": "bra_2011_b56a3c",
+      "prompt_tokens": 233,
+      "completion_tokens": 14516,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 179.3503611087799
+    },
+    {
+      "condition": "dumb",
+      "query_id": "bra_2011_b56a3c",
+      "prompt_tokens": 425,
+      "completion_tokens": 2097,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 38.060367822647095
+    },
+    {
+      "condition": "gold",
+      "query_id": "bra_2011_b56a3c",
+      "prompt_tokens": 454,
+      "completion_tokens": 21764,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 205.4824891090393
+    },
+    {
+      "condition": "none",
+      "query_id": "srb_2016_cab572",
+      "prompt_tokens": 99,
+      "completion_tokens": 5414,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 70.85085487365723
+    },
+    {
+      "condition": "dumb",
+      "query_id": "srb_2016_cab572",
+      "prompt_tokens": 216,
+      "completion_tokens": 31136,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 224.24676990509033
+    },
+    {
+      "condition": "gold",
+      "query_id": "srb_2016_cab572",
+      "prompt_tokens": 238,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 188.06769108772278
+    }
+  ],
+  "deepseek": [
+    {
+      "condition": "none",
+      "query_id": "sau_2012_bb6608",
+      "prompt_tokens": 151,
+      "completion_tokens": 14390,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 121.80398416519165,
+      "cost": 0.00405034
+    },
+    {
+      "condition": "dumb",
+      "query_id": "sau_2012_bb6608",
+      "prompt_tokens": 244,
+      "completion_tokens": 11689,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 104.37430214881897,
+      "cost": 0.0033070800000000004
+    },
+    {
+      "condition": "gold",
+      "query_id": "sau_2012_bb6608",
+      "prompt_tokens": 297,
+      "completion_tokens": 8084,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 71.21743988990784,
+      "cost": 0.0023050999999999996
+    },
+    {
+      "condition": "none",
+      "query_id": "bra_2019_7792eb",
+      "prompt_tokens": 251,
+      "completion_tokens": 14524,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 139.01947689056396,
+      "cost": 0.004101860000000001
+    },
+    {
+      "condition": "dumb",
+      "query_id": "bra_2019_7792eb",
+      "prompt_tokens": 401,
+      "completion_tokens": 21997,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 207.75500988960266,
+      "cost": 0.0062153
+    },
+    {
+      "condition": "gold",
+      "query_id": "bra_2019_7792eb",
+      "prompt_tokens": 419,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 313.8925812244415,
+      "cost": 0.009233700000000001
+    },
+    {
+      "condition": "none",
+      "query_id": "arg_2022_6b9544",
+      "prompt_tokens": 245,
+      "completion_tokens": 19937,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 194.2684268951416,
+      "cost": 0.005616660000000001
+    },
+    {
+      "condition": "dumb",
+      "query_id": "arg_2022_6b9544",
+      "prompt_tokens": 424,
+      "completion_tokens": 26458,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 245.9460427761078,
+      "cost": 0.0074676
+    },
+    {
+      "condition": "gold",
+      "query_id": "arg_2022_6b9544",
+      "prompt_tokens": 471,
+      "completion_tokens": 18332,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 175.82869815826416,
+      "cost": 0.005198900000000001
+    },
+    {
+      "condition": "none",
+      "query_id": "tur_2008_22f4a1",
+      "prompt_tokens": 154,
+      "completion_tokens": 17496,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 164.3875482082367,
+      "cost": 0.004920440000000001
+    },
+    {
+      "condition": "dumb",
+      "query_id": "tur_2008_22f4a1",
+      "prompt_tokens": 246,
+      "completion_tokens": 31543,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 292.2575309276581,
+      "cost": 0.008866480000000001
+    },
+    {
+      "condition": "gold",
+      "query_id": "tur_2008_22f4a1",
+      "prompt_tokens": 298,
+      "completion_tokens": 26593,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 241.26921033859253,
+      "cost": 0.00748776
+    },
+    {
+      "condition": "none",
+      "query_id": "fra_2014_eb9ec4",
+      "prompt_tokens": 285,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 333.73818802833557,
+      "cost": 0.009214940000000001
+    },
+    {
+      "condition": "dumb",
+      "query_id": "fra_2014_eb9ec4",
+      "prompt_tokens": 523,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 353.61431097984314,
+      "cost": 0.009248260000000001
+    },
+    {
+      "condition": "gold",
+      "query_id": "fra_2014_eb9ec4",
+      "prompt_tokens": 512,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 344.5562319755554,
+      "cost": 0.00924672
+    },
+    {
+      "condition": "none",
+      "query_id": "esp_2014_70c877",
+      "prompt_tokens": 144,
+      "completion_tokens": 10652,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 94.62734484672546,
+      "cost": 0.0030027200000000004
+    },
+    {
+      "condition": "dumb",
+      "query_id": "esp_2014_70c877",
+      "prompt_tokens": 231,
+      "completion_tokens": 10069,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 86.83388590812683,
+      "cost": 0.0028516600000000002
+    },
+    {
+      "condition": "gold",
+      "query_id": "esp_2014_70c877",
+      "prompt_tokens": 287,
+      "completion_tokens": 3418,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 28.55936098098755,
+      "cost": 0.00099722
+    },
+    {
+      "condition": "none",
+      "query_id": "btw_2009_f506f3",
+      "prompt_tokens": 152,
+      "completion_tokens": 17957,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 164.9644227027893,
+      "cost": 0.005049240000000001
+    },
+    {
+      "condition": "dumb",
+      "query_id": "btw_2009_f506f3",
+      "prompt_tokens": 245,
+      "completion_tokens": 27883,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 258.91059708595276,
+      "cost": 0.007841540000000001
+    },
+    {
+      "condition": "gold",
+      "query_id": "btw_2009_f506f3",
+      "prompt_tokens": 318,
+      "completion_tokens": 14595,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 132.95192503929138,
+      "cost": 0.00413112
+    },
+    {
+      "condition": "none",
+      "query_id": "svn_2023_c9c438",
+      "prompt_tokens": 216,
+      "completion_tokens": 2227,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 22.23146891593933,
+      "cost": 0.0006538
+    },
+    {
+      "condition": "dumb",
+      "query_id": "svn_2023_c9c438",
+      "prompt_tokens": 351,
+      "completion_tokens": 3684,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 35.54561805725098,
+      "cost": 0.0010806600000000002
+    },
+    {
+      "condition": "gold",
+      "query_id": "svn_2023_c9c438",
+      "prompt_tokens": 321,
+      "completion_tokens": 4648,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 47.77536392211914,
+      "cost": 0.0013463800000000003
+    },
+    {
+      "condition": "none",
+      "query_id": "bra_2011_b56a3c",
+      "prompt_tokens": 312,
+      "completion_tokens": 29200,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 293.0059058666229,
+      "cost": 0.008219680000000002
+    },
+    {
+      "condition": "dumb",
+      "query_id": "bra_2011_b56a3c",
+      "prompt_tokens": 506,
+      "completion_tokens": 27150,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 280.289626121521,
+      "cost": 0.007672840000000001
+    },
+    {
+      "condition": "gold",
+      "query_id": "bra_2011_b56a3c",
+      "prompt_tokens": 529,
+      "completion_tokens": 24212,
+      "finish_reason": "stop",
+      "capped": false,
+      "wall_s": 243.65878891944885,
+      "cost": 0.006853420000000001
+    },
+    {
+      "condition": "none",
+      "query_id": "srb_2016_cab572",
+      "prompt_tokens": 163,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 319.1608040332794,
+      "cost": 0.00919786
+    },
+    {
+      "condition": "dumb",
+      "query_id": "srb_2016_cab572",
+      "prompt_tokens": 268,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 300.5117220878601,
+      "cost": 0.00921256
+    },
+    {
+      "condition": "gold",
+      "query_id": "srb_2016_cab572",
+      "prompt_tokens": 304,
+      "completion_tokens": 32768,
+      "finish_reason": "length",
+      "capped": true,
+      "wall_s": 309.82453417778015,
+      "cost": 0.009217600000000001
+    }
+  ]
+}

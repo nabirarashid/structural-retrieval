@@ -1,0 +1,542 @@
+[
+  {
+    "query_id": "new_60",
+    "query_text": "put a mug in desk.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "mug",
+    "goal_receptacle": "desk",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_61",
+    "query_text": "put a pencil in shelf.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "pencil",
+    "goal_receptacle": "shelf",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_62",
+    "query_text": "put a peppershaker in drawer.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "peppershaker",
+    "goal_receptacle": "drawer",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_63",
+    "query_text": "put a saltshaker in drawer.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "saltshaker",
+    "goal_receptacle": "drawer",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_64",
+    "query_text": "put a soapbottle in toilet.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_65",
+    "query_text": "put a vase in safe.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "vase",
+    "goal_receptacle": "safe",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_66",
+    "query_text": "put some mug on desk.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "mug",
+    "goal_receptacle": "desk",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_67",
+    "query_text": "put some peppershaker on drawer.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "peppershaker",
+    "goal_receptacle": "drawer",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_68",
+    "query_text": "put some saltshaker on cabinet.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "saltshaker",
+    "goal_receptacle": "cabinet",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_69",
+    "query_text": "put some saltshaker on drawer.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "target_object": "saltshaker",
+    "goal_receptacle": "drawer",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "query_id": "new_16",
+    "query_text": "examine the alarmclock with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "query_id": "new_17",
+    "query_text": "examine the book with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "book",
+    "goal_receptacle": null,
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "query_id": "new_18",
+    "query_text": "examine the bowl with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "bowl",
+    "goal_receptacle": null,
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "query_id": "new_19",
+    "query_text": "examine the cd with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "cd",
+    "goal_receptacle": null,
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "query_id": "new_20",
+    "query_text": "examine the mug with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "mug",
+    "goal_receptacle": null,
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "query_id": "new_21",
+    "query_text": "examine the pencil with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "pencil",
+    "goal_receptacle": null,
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "query_id": "new_34",
+    "query_text": "look at alarmclock under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "query_id": "new_35",
+    "query_text": "look at bowl under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "bowl",
+    "goal_receptacle": null,
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "query_id": "new_36",
+    "query_text": "look at cd under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "cd",
+    "goal_receptacle": null,
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "query_id": "new_37",
+    "query_text": "look at mug under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "target_object": "mug",
+    "goal_receptacle": null,
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "query_id": "new_0",
+    "query_text": "clean some bowl and put it in cabinet.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "bowl",
+    "goal_receptacle": "cabinet",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_1",
+    "query_text": "clean some cloth and put it in cabinet.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "cloth",
+    "goal_receptacle": "cabinet",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_2",
+    "query_text": "clean some cloth and put it in countertop.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "cloth",
+    "goal_receptacle": "countertop",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_3",
+    "query_text": "clean some egg and put it in microwave.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "egg",
+    "goal_receptacle": "microwave",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_4",
+    "query_text": "clean some knife and put it in countertop.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "knife",
+    "goal_receptacle": "countertop",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_5",
+    "query_text": "clean some pan and put it in countertop.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "pan",
+    "goal_receptacle": "countertop",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_6",
+    "query_text": "clean some plate and put it in countertop.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "plate",
+    "goal_receptacle": "countertop",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_7",
+    "query_text": "clean some soapbar and put it in cabinet.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_8",
+    "query_text": "clean some soapbar and put it in countertop.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_9",
+    "query_text": "clean some spatula and put it in drawer.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "target_object": "spatula",
+    "goal_receptacle": "drawer",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "query_id": "new_27",
+    "query_text": "heat some apple and put it in fridge.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "apple",
+    "goal_receptacle": "fridge",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "query_id": "new_28",
+    "query_text": "heat some apple and put it in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "apple",
+    "goal_receptacle": "garbagecan",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "query_id": "new_29",
+    "query_text": "heat some egg and put it in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "egg",
+    "goal_receptacle": "garbagecan",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "query_id": "new_30",
+    "query_text": "heat some mug and put it in cabinet.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "mug",
+    "goal_receptacle": "cabinet",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "query_id": "new_31",
+    "query_text": "heat some mug and put it in coffeemachine.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "query_id": "new_32",
+    "query_text": "heat some potato and put it in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "potato",
+    "goal_receptacle": "garbagecan",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "query_id": "new_33",
+    "query_text": "heat some tomato and put it in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "tomato",
+    "goal_receptacle": "garbagecan",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "query_id": "new_54",
+    "query_text": "put a hot apple in fridge.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "apple",
+    "goal_receptacle": "fridge",
+    "rule": "put_a_hot_X_in"
+  },
+  {
+    "query_id": "new_55",
+    "query_text": "put a hot cup in cabinet.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "cup",
+    "goal_receptacle": "cabinet",
+    "rule": "put_a_hot_X_in"
+  },
+  {
+    "query_id": "new_56",
+    "query_text": "put a hot mug in cabinet.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "target_object": "mug",
+    "goal_receptacle": "cabinet",
+    "rule": "put_a_hot_X_in"
+  },
+  {
+    "query_id": "new_10",
+    "query_text": "cool some bread and put it in countertop.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "bread",
+    "goal_receptacle": "countertop",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "query_id": "new_11",
+    "query_text": "cool some lettuce and put it in countertop.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "lettuce",
+    "goal_receptacle": "countertop",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "query_id": "new_12",
+    "query_text": "cool some mug and put it in cabinet.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "mug",
+    "goal_receptacle": "cabinet",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "query_id": "new_13",
+    "query_text": "cool some mug and put it in coffeemachine.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "query_id": "new_14",
+    "query_text": "cool some pan and put it in countertop.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "pan",
+    "goal_receptacle": "countertop",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "query_id": "new_15",
+    "query_text": "cool some potato and put it in microwave.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "potato",
+    "goal_receptacle": "microwave",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "query_id": "new_48",
+    "query_text": "put a cool bread in countertop.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "bread",
+    "goal_receptacle": "countertop",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "query_id": "new_49",
+    "query_text": "put a cool lettuce in countertop.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "lettuce",
+    "goal_receptacle": "countertop",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "query_id": "new_50",
+    "query_text": "put a cool mug in cabinet.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "mug",
+    "goal_receptacle": "cabinet",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "query_id": "new_51",
+    "query_text": "put a cool mug in coffeemachine.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "query_id": "new_22",
+    "query_text": "find two cd and put them in safe.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "cd",
+    "goal_receptacle": "safe",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "query_id": "new_23",
+    "query_text": "find two peppershaker and put them in drawer.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "peppershaker",
+    "goal_receptacle": "drawer",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "query_id": "new_24",
+    "query_text": "find two pillow and put them in sofa.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "pillow",
+    "goal_receptacle": "sofa",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "query_id": "new_25",
+    "query_text": "find two soapbar and put them in cabinet.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "query_id": "new_26",
+    "query_text": "find two toiletpaper and put them in cabinet.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "toiletpaper",
+    "goal_receptacle": "cabinet",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "query_id": "new_73",
+    "query_text": "put two cd in safe.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "cd",
+    "goal_receptacle": "safe",
+    "rule": "put_two_X_in"
+  },
+  {
+    "query_id": "new_74",
+    "query_text": "put two keychain in safe.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "keychain",
+    "goal_receptacle": "safe",
+    "rule": "put_two_X_in"
+  },
+  {
+    "query_id": "new_75",
+    "query_text": "put two peppershaker in drawer.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "peppershaker",
+    "goal_receptacle": "drawer",
+    "rule": "put_two_X_in"
+  },
+  {
+    "query_id": "new_76",
+    "query_text": "put two pillow in sofa.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "pillow",
+    "goal_receptacle": "sofa",
+    "rule": "put_two_X_in"
+  },
+  {
+    "query_id": "new_77",
+    "query_text": "put two soapbar in garbagecan.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "rule": "put_two_X_in"
+  }
+]

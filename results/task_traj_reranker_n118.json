@@ -1,0 +1,224 @@
+{
+  "labembed-Qwen3-8B": {
+    "gemini-3.1-flash-lite/pooled": {
+      "n": 118,
+      "orig_h1_baseline": 0.17796610169491525,
+      "orig_h1_actual_topcand": 0.17796610169491525,
+      "reranked_h1": 0.3728813559322034,
+      "share_closed_pct": 42.592592592592595,
+      "ci_lo": 27.268875192604003,
+      "ci_hi": 59.25925925925927,
+      "taxonomy": {
+        "n_miss": 74,
+        "sibling_pct": 85.13513513513513,
+        "near_miss_pct": 13.513513513513514,
+        "other_pct": 1.3513513513513513,
+        "unparsed_pct": 0.0
+      }
+    },
+    "gemini-3.1-flash-lite/old_40": {
+      "n": 40,
+      "orig_h1_baseline": 0.1,
+      "orig_h1_actual_topcand": 0.1,
+      "reranked_h1": 0.3,
+      "share_closed_pct": 61.53846153846154,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "gemini-3.1-flash-lite/new_78": {
+      "n": 78,
+      "orig_h1_baseline": 0.21794871794871795,
+      "orig_h1_actual_topcand": 0.21794871794871795,
+      "reranked_h1": 0.41025641025641024,
+      "share_closed_pct": 36.58536585365853,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "glm-5.2-fp8/pooled": {
+      "n": 118,
+      "orig_h1_baseline": 0.17796610169491525,
+      "orig_h1_actual_topcand": 0.17796610169491525,
+      "reranked_h1": 0.4915254237288136,
+      "share_closed_pct": 68.51851851851853,
+      "ci_lo": 50.877192982456144,
+      "ci_hi": 87.5,
+      "taxonomy": {
+        "n_miss": 60,
+        "sibling_pct": 88.33333333333333,
+        "near_miss_pct": 11.666666666666666,
+        "other_pct": 0.0,
+        "unparsed_pct": 0.0
+      }
+    },
+    "glm-5.2-fp8/old_40": {
+      "n": 40,
+      "orig_h1_baseline": 0.1,
+      "orig_h1_actual_topcand": 0.1,
+      "reranked_h1": 0.325,
+      "share_closed_pct": 69.23076923076924,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "glm-5.2-fp8/new_78": {
+      "n": 78,
+      "orig_h1_baseline": 0.21794871794871795,
+      "orig_h1_actual_topcand": 0.21794871794871795,
+      "reranked_h1": 0.5769230769230769,
+      "share_closed_pct": 68.29268292682926,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    }
+  },
+  "gemini-embedding-001": {
+    "gemini-3.1-flash-lite/pooled": {
+      "n": 118,
+      "orig_h1_baseline": 0.15254237288135594,
+      "orig_h1_actual_topcand": 0.15254237288135594,
+      "reranked_h1": 0.4067796610169492,
+      "share_closed_pct": 45.45454545454546,
+      "ci_lo": 31.944444444444446,
+      "ci_hi": 59.67741935483871,
+      "taxonomy": {
+        "n_miss": 70,
+        "sibling_pct": 85.71428571428571,
+        "near_miss_pct": 14.285714285714285,
+        "other_pct": 0.0,
+        "unparsed_pct": 0.0
+      }
+    },
+    "gemini-3.1-flash-lite/old_40": {
+      "n": 40,
+      "orig_h1_baseline": 0.05,
+      "orig_h1_actual_topcand": 0.05,
+      "reranked_h1": 0.3,
+      "share_closed_pct": 62.5,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "gemini-3.1-flash-lite/new_78": {
+      "n": 78,
+      "orig_h1_baseline": 0.20512820512820512,
+      "orig_h1_actual_topcand": 0.20512820512820512,
+      "reranked_h1": 0.46153846153846156,
+      "share_closed_pct": 40.00000000000001,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "glm-5.2-fp8/pooled": {
+      "n": 118,
+      "orig_h1_baseline": 0.15254237288135594,
+      "orig_h1_actual_topcand": 0.15254237288135594,
+      "reranked_h1": 0.576271186440678,
+      "share_closed_pct": 75.75757575757575,
+      "ci_lo": 60.655737704918025,
+      "ci_hi": 91.37931034482759,
+      "taxonomy": {
+        "n_miss": 50,
+        "sibling_pct": 80.0,
+        "near_miss_pct": 14.000000000000002,
+        "other_pct": 2.0,
+        "unparsed_pct": 4.0
+      }
+    },
+    "glm-5.2-fp8/old_40": {
+      "n": 40,
+      "orig_h1_baseline": 0.05,
+      "orig_h1_actual_topcand": 0.05,
+      "reranked_h1": 0.35,
+      "share_closed_pct": 74.99999999999999,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "glm-5.2-fp8/new_78": {
+      "n": 78,
+      "orig_h1_baseline": 0.20512820512820512,
+      "orig_h1_actual_topcand": 0.20512820512820512,
+      "reranked_h1": 0.6923076923076923,
+      "share_closed_pct": 76.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    }
+  },
+  "MiniLM-L6-v2": {
+    "gemini-3.1-flash-lite/pooled": {
+      "n": 118,
+      "orig_h1_baseline": 0.09322033898305085,
+      "orig_h1_actual_topcand": 0.09322033898305085,
+      "reranked_h1": 0.3728813559322034,
+      "share_closed_pct": 58.92857142857143,
+      "ci_lo": 42.10526315789473,
+      "ci_hi": 76.78571428571428,
+      "taxonomy": {
+        "n_miss": 74,
+        "sibling_pct": 74.32432432432432,
+        "near_miss_pct": 20.27027027027027,
+        "other_pct": 5.405405405405405,
+        "unparsed_pct": 0.0
+      }
+    },
+    "gemini-3.1-flash-lite/old_40": {
+      "n": 40,
+      "orig_h1_baseline": 0.025,
+      "orig_h1_actual_topcand": 0.025,
+      "reranked_h1": 0.25,
+      "share_closed_pct": 56.250000000000014,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "gemini-3.1-flash-lite/new_78": {
+      "n": 78,
+      "orig_h1_baseline": 0.1282051282051282,
+      "orig_h1_actual_topcand": 0.1282051282051282,
+      "reranked_h1": 0.4358974358974359,
+      "share_closed_pct": 60.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "glm-5.2-fp8/pooled": {
+      "n": 118,
+      "orig_h1_baseline": 0.09322033898305085,
+      "orig_h1_actual_topcand": 0.09322033898305085,
+      "reranked_h1": 0.4491525423728814,
+      "share_closed_pct": 75.0,
+      "ci_lo": 56.89655172413792,
+      "ci_hi": 93.22033898305085,
+      "taxonomy": {
+        "n_miss": 65,
+        "sibling_pct": 72.3076923076923,
+        "near_miss_pct": 7.6923076923076925,
+        "other_pct": 9.230769230769232,
+        "unparsed_pct": 10.76923076923077
+      }
+    },
+    "glm-5.2-fp8/old_40": {
+      "n": 40,
+      "orig_h1_baseline": 0.025,
+      "orig_h1_actual_topcand": 0.025,
+      "reranked_h1": 0.325,
+      "share_closed_pct": 75.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    },
+    "glm-5.2-fp8/new_78": {
+      "n": 78,
+      "orig_h1_baseline": 0.1282051282051282,
+      "orig_h1_actual_topcand": 0.1282051282051282,
+      "reranked_h1": 0.5128205128205128,
+      "share_closed_pct": 74.99999999999999,
+      "ci_lo": null,
+      "ci_hi": null,
+      "taxonomy": null
+    }
+  }
+}

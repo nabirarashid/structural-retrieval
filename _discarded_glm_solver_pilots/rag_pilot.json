@@ -1,0 +1,38 @@
+{
+  "none": {
+    "n": 88,
+    "n_correct": 53,
+    "pct_correct": 60.22727272727273,
+    "n_unparsed_grade": 0
+  },
+  "dumb": {
+    "n": 88,
+    "n_correct": 64,
+    "pct_correct": 72.72727272727273,
+    "n_unparsed_grade": 0
+  },
+  "baseline": {
+    "n": 88,
+    "n_correct": 55,
+    "pct_correct": 62.5,
+    "n_unparsed_grade": 0
+  },
+  "glm_reranked": {
+    "n": 88,
+    "n_correct": 63,
+    "pct_correct": 71.5909090909091,
+    "n_unparsed_grade": 0
+  },
+  "gemini_reranked": {
+    "n": 88,
+    "n_correct": 55,
+    "pct_correct": 62.5,
+    "n_unparsed_grade": 0
+  },
+  "gold": {
+    "n": 88,
+    "n_correct": 56,
+    "pct_correct": 63.63636363636363,
+    "n_unparsed_grade": 0
+  }
+}

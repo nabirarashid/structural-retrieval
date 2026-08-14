@@ -1,0 +1,126 @@
+[
+  {
+    "provider": "gemini",
+    "tier": "easy",
+    "model": "gemini-3.1-flash-lite",
+    "n_queries": 50,
+    "orig_hit1": 0.16,
+    "orig_hit10": 0.98,
+    "llm_reranked_hit1": 0.38,
+    "n_unparsed_responses": 0,
+    "recoverable_gap": 0.82,
+    "gap_closed": 0.22,
+    "share_of_recoverable_gap_closed": 0.2682926829268293,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 4,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.25
+      },
+      "regional": {
+        "n": 8,
+        "orig_hit1": 0.25,
+        "llm_hit1": 0.25
+      },
+      "other": {
+        "n": 38,
+        "orig_hit1": 0.15789473684210525,
+        "llm_hit1": 0.42105263157894735
+      }
+    },
+    "elapsed_seconds": 60.210479974746704
+  },
+  {
+    "provider": "gemini",
+    "tier": "hard",
+    "model": "gemini-3.1-flash-lite",
+    "n_queries": 50,
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.54,
+    "llm_reranked_hit1": 0.24,
+    "n_unparsed_responses": 0,
+    "recoverable_gap": 0.54,
+    "gap_closed": 0.24,
+    "share_of_recoverable_gap_closed": 0.4444444444444444,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 4,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.75
+      },
+      "regional": {
+        "n": 8,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.375
+      },
+      "other": {
+        "n": 38,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.15789473684210525
+      }
+    },
+    "elapsed_seconds": 59.54362511634827
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "easy",
+    "model": "gemini-3.1-flash-lite",
+    "n_queries": 50,
+    "orig_hit1": 0.06,
+    "orig_hit10": 1.0,
+    "llm_reranked_hit1": 0.48,
+    "n_unparsed_responses": 0,
+    "recoverable_gap": 0.94,
+    "gap_closed": 0.42,
+    "share_of_recoverable_gap_closed": 0.4468085106382979,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 4,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.25
+      },
+      "regional": {
+        "n": 8,
+        "orig_hit1": 0.125,
+        "llm_hit1": 0.375
+      },
+      "other": {
+        "n": 38,
+        "orig_hit1": 0.05263157894736842,
+        "llm_hit1": 0.5263157894736842
+      }
+    },
+    "elapsed_seconds": 62.55637502670288
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "hard",
+    "model": "gemini-3.1-flash-lite",
+    "n_queries": 50,
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.22,
+    "llm_reranked_hit1": 0.1,
+    "n_unparsed_responses": 0,
+    "recoverable_gap": 0.22,
+    "gap_closed": 0.1,
+    "share_of_recoverable_gap_closed": 0.4545454545454546,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 4,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.5
+      },
+      "regional": {
+        "n": 8,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.125
+      },
+      "other": {
+        "n": 38,
+        "orig_hit1": 0.0,
+        "llm_hit1": 0.05263157894736842
+      }
+    },
+    "elapsed_seconds": 63.65456795692444
+  }
+]

@@ -1,0 +1,7238 @@
+[
+  {
+    "trajectory_id": "alfworld_0",
+    "task_description": "find two laptop and put them in bed.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "laptop",
+    "goal_receptacle": "bed",
+    "objects_touched_in_trajectory": [
+      "laptop"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "bed",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_1",
+    "task_description": "put two cellphone in dresser.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "dresser",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "drawer",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_2",
+    "task_description": "heat some plate and put it in countertop.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_3",
+    "task_description": "put some keychain on sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "drawer",
+      "dresser",
+      "garbagecan",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_4",
+    "task_description": "put a pencil in desk.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "pencil",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "pencil"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_5",
+    "task_description": "put a cool plate in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_6",
+    "task_description": "examine the cellphone with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_7",
+    "task_description": "cool some lettuce and put it in garbagecan.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_8",
+    "task_description": "clean some ladle and put it in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "ladle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "ladle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_9",
+    "task_description": "look at box under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "box",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "box"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "diningtable",
+      "drawer",
+      "dresser",
+      "garbagecan",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_10",
+    "task_description": "put some pen on sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "pen",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "pen"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "drawer",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_11",
+    "task_description": "put a cool cup in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_12",
+    "task_description": "put some newspaper on garbagecan.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "newspaper",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "newspaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_13",
+    "task_description": "find two spraybottle and put them in toilet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "shelf",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_14",
+    "task_description": "cool some bowl and put it in cabinet.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_15",
+    "task_description": "put some cellphone on bed.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "bed",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "bed",
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_16",
+    "task_description": "put some spraybottle on toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_17",
+    "task_description": "look at pen under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "pen",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pen"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_18",
+    "task_description": "put a hot tomato in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_19",
+    "task_description": "examine the mug with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "drawer",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_20",
+    "task_description": "put a soapbottle in toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_21",
+    "task_description": "put a spraybottle in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "cabinet",
+      "countertop",
+      "shelf",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_22",
+    "task_description": "put a clean soapbar in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "cabinet",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_23",
+    "task_description": "clean some potato and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_24",
+    "task_description": "put a keychain in sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "drawer",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_25",
+    "task_description": "put two book in diningtable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_26",
+    "task_description": "clean some soapbar and put it in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_27",
+    "task_description": "put two toiletpaper in cabinet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "toiletpaper",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "toiletpaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "garbagecan",
+      "sinkbasin",
+      "toiletpaperhanger"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_28",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_29",
+    "task_description": "put a hot potato in sidetable.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_30",
+    "task_description": "put a cool bowl in countertop.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_31",
+    "task_description": "put some keychain on desk.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_32",
+    "task_description": "put some alarmclock on desk.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "drawer",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_33",
+    "task_description": "cool some tomato and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_34",
+    "task_description": "heat some cup and put it in cabinet.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_35",
+    "task_description": "cool some tomato and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_36",
+    "task_description": "look at pillow under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "pillow",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pillow"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "desklamp",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_37",
+    "task_description": "put a clean fork in drawer.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "fork",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "fork"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_38",
+    "task_description": "put a clean soapbar in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "garbagecan",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_39",
+    "task_description": "look at alarmclock under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_40",
+    "task_description": "clean some potato and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_41",
+    "task_description": "put a handtowel in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "handtowel",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "handtowel"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "handtowelholder"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_42",
+    "task_description": "find two cd and put them in sidetable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_43",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_44",
+    "task_description": "clean some apple and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "apple",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "apple"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_45",
+    "task_description": "find two book and put them in bed.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "bed",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "drawer"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_46",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_47",
+    "task_description": "put a clean ladle in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "ladle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "ladle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_48",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_49",
+    "task_description": "put a clean soapbar in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_50",
+    "task_description": "cool some cup and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_51",
+    "task_description": "put a cellphone in dresser.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "dresser",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "drawer",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_52",
+    "task_description": "cool some mug and put it in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_53",
+    "task_description": "put two spraybottle in drawer.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "countertop",
+      "drawer",
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_54",
+    "task_description": "put a cool cup in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_55",
+    "task_description": "put two book in bed.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "bed",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "drawer"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_56",
+    "task_description": "put two cup in microwave.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_57",
+    "task_description": "put a cool tomato in diningtable.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "diningtable",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_58",
+    "task_description": "put a hot apple in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "apple",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "apple"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_59",
+    "task_description": "examine the alarmclock with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_60",
+    "task_description": "put a clean soapbar in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "garbagecan",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_61",
+    "task_description": "put some spraybottle on toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_62",
+    "task_description": "heat some apple and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "apple",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "apple"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_63",
+    "task_description": "put a clean plate in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_64",
+    "task_description": "put a hot cup in shelf.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "microwave",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_65",
+    "task_description": "put a remotecontrol in armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "shelf",
+      "sofa",
+      "tvstand"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_66",
+    "task_description": "put a clean soapbar in toilet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_67",
+    "task_description": "find two spraybottle and put them in toilet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "garbagecan",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_68",
+    "task_description": "put a cool tomato in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_69",
+    "task_description": "heat some egg and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_70",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_71",
+    "task_description": "put a clean spoon in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "spoon",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "spoon"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_72",
+    "task_description": "put two remotecontrol in armchair.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "shelf",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_73",
+    "task_description": "cool some potato and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_74",
+    "task_description": "put two keychain in ottoman.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "ottoman",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "ottoman",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_75",
+    "task_description": "put a cellphone in dresser.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "dresser",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "drawer",
+      "dresser",
+      "garbagecan",
+      "laundryhamper",
+      "safe",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_76",
+    "task_description": "put a newspaper in garbagecan.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "newspaper",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "newspaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "garbagecan",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_77",
+    "task_description": "cool some tomato and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_78",
+    "task_description": "put two remotecontrol in armchair.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_79",
+    "task_description": "put some handtowel on cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "handtowel",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "handtowel"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "handtowelholder"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_80",
+    "task_description": "heat some egg and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_81",
+    "task_description": "find two book and put them in diningtable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_82",
+    "task_description": "put a pan in diningtable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "pan",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "pan"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "stoveburner"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_83",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_84",
+    "task_description": "put some cd on sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_85",
+    "task_description": "put some keychain on desk.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_86",
+    "task_description": "put two book in bed.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "bed",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_87",
+    "task_description": "look at laptop under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "laptop",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "laptop"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_88",
+    "task_description": "clean some soapbar and put it in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "garbagecan",
+      "shelf",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_89",
+    "task_description": "cool some tomato and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_90",
+    "task_description": "put a clean soapbar in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_91",
+    "task_description": "clean some soapbar and put it in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_92",
+    "task_description": "find two candle and put them in countertop.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "candle",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "candle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_93",
+    "task_description": "put a hot apple in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "apple",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "apple"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_94",
+    "task_description": "cool some lettuce and put it in garbagecan.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "fridge",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_95",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_96",
+    "task_description": "put some spraybottle on toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_97",
+    "task_description": "cool some mug and put it in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_98",
+    "task_description": "put two spraybottle in garbagecan.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_99",
+    "task_description": "look at cellphone under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_100",
+    "task_description": "put two book in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "desk"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_101",
+    "task_description": "cool some plate and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_102",
+    "task_description": "clean some knife and put it in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "knife",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "knife"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_103",
+    "task_description": "put two glassbottle in fridge.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "glassbottle",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "glassbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_104",
+    "task_description": "put a clean lettuce in fridge.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_105",
+    "task_description": "heat some potato and put it in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_106",
+    "task_description": "put a clean fork in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "fork",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "fork"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_107",
+    "task_description": "put a clean soapbar in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_108",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_109",
+    "task_description": "find two pen and put them in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "pen",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "pen"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_110",
+    "task_description": "cool some plate and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_111",
+    "task_description": "put a hot plate in countertop.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "fridge",
+      "microwave",
+      "stoveburner"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_112",
+    "task_description": "cool some cup and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_113",
+    "task_description": "cool some lettuce and put it in garbagecan.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_114",
+    "task_description": "put a hot potato in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_115",
+    "task_description": "cool some plate and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_116",
+    "task_description": "cool some cup and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "drawer",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_117",
+    "task_description": "heat some potato and put it in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_118",
+    "task_description": "put some newspaper on sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "newspaper",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "newspaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "drawer",
+      "shelf",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_119",
+    "task_description": "put some newspaper on sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "newspaper",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "newspaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "shelf",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_120",
+    "task_description": "put a soapbottle in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_121",
+    "task_description": "examine the alarmclock with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desklamp",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_122",
+    "task_description": "cool some mug and put it in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_123",
+    "task_description": "put a cool bowl in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_124",
+    "task_description": "put a cool pot in countertop.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "pot",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "pot"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "stoveburner"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_125",
+    "task_description": "examine the cellphone with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_126",
+    "task_description": "put a hot tomato in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_127",
+    "task_description": "put a box in diningtable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "box",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "box"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "diningtable",
+      "sofa",
+      "tvstand"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_128",
+    "task_description": "put a clean soapbar in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_129",
+    "task_description": "put some cd on sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_130",
+    "task_description": "find two glassbottle and put them in fridge.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "glassbottle",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "glassbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_131",
+    "task_description": "find two cellphone and put them in diningtable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "diningtable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_132",
+    "task_description": "look at cellphone under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "cabinet",
+      "desk",
+      "desklamp",
+      "drawer",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_133",
+    "task_description": "find two cellphone and put them in drawer.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "drawer",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_134",
+    "task_description": "cool some mug and put it in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_135",
+    "task_description": "put two peppershaker in cabinet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "peppershaker",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "peppershaker"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "diningtable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_136",
+    "task_description": "clean some fork and put it in drawer.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "fork",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "fork"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_137",
+    "task_description": "clean some soapbar and put it in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "garbagecan",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_138",
+    "task_description": "find two cd and put them in drawer.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_139",
+    "task_description": "put some cd on sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_140",
+    "task_description": "find two toiletpaper and put them in cabinet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "toiletpaper",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "toiletpaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "garbagecan",
+      "toiletpaperhanger"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_141",
+    "task_description": "find two remotecontrol and put them in armchair.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "shelf",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_142",
+    "task_description": "put some cd on sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_143",
+    "task_description": "put a cool bowl in cabinet.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_144",
+    "task_description": "heat some bread and put it in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "bread",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "bread"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_145",
+    "task_description": "heat some tomato and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_146",
+    "task_description": "put some keychain on armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "drawer"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_147",
+    "task_description": "put some keychain on sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_148",
+    "task_description": "clean some soapbar and put it in toilet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_149",
+    "task_description": "put two cellphone in shelf.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_150",
+    "task_description": "heat some egg and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_151",
+    "task_description": "heat some egg and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "apple",
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "drawer",
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_152",
+    "task_description": "put a clean kettle in stoveburner.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "kettle",
+    "goal_receptacle": "stoveburner",
+    "objects_touched_in_trajectory": [
+      "kettle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin",
+      "stoveburner"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_153",
+    "task_description": "find two soapbottle and put them in toilet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_154",
+    "task_description": "cool some plate and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_155",
+    "task_description": "put two spraybottle in toilet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "shelf",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_156",
+    "task_description": "put two remotecontrol in sofa.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "diningtable",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_157",
+    "task_description": "put a glassbottle in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "glassbottle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "glassbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "diningtable",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_158",
+    "task_description": "put some remotecontrol on armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_159",
+    "task_description": "examine the alarmclock with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "drawer",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_160",
+    "task_description": "put a hot plate in countertop.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "plate",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "plate"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_161",
+    "task_description": "clean some potato and put it in diningtable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_162",
+    "task_description": "put some remotecontrol on armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "tvstand"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_163",
+    "task_description": "examine the watch with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "watch",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "watch"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "drawer",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_164",
+    "task_description": "look at pillow under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "pillow",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pillow"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_165",
+    "task_description": "find two book and put them in diningtable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_166",
+    "task_description": "find two remotecontrol and put them in sofa.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_167",
+    "task_description": "clean some soapbar and put it in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_168",
+    "task_description": "put two cellphone in dresser.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "dresser",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_169",
+    "task_description": "put some newspaper on garbagecan.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "newspaper",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "newspaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_170",
+    "task_description": "put some remotecontrol on armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "shelf",
+      "sofa",
+      "tvstand"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_171",
+    "task_description": "clean some egg and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_172",
+    "task_description": "find two cellphone and put them in sofa.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "diningtable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_173",
+    "task_description": "cool some potato and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_174",
+    "task_description": "put a hot potato in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_175",
+    "task_description": "put two peppershaker in cabinet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "peppershaker",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "peppershaker"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_176",
+    "task_description": "look at statue under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "statue",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "statue"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_177",
+    "task_description": "heat some apple and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "apple",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "apple"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_178",
+    "task_description": "put some dishsponge on cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "dishsponge",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "dishsponge"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_179",
+    "task_description": "put some keychain on sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeetable",
+      "drawer",
+      "dresser",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_180",
+    "task_description": "look at pillow under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "pillow",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pillow"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "desklamp",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_181",
+    "task_description": "put some box on diningtable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "box",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "box"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "diningtable",
+      "sofa",
+      "tvstand"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_182",
+    "task_description": "examine the laptop with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "laptop",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "laptop"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "dresser",
+      "safe",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_183",
+    "task_description": "put a cool mug in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_184",
+    "task_description": "find two pencil and put them in sidetable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "pencil",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "pencil"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_185",
+    "task_description": "examine the watch with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "watch",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "watch"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_186",
+    "task_description": "find two spraybottle and put them in drawer.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "garbagecan",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_187",
+    "task_description": "put a soapbottle in toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_188",
+    "task_description": "look at cellphone under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "desklamp",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_189",
+    "task_description": "heat some bread and put it in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "bread",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "bread"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_190",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_191",
+    "task_description": "examine the pillow with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "pillow",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pillow"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desklamp",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_192",
+    "task_description": "clean some kettle and put it in stoveburner.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "kettle",
+    "goal_receptacle": "stoveburner",
+    "objects_touched_in_trajectory": [
+      "kettle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin",
+      "stoveburner"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_193",
+    "task_description": "clean some fork and put it in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "fork",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "fork"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "diningtable",
+      "drawer",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_194",
+    "task_description": "put some handtowel on cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "handtowel",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "handtowel"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "handtowelholder"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_195",
+    "task_description": "put a kettle in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "kettle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "kettle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_196",
+    "task_description": "clean some lettuce and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "fridge",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_197",
+    "task_description": "put some spraybottle on toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_198",
+    "task_description": "put a clean kettle in stoveburner.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "kettle",
+    "goal_receptacle": "stoveburner",
+    "objects_touched_in_trajectory": [
+      "kettle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "sinkbasin",
+      "stoveburner"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_199",
+    "task_description": "put a hot apple in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "apple",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "apple"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_200",
+    "task_description": "cool some bowl and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_201",
+    "task_description": "put two spraybottle in toilet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_202",
+    "task_description": "examine the pillow with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "pillow",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pillow"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_203",
+    "task_description": "examine the alarmclock with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_204",
+    "task_description": "examine the watch with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "watch",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "watch"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "drawer",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_205",
+    "task_description": "put a clean fork in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "fork",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "fork"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "diningtable",
+      "drawer",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_206",
+    "task_description": "put some keychain on sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_207",
+    "task_description": "put a cd in sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "shelf",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_208",
+    "task_description": "examine the alarmclock with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "desklamp 1 on alarmclock"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_209",
+    "task_description": "put two cellphone in drawer.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "drawer",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_210",
+    "task_description": "clean some spoon and put it in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "spoon",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "spoon"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_211",
+    "task_description": "examine the pen with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "pen",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pen"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_212",
+    "task_description": "put some soapbottle on cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_213",
+    "task_description": "clean some soapbar and put it in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "cabinet",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_214",
+    "task_description": "put a glassbottle in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "glassbottle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "glassbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_215",
+    "task_description": "put a keychain in armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "cabinet",
+      "drawer",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_216",
+    "task_description": "clean some ladle and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "ladle",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "ladle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_217",
+    "task_description": "put some kettle on cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "kettle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "kettle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_218",
+    "task_description": "cool some mug and put it in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_219",
+    "task_description": "heat some potato and put it in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_220",
+    "task_description": "put a hot egg in diningtable.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_221",
+    "task_description": "put a soapbottle in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_222",
+    "task_description": "put a clean lettuce in fridge.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_223",
+    "task_description": "clean some apple and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "apple",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "apple"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_224",
+    "task_description": "put two cellphone in sofa.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "diningtable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_225",
+    "task_description": "find two keychain and put them in sofa.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_226",
+    "task_description": "cool some cup and put it in microwave.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_227",
+    "task_description": "heat some tomato and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_228",
+    "task_description": "put a clean soapbar in drawer.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_229",
+    "task_description": "put a clean dishsponge in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "dishsponge",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "dishsponge"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_230",
+    "task_description": "put two keychain in dresser.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "dresser",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_231",
+    "task_description": "cool some bowl and put it in countertop.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_232",
+    "task_description": "cool some lettuce and put it in garbagecan.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_233",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "drawer",
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_234",
+    "task_description": "clean some soapbar and put it in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_235",
+    "task_description": "put a clean spoon in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "spoon",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "spoon"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_236",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_237",
+    "task_description": "put a clean soapbar in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "drawer",
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_238",
+    "task_description": "put some cellphone on dresser.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "dresser",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "drawer",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_239",
+    "task_description": "put some soapbottle on toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_240",
+    "task_description": "clean some tomato and put it in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_241",
+    "task_description": "put a cool tomato in diningtable.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_242",
+    "task_description": "put two cellphone in diningtable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "drawer",
+      "shelf",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_243",
+    "task_description": "clean some soapbar and put it in drawer.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "drawer",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_244",
+    "task_description": "clean some egg and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_245",
+    "task_description": "cool some bread and put it in countertop.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "bread",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "bread"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_246",
+    "task_description": "look at mug under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "drawer",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_247",
+    "task_description": "put some newspaper on sofa.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "newspaper",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "newspaper"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "drawer",
+      "shelf",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_248",
+    "task_description": "look at alarmclock under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desklamp",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_249",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_250",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_251",
+    "task_description": "put a pencil in desk.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "pencil",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "pencil"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_252",
+    "task_description": "find two remotecontrol and put them in sofa.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "sofa",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "diningtable",
+      "sidetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_253",
+    "task_description": "put a clean soapbar in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "drawer",
+      "garbagecan",
+      "sidetable",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_254",
+    "task_description": "put a clean soapbar in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_255",
+    "task_description": "clean some lettuce and put it in fridge.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_256",
+    "task_description": "put a cool lettuce in garbagecan.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_257",
+    "task_description": "put some remotecontrol on armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable",
+      "tvstand"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_258",
+    "task_description": "clean some potato and put it in diningtable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_259",
+    "task_description": "put two laptop in bed.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "laptop",
+    "goal_receptacle": "bed",
+    "objects_touched_in_trajectory": [
+      "laptop"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "countertop",
+      "diningtable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_260",
+    "task_description": "clean some soapbar and put it in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "soapbar",
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "cabinet",
+      "garbagecan",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_261",
+    "task_description": "put two lettuce in fridge.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "diningtable",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_262",
+    "task_description": "put a handtowel in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "handtowel",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "handtowel"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "handtowelholder"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_263",
+    "task_description": "put a clean ladle in cabinet.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "ladle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "ladle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_264",
+    "task_description": "find two book and put them in drawer.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_265",
+    "task_description": "cool some cup and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "diningtable",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_266",
+    "task_description": "put a hot bread in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "bread",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "bread"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_267",
+    "task_description": "find two box and put them in coffeetable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "box",
+    "goal_receptacle": "coffeetable",
+    "objects_touched_in_trajectory": [
+      "box"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "diningtable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_268",
+    "task_description": "find two pencil and put them in sidetable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "pencil",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "pencil"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_269",
+    "task_description": "cool some pot and put it in countertop.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "pot",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "pot"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "stoveburner"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_270",
+    "task_description": "look at cellphone under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_271",
+    "task_description": "put a keychain in desk.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_272",
+    "task_description": "put a clean soapbar in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_273",
+    "task_description": "put some soapbottle on toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_274",
+    "task_description": "look at alarmclock under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_275",
+    "task_description": "look at pen under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "pen",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pen"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_276",
+    "task_description": "put a clean soapbar in garbagecan.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "drawer",
+      "garbagecan",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_277",
+    "task_description": "put a keychain in sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "keychain"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_278",
+    "task_description": "cool some mug and put it in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_279",
+    "task_description": "put two book in drawer.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_280",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_281",
+    "task_description": "cool some bowl and put it in countertop.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_282",
+    "task_description": "put a kettle in shelf.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "kettle",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "kettle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_283",
+    "task_description": "put two cellphone in shelf.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_284",
+    "task_description": "cool some cup and put it in shelf.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "fridge",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_285",
+    "task_description": "clean some tomato and put it in sidetable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "fridge",
+      "sidetable",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_286",
+    "task_description": "put a remotecontrol in armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_287",
+    "task_description": "cool some lettuce and put it in diningtable.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_288",
+    "task_description": "find two alarmclock and put them in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "drawer",
+      "shelf",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_289",
+    "task_description": "heat some tomato and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge",
+      "garbagecan",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_290",
+    "task_description": "heat some egg and put it in garbagecan.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "egg",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "egg"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "drawer",
+      "fridge",
+      "garbagecan",
+      "microwave",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_291",
+    "task_description": "put some handtowel on cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "handtowel",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "handtowel"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "handtowelholder"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_292",
+    "task_description": "put a cool mug in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "countertop",
+      "drawer",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_293",
+    "task_description": "heat some cup and put it in shelf.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "cup",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cup"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "microwave",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_294",
+    "task_description": "put two keychain in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "keychain",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "keychain",
+      "pencil"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_295",
+    "task_description": "put two remotecontrol in coffeetable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "coffeetable",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "sofa"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_296",
+    "task_description": "put a spraybottle in cabinet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "spraybottle",
+    "goal_receptacle": "cabinet",
+    "objects_touched_in_trajectory": [
+      "spraybottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "cabinet",
+      "countertop",
+      "garbagecan",
+      "shelf",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_297",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "microwave",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_298",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "countertop",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_299",
+    "task_description": "put a clean fork in countertop.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "3:put_a_clean_X_in"
+    ],
+    "target_object": "fork",
+    "goal_receptacle": "countertop",
+    "objects_touched_in_trajectory": [
+      "fork"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_300",
+    "task_description": "put a cool tomato in diningtable.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "tomato",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "tomato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "fridge",
+      "garbagecan",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_301",
+    "task_description": "examine the cellphone with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_302",
+    "task_description": "look at pillow under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "pillow",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pillow"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_303",
+    "task_description": "put a pan in diningtable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "pan",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "pan"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_304",
+    "task_description": "put two soapbottle in toilet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_305",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_306",
+    "task_description": "clean some potato and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "diningtable",
+      "drawer",
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_307",
+    "task_description": "look at pillow under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "pillow",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "pillow"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "desk",
+      "desklamp",
+      "drawer",
+      "dresser",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_308",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_309",
+    "task_description": "clean some potato and put it in microwave.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "microwave",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "fridge",
+      "microwave",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_310",
+    "task_description": "find two cellphone and put them in diningtable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "diningtable",
+      "drawer",
+      "shelf",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_311",
+    "task_description": "put a hot potato in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_312",
+    "task_description": "put a soapbottle in toilet.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_313",
+    "task_description": "put two alarmclock in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_314",
+    "task_description": "put some remotecontrol on armchair.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "armchair",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "armchair",
+      "coffeetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_315",
+    "task_description": "clean some dishsponge and put it in shelf.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "dishsponge",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "dishsponge"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "shelf",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_316",
+    "task_description": "put some pen on sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "pen",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "pen"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "drawer",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_317",
+    "task_description": "examine the bowl with the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:examine_X_with_desklamp"
+    ],
+    "target_object": "bowl",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "bowl"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "desklamp"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_318",
+    "task_description": "put a hot potato in fridge.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "countertop",
+      "diningtable",
+      "fridge",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_319",
+    "task_description": "cool some lettuce and put it in garbagecan.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "5:cool_some_X_and_put"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "garbagecan",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "fridge",
+      "garbagecan"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_320",
+    "task_description": "put a cool mug in coffeemachine.",
+    "task_type": 5,
+    "task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "5:put_a_cool_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "coffeemachine",
+      "drawer",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_321",
+    "task_description": "find two book and put them in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "book",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "book"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "cabinet",
+      "desk",
+      "drawer",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_322",
+    "task_description": "put two soapbottle in toilet.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "soapbottle",
+    "goal_receptacle": "toilet",
+    "objects_touched_in_trajectory": [
+      "soapbottle"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_323",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "4:heat_some_X_and_put"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_324",
+    "task_description": "find two remotecontrol and put them in coffeetable.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "6:find_two_X_and_put"
+    ],
+    "target_object": "remotecontrol",
+    "goal_receptacle": "coffeetable",
+    "objects_touched_in_trajectory": [
+      "remotecontrol"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeetable",
+      "sofa",
+      "tvstand"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_325",
+    "task_description": "put two cellphone in shelf.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "cellphone",
+    "goal_receptacle": "shelf",
+    "objects_touched_in_trajectory": [
+      "cellphone"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "shelf"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_326",
+    "task_description": "put some alarmclock on desk.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_327",
+    "task_description": "put a hot mug in coffeemachine.",
+    "task_type": 4,
+    "task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "4:put_a_hot_X_in"
+    ],
+    "target_object": "mug",
+    "goal_receptacle": "coffeemachine",
+    "objects_touched_in_trajectory": [
+      "mug"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "coffeemachine",
+      "countertop",
+      "diningtable",
+      "microwave"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_328",
+    "task_description": "put two lettuce in fridge.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "lettuce",
+    "goal_receptacle": "fridge",
+    "objects_touched_in_trajectory": [
+      "lettuce"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "countertop",
+      "diningtable",
+      "drawer",
+      "fridge"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_329",
+    "task_description": "put two pen in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "pen",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "pen"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_330",
+    "task_description": "look at statue under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "statue",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "statue"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "dresser"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_331",
+    "task_description": "clean some potato and put it in diningtable.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "potato",
+    "goal_receptacle": "diningtable",
+    "objects_touched_in_trajectory": [
+      "potato"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "cabinet",
+      "diningtable",
+      "fridge",
+      "sinkbasin"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_332",
+    "task_description": "look at laptop under the desklamp.",
+    "task_type": 2,
+    "task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp",
+    "ambiguous": false,
+    "all_hits": [
+      "2:look_at_X_under_desklamp"
+    ],
+    "target_object": "laptop",
+    "goal_receptacle": null,
+    "objects_touched_in_trajectory": [
+      "laptop"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desklamp",
+      "dresser",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_333",
+    "task_description": "put two alarmclock in desk.",
+    "task_type": 6,
+    "task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in",
+    "ambiguous": false,
+    "all_hits": [
+      "6:put_two_X_in"
+    ],
+    "target_object": "alarmclock",
+    "goal_receptacle": "desk",
+    "objects_touched_in_trajectory": [
+      "alarmclock"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "desk",
+      "drawer",
+      "shelf",
+      "sidetable"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_334",
+    "task_description": "clean some soapbar and put it in drawer.",
+    "task_type": 3,
+    "task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put",
+    "ambiguous": false,
+    "all_hits": [
+      "3:clean_some_X_and_put"
+    ],
+    "target_object": "soapbar",
+    "goal_receptacle": "drawer",
+    "objects_touched_in_trajectory": [
+      "soapbar"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bathtubbasin",
+      "countertop",
+      "drawer",
+      "sinkbasin",
+      "toilet"
+    ]
+  },
+  {
+    "trajectory_id": "alfworld_335",
+    "task_description": "put a cd in sidetable.",
+    "task_type": 1,
+    "task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain",
+    "ambiguous": false,
+    "all_hits": [
+      "1:put_a_or_some_X_plain"
+    ],
+    "target_object": "cd",
+    "goal_receptacle": "sidetable",
+    "objects_touched_in_trajectory": [
+      "cd"
+    ],
+    "receptacles_touched_in_trajectory": [
+      "bed",
+      "diningtable",
+      "drawer",
+      "sidetable"
+    ]
+  }
+]

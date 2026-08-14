@@ -1,0 +1,25 @@
+{
+  "n_compared": 500,
+  "model": "Qwen/Qwen3-Embedding-8B",
+  "declared_dim": 4096,
+  "cosine_similarity": {
+    "mean": 0.994749194809159,
+    "median": 0.9949672910337799,
+    "std": 0.0013559493955696911,
+    "min": 0.9884419576984254,
+    "max": 0.9971846035272052
+  },
+  "pct_below_threshold": {
+    "0.999": 100.0,
+    "0.99": 1.0,
+    "0.95": 0.0,
+    "0.90": 0.0
+  },
+  "raw_norm": {
+    "deepinfra_mean": 1.000000011908292,
+    "deepinfra_std": 4.029006755137075e-08,
+    "labembed_mean": 1.0000000135675366,
+    "labembed_std": 4.1765205097628666e-08
+  },
+  "seed": 42
+}

@@ -1,0 +1,22 @@
+{
+  "dumb": {
+    "n": 7,
+    "n_capped": 5,
+    "pct_capped": 71.42857142857143
+  },
+  "gold": {
+    "n": 7,
+    "n_capped": 3,
+    "pct_capped": 42.857142857142854
+  },
+  "none": {
+    "n": 6,
+    "n_capped": 2,
+    "pct_capped": 33.33333333333333
+  },
+  "_total": {
+    "n": 20,
+    "n_capped": 10,
+    "pct_capped": 50.0
+  }
+}

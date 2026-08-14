@@ -1,0 +1,26 @@
+{
+  "labembed-Qwen3-8B": {
+    "orig_hit1": 0.1,
+    "full_mix_share_closed_pct": 15.384615384615383,
+    "verb_only_hit1": 0.15,
+    "verb_only_share_closed_pct": 15.384615384615383,
+    "noun_only_hit1": 0.1,
+    "noun_only_share_closed_pct": 0.0
+  },
+  "gemini-embedding-001": {
+    "orig_hit1": 0.05,
+    "full_mix_share_closed_pct": 31.249999999999993,
+    "verb_only_hit1": 0.125,
+    "verb_only_share_closed_pct": 18.749999999999996,
+    "noun_only_hit1": 0.075,
+    "noun_only_share_closed_pct": 6.249999999999998
+  },
+  "MiniLM-L6-v2": {
+    "orig_hit1": 0.025,
+    "full_mix_share_closed_pct": 18.750000000000007,
+    "verb_only_hit1": 0.075,
+    "verb_only_share_closed_pct": 12.5,
+    "noun_only_hit1": 0.075,
+    "noun_only_share_closed_pct": 12.5
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "condition": "gold",
+    "query_id": "sau_2012_bb6608",
+    "prompt_tokens": 297,
+    "completion_tokens": 8192,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.00233534
+  },
+  {
+    "condition": "gold",
+    "query_id": "bra_2019_7792eb",
+    "prompt_tokens": 419,
+    "completion_tokens": 8192,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.00235242
+  },
+  {
+    "condition": "gold",
+    "query_id": "arg_2022_6b9544",
+    "prompt_tokens": 471,
+    "completion_tokens": 8192,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.0023597
+  },
+  {
+    "condition": "gold",
+    "query_id": "tur_2008_22f4a1",
+    "prompt_tokens": 298,
+    "completion_tokens": 8192,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.00233548
+  },
+  {
+    "condition": "dumb",
+    "query_id": "fra_2014_eb9ec4",
+    "prompt_tokens": 523,
+    "completion_tokens": 8191,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.0023667000000000007
+  },
+  {
+    "condition": "dumb",
+    "query_id": "esp_2014_70c877",
+    "prompt_tokens": 231,
+    "completion_tokens": 2057,
+    "finish_reason": "stop",
+    "capped": false,
+    "cost": 0.0006083
+  },
+  {
+    "condition": "dumb",
+    "query_id": "btw_2009_f506f3",
+    "prompt_tokens": 245,
+    "completion_tokens": 8192,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.0023280600000000003
+  },
+  {
+    "condition": "none",
+    "query_id": "svn_2023_c9c438",
+    "prompt_tokens": 216,
+    "completion_tokens": 4002,
+    "finish_reason": "stop",
+    "capped": false,
+    "cost": 0.0011508000000000002
+  },
+  {
+    "condition": "none",
+    "query_id": "bra_2011_b56a3c",
+    "prompt_tokens": 312,
+    "completion_tokens": 8192,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.00233744
+  },
+  {
+    "condition": "none",
+    "query_id": "srb_2016_cab572",
+    "prompt_tokens": 163,
+    "completion_tokens": 8192,
+    "finish_reason": "length",
+    "capped": true,
+    "cost": 0.0023165800000000004
+  }
+]

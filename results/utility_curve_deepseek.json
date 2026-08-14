@@ -1,0 +1,23 @@
+{
+  "none": {
+    "n": 210,
+    "truncated": 64,
+    "correct_a": 146,
+    "correct_b": 147,
+    "agree": 207
+  },
+  "dumb": {
+    "n": 210,
+    "truncated": 66,
+    "correct_a": 143,
+    "correct_b": 141,
+    "agree": 202
+  },
+  "gold": {
+    "n": 210,
+    "truncated": 65,
+    "correct_a": 143,
+    "correct_b": 145,
+    "agree": 206
+  }
+}

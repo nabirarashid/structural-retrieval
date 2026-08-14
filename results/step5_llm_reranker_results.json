@@ -1,0 +1,32 @@
+{
+  "labembed-Qwen3-8B": {
+    "gemini-3.1-flash-lite": {
+      "reranked_hit1": 0.3,
+      "share_of_gap_closed_pct": 61.53846153846154
+    },
+    "glm-5.2-fp8": {
+      "reranked_hit1": 0.325,
+      "share_of_gap_closed_pct": 69.23076923076924
+    }
+  },
+  "gemini-embedding-001": {
+    "gemini-3.1-flash-lite": {
+      "reranked_hit1": 0.3,
+      "share_of_gap_closed_pct": 62.5
+    },
+    "glm-5.2-fp8": {
+      "reranked_hit1": 0.35,
+      "share_of_gap_closed_pct": 74.99999999999999
+    }
+  },
+  "MiniLM-L6-v2": {
+    "gemini-3.1-flash-lite": {
+      "reranked_hit1": 0.25,
+      "share_of_gap_closed_pct": 56.250000000000014
+    },
+    "glm-5.2-fp8": {
+      "reranked_hit1": 0.325,
+      "share_of_gap_closed_pct": 75.0
+    }
+  }
+}

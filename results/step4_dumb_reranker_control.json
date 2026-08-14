@@ -1,0 +1,23 @@
+{
+  "labembed-Qwen3-8B": {
+    "orig_hit1": 0.1,
+    "dumb_hit1": 0.15,
+    "orig_hit10": 0.425,
+    "recoverable_gap_pts": 32.49999999999999,
+    "share_of_gap_closed_pct": 15.384615384615383
+  },
+  "gemini-embedding-001": {
+    "orig_hit1": 0.05,
+    "dumb_hit1": 0.175,
+    "orig_hit10": 0.45,
+    "recoverable_gap_pts": 40.0,
+    "share_of_gap_closed_pct": 31.249999999999993
+  },
+  "MiniLM-L6-v2": {
+    "orig_hit1": 0.025,
+    "dumb_hit1": 0.1,
+    "orig_hit10": 0.425,
+    "recoverable_gap_pts": 40.0,
+    "share_of_gap_closed_pct": 18.750000000000007
+  }
+}

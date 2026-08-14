@@ -1,0 +1,129 @@
+[gemini/full_queries] 500 cached, 0 to embed
+[gemini/full_corpus] 117088 cached, 0 to embed
+====================================================================================================
+QUERY (sau_2012_bb6608):
+Determine all positive integers $n$ such that the inequality
+$$
+\sqrt{x-1} + \sqrt{x-2} + \cdots + \sqrt{x-n} < x
+$$
+holds for every real number $x \ge n$.
+
+GOLD TARGET (sau_2012_bb6608::eq::easy):
+Find every natural number $m \ge 1$ such that for any real number $x \ge m$, the inequality
+$$
+\sum_{k=1}^m \sqrt{x-k} < x
+$$
+is satisfied.
+
+  #1 [0.8599] sau_2012_bb6608::nm::0 <-- TOP-1 (WRONG)
+       Determine all positive integers $n$ such that the inequality
+$$
+\sqrt{x-1} + \sqrt{x-2} + \cdots + \sqrt{x-n} > x
+$$
+holds for every real number $x \ge n$.
+  #2 [0.8396] sau_2012_bb6608::nm::2
+       Determine all positive integers $n$ such that the inequality
+$$
+\sqrt{x-1} \cdot \sqrt{x-2} \cdot \cdots \cdot \sqrt{x-n} < x
+$$
+holds for every real number $x \ge n$.
+  #3 [0.8311] sau_2012_bb6608::eq::medium
+       Determine all positive integers $n$ such that for every real number $y \ge 0$, the inequality $\sum_{k=0}^{n-1} \sqrt{y+k} < y+n$ holds.
+  #4 [0.8208] sau_2012_bb6608::eq::easy <-- GOLD
+       Find every natural number $m \ge 1$ such that for any real number $x \ge m$, the inequality
+$$
+\sum_{k=1}^m \sqrt{x-k} < x
+$$
+is satisfied.
+  #5 [0.8157] sau_2012_bb6608::nm::1
+       Determine all positive integers $n$ such that the inequality
+$$
+\sqrt[3]{x-1} + \sqrt[3]{x-2} + \cdots + \sqrt[3]{x-n} < x
+$$
+holds for every real number $x \ge n$.
+  #6 [0.7871] grc_2010_0f207f::eq::medium
+       a. Let $n$ be a positive integer. Prove that $x - 2n\sqrt{x-n^2} \ge 0$ for all $x \ge n^2$.
+
+b. Find all real numbers $x, y, z$ such that $(x - 2\sqrt{x-1}) + (y - 4\sqrt{y-4}) + (z - 6\sqrt{z-9}) = 
+  #7 [0.7864] hrv_2014_622228::eq::medium
+       For any $n \in \mathbb{Z}^+$, let $S_n = \sqrt{n + \sqrt{n-1 + \dots + \sqrt{1}}}$. Show that $S_n^2 - 2S_n + 1 < n$.
+  #8 [0.7850] btw_2009_f07d82::nm::0
+       Determine all integers $n > 1$ for which the inequality $$x_1^2 + x_2^2 + \dots + x_n^2 \leq (x_1 + x_2 + \dots + x_{n-1})x_n$$ holds for all real $x_1, x_2, \dots, x_n$.
+  #9 [0.7822] btw_2009_f07d82::nm::1
+       Determine all integers $n > 1$ for which the inequality $$x_1^2 + x_2^2 + \dots + x_n^2 \geq (x_1 + x_2 + \dots + x_{n-1})^2$$ holds for all real $x_1, x_2, \dots, x_n$.
+  #10 [0.7802] btw_2009_f07d82::nm::2
+       Determine all integers $n > 1$ for which the inequality $$x_1^2 + x_2^2 + \dots + x_n^2 \geq 2\,(x_1 + x_2 + \dots + x_{n-1})x_n$$ holds for all real $x_1, x_2, \dots, x_n$.
+
+====================================================================================================
+QUERY (bra_2019_7792eb):
+Em um determinado jogo, o número $1$ está escrito no quadro. Em qualquer momento, um movimento permitido consiste em trocar o número escrito no quadro pelo seu dobro ou por outro número que possui os mesmos dígitos que ele. Por exemplo, se estiver escrito no quadro o número $137$, um movimento permitido consiste em trocá-lo por $137 \cdot 2 = 274$ ou por $173$, $317$, $371$, $713$ ou $731$. Determine se após um número finito de operações é possível obtermos os seguintes números:
+
+a) $10^{3}$.
+
+b) $10^{9}$.
+
+c) $9876543210$.
+
+GOLD TARGET (bra_2019_7792eb::eq::easy):
+No quadro está escrito o número $1$. Uma jogada permitida permite substituir o número atual pelo seu dobro ou por uma permutação de seus dígitos. Por exemplo, se o número for $137$, podemos trocá-lo por $274$ ou por qualquer um dos números $173, 317, 371, 713, 731$. Verifique se, após uma sequência finita de tais jogadas, é possível chegar aos números:
+a) $10^{3}$.
+b) $10^{9}$.
+c) $9876543210$.
+
+  #1 [0.9049] bra_2019_7792eb::nm::1 <-- TOP-1 (WRONG)
+       Em um determinado jogo, o número $1$ está escrito no quadro. Em qualquer momento, um movimento permitido consiste em trocar o número escrito no quadro pelo seu dobro somado de $1$ ($2n+1$) ou por outr
+  #2 [0.9037] bra_2019_7792eb::nm::0
+       Em um determinado jogo, o número $1$ está escrito no quadro. Em qualquer momento, um movimento permitido consiste em trocar o número escrito no quadro pelo seu triplo ou por outro número que possui os
+  #3 [0.9028] bra_2019_7792eb::nm::2
+       Em um determinado jogo, o número $1$ está escrito no quadro. Em qualquer momento, um movimento permitido consiste em trocar o número escrito no quadro pelo seu quadrado ou por outro número que possui 
+  #4 [0.8957] bra_2019_7792eb::eq::easy <-- GOLD
+       No quadro está escrito o número $1$. Uma jogada permitida permite substituir o número atual pelo seu dobro ou por uma permutação de seus dígitos. Por exemplo, se o número for $137$, podemos trocá-lo p
+  #5 [0.8408] bra_2019_7792eb::eq::medium
+       Seja $S$ o conjunto de números alcançáveis a partir de $1$ por meio das operações $n \mapsto 2n$ e $n \mapsto \pi(n)$, onde $\pi(n)$ representa uma permutação dos dígitos de $n$. Determine se: a) $10^
+  #6 [0.8259] bra_2019_7792eb::eq::hard
+       Alice has a digital blackboard that currently displays the number $1$. She can perform two types of transformations: she can replace the current number $n$ with $2n$, or she can rearrange the digits o
+  #7 [0.8008] arg_2022_e1bbfa::nm::1
+       Initially there is a positive integer $N$ written on the blackboard. The following operations are allowed:
+* Replace the number $N$ by its square $N^2$.
+* Replace the number by another which has the s
+  #8 [0.7918] arg_2022_e1bbfa::nm::0
+       Initially there is a positive integer $N$ written on the blackboard. The following operations are allowed:
+* Replace the number by a positive multiple of itself.
+* Replace the number by another which 
+  #9 [0.7903] arg_2022_e1bbfa::eq::easy
+       A positive integer $k$ is written on a whiteboard. We can perform the following moves:
+* Substitute the current number with a positive multiple of itself.
+* Substitute the current number with any perm
+  #10 [0.7891] arg_2022_e1bbfa::nm::2
+       Initially there is a positive integer $N$ written on the blackboard. The following operations are allowed:
+* Replace the number by a positive multiple of itself.
+* Replace the number by another which 
+
+====================================================================================================
+QUERY (arg_2022_6b9544):
+In the quadrilateral $ABCD$, whose sides are $AB$, $BC$, $CD$ and $DA$, $\angle ABC = \angle BCD = 150^\circ$, $AB = 18\ \text{cm}$ and $BC = 24\ \text{cm}$. Outside the quadrilateral $ABCD$ we draw the equilateral triangles $APB$, $BQC$ and $CRD$. Then we draw the segments $PQ$ and $QR$ and thus a pentagon $APQRD$ is formed. Given that the perimeter of $APQRD$ is $32\ \text{cm}$ greater than the perimeter of $ABCD$, find the length of $CD$.
+
+GOLD TARGET (arg_2022_6b9544::eq::easy):
+In a quadrilateral $WXYZ$, the side lengths are $WX = 18\text{ cm}$ and $XY = 24\text{ cm}$, with internal angles $\angle WXY = \angle XYZ = 150^\circ$. Externally to $WXYZ$, construct equilateral triangles $W PX$, $X Q Y$, and $Y R Z$. Form a pentagon $W P Q R Z$ by connecting $PQ$ and $QR$. If the perimeter of $W P Q R Z$ is $32\text{ cm}$ longer than the perimeter of $WXYZ$, determine the length of the side $YZ$.
+
+  #1 [0.8672] arg_2022_6b9544::nm::1 <-- TOP-1 (WRONG)
+       In the quadrilateral $ABCD$, whose sides are $AB$, $BC$, $CD$ and $DA$, $\angle ABC = \angle BCD = 150^\circ$, $AB = 18\ \text{cm}$ and $BC = 24\ \text{cm}$. Outside the quadrilateral $ABCD$ we draw t
+  #2 [0.8623] arg_2022_6b9544::nm::2
+       In the quadrilateral $ABCD$, whose sides are $AB$, $BC$, $CD$ and $DA$, $\angle ABC = \angle BCD = 150^\circ$, $AB = 18\ \text{cm}$ and $BC = 24\ \text{cm}$. Outside the quadrilateral $ABCD$ we draw t
+  #3 [0.8454] arg_2022_6b9544::eq::medium
+       In the quadrilateral $ABCD$, $\angle ABC = \angle BCD = 150^\circ$, $AB = 18\ \text{cm}$ and $BC = 24\ \text{cm}$. Equilateral triangles $APB, BQC$ and $CRD$ are constructed externally. If the sum of 
+  #4 [0.8393] arg_2022_6b9544::nm::0
+       In the quadrilateral $ABCD$, whose sides are $AB$, $BC$, $CD$ and $DA$, $\angle ABC = \angle BCD = 150^\circ$, $AB = 18\ \text{cm}$ and $BC = 24\ \text{cm}$. Outside the quadrilateral $ABCD$ we draw s
+  #5 [0.8241] arg_2022_6b9544::eq::easy <-- GOLD
+       In a quadrilateral $WXYZ$, the side lengths are $WX = 18\text{ cm}$ and $XY = 24\text{ cm}$, with internal angles $\angle WXY = \angle XYZ = 150^\circ$. Externally to $WXYZ$, construct equilateral tri
+  #6 [0.7519] arg_2022_6b9544::eq::hard
+       A cargo ship follows a route $A \to B \to C \to D$. The first leg $AB$ is 18 km and the second leg $BC$ is 24 km. At both $B$ and $C$, the ship makes a $30^\circ$ turn to its port (left) side. A surve
+  #7 [0.7428] usa_2007_165600::eq::medium
+       In a convex quadrilateral $ABCD$, let the lengths of the sides be $AB=BC=7$, $CD=5$, and $AD=3$. If triangle $ABC$ is equilateral, calculate the length of the diagonal $BD$.
+  #8 [0.7336] usa_2008_4257c0::nm::1
+       Cyclic pentagon $ABCDE$ has an angle $\angle ABC = 120^{\circ}$ and side lengths $AB = 15$ and $BC = 20$. Supposing that $AB = DE = EA = 15$, find $CD$.
+  #9 [0.7311] usa_2008_4257c0::eq::medium
+       Let $ABCDE$ be a cyclic pentagon such that $AB = DE = EA = 15$ and $BC = 20$. If the chord $AC$ has length $25$, find the length of $CD$.
+  #10 [0.7280] mng_2021_a2e4ad::nm::2
+       Let $ABCD$ be a quadrilateral with $AB = BC = CD$ and $\angle ABC + \angle ADC = 240^\circ$. Find the angle $\angle CAD$.
+

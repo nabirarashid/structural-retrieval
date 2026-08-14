@@ -1,0 +1,619 @@
+{
+  "metrics": {
+    "labembed-Qwen3-8B": {
+      "STRICT": {
+        "Hit@1": 0.1,
+        "Hit@5": 0.25,
+        "Hit@10": 0.425,
+        "MAP": 0.3858845706686081
+      },
+      "LENIENT": {
+        "Hit@1": 0.75,
+        "Hit@5": 0.875,
+        "Hit@10": 0.925,
+        "MAP": 0.5974341251880428
+      }
+    },
+    "gemini-embedding-001": {
+      "STRICT": {
+        "Hit@1": 0.05,
+        "Hit@5": 0.225,
+        "Hit@10": 0.45,
+        "MAP": 0.4144402269047756
+      },
+      "LENIENT": {
+        "Hit@1": 0.725,
+        "Hit@5": 0.875,
+        "Hit@10": 0.925,
+        "MAP": 0.6322401255381532
+      }
+    },
+    "MiniLM-L6-v2": {
+      "STRICT": {
+        "Hit@1": 0.025,
+        "Hit@5": 0.15,
+        "Hit@10": 0.425,
+        "MAP": 0.2579897176666835
+      },
+      "LENIENT": {
+        "Hit@1": 0.425,
+        "Hit@5": 0.75,
+        "Hit@10": 0.85,
+        "MAP": 0.41231227874732035
+      }
+    }
+  },
+  "failure_taxonomy": {
+    "labembed-Qwen3-8B": [
+      {
+        "query_id": "easy_1",
+        "winner": "alfworld_90",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_2",
+        "winner": "alfworld_103",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_3",
+        "winner": "alfworld_297",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_4",
+        "winner": "alfworld_146",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_5",
+        "winner": "alfworld_300",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_6",
+        "winner": "alfworld_173",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_7",
+        "winner": "alfworld_238",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_8",
+        "winner": "alfworld_116",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_9",
+        "winner": "alfworld_170",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_10",
+        "winner": "alfworld_329",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_11",
+        "winner": "alfworld_132",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_12",
+        "winner": "alfworld_275",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_13",
+        "winner": "alfworld_159",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_14",
+        "winner": "alfworld_270",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_1",
+        "winner": "alfworld_260",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_2",
+        "winner": "alfworld_38",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_3",
+        "winner": "alfworld_38",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_4",
+        "winner": "alfworld_54",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_6",
+        "winner": "alfworld_105",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_7",
+        "winner": "alfworld_305",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_8",
+        "winner": "alfworld_309",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_9",
+        "winner": "alfworld_69",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_10",
+        "winner": "alfworld_297",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_11",
+        "winner": "alfworld_287",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_12",
+        "winner": "alfworld_7",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_13",
+        "winner": "alfworld_173",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_14",
+        "winner": "alfworld_57",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_2",
+        "winner": "alfworld_103",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_3",
+        "winner": "alfworld_252",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_6",
+        "winner": "alfworld_230",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_7",
+        "winner": "alfworld_329",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_9",
+        "winner": "alfworld_329",
+        "winner_class": "other"
+      },
+      {
+        "query_id": "hard_10",
+        "winner": "alfworld_270",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_11",
+        "winner": "alfworld_39",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_14",
+        "winner": "alfworld_7",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_15",
+        "winner": "alfworld_38",
+        "winner_class": "sibling"
+      }
+    ],
+    "gemini-embedding-001": [
+      {
+        "query_id": "easy_1",
+        "winner": "alfworld_90",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_2",
+        "winner": "alfworld_103",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_3",
+        "winner": "alfworld_292",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_4",
+        "winner": "alfworld_146",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_5",
+        "winner": "alfworld_241",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_6",
+        "winner": "alfworld_173",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_7",
+        "winner": "alfworld_242",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_8",
+        "winner": "alfworld_116",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_9",
+        "winner": "alfworld_170",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_10",
+        "winner": "alfworld_316",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_11",
+        "winner": "alfworld_6",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_12",
+        "winner": "alfworld_211",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_13",
+        "winner": "alfworld_159",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_14",
+        "winner": "alfworld_132",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_1",
+        "winner": "alfworld_90",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_2",
+        "winner": "alfworld_38",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_3",
+        "winner": "alfworld_272",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_4",
+        "winner": "alfworld_56",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_6",
+        "winner": "alfworld_219",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_7",
+        "winner": "alfworld_297",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_8",
+        "winner": "alfworld_173",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_9",
+        "winner": "alfworld_290",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_10",
+        "winner": "alfworld_297",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_11",
+        "winner": "alfworld_287",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_12",
+        "winner": "alfworld_256",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_13",
+        "winner": "alfworld_173",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_14",
+        "winner": "alfworld_241",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_15",
+        "winner": "alfworld_93",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "hard_2",
+        "winner": "alfworld_103",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_3",
+        "winner": "alfworld_156",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_4",
+        "winner": "alfworld_148",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "hard_6",
+        "winner": "alfworld_230",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_7",
+        "winner": "alfworld_329",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_10",
+        "winner": "alfworld_6",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_11",
+        "winner": "alfworld_159",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_13",
+        "winner": "alfworld_219",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_14",
+        "winner": "alfworld_256",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_15",
+        "winner": "alfworld_26",
+        "winner_class": "sibling"
+      }
+    ],
+    "MiniLM-L6-v2": [
+      {
+        "query_id": "easy_1",
+        "winner": "alfworld_254",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_2",
+        "winner": "alfworld_293",
+        "winner_class": "other"
+      },
+      {
+        "query_id": "easy_3",
+        "winner": "alfworld_48",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_4",
+        "winner": "alfworld_31",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_5",
+        "winner": "alfworld_285",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_6",
+        "winner": "alfworld_40",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_7",
+        "winner": "alfworld_270",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_8",
+        "winner": "alfworld_11",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_9",
+        "winner": "alfworld_72",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_10",
+        "winner": "alfworld_17",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "easy_11",
+        "winner": "alfworld_125",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_12",
+        "winner": "alfworld_17",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_13",
+        "winner": "alfworld_39",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "easy_14",
+        "winner": "alfworld_270",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_1",
+        "winner": "alfworld_254",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_2",
+        "winner": "alfworld_137",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_3",
+        "winner": "alfworld_91",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_4",
+        "winner": "alfworld_56",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_6",
+        "winner": "alfworld_117",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_7",
+        "winner": "alfworld_48",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "medium_8",
+        "winner": "alfworld_40",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_9",
+        "winner": "alfworld_244",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_10",
+        "winner": "alfworld_19",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_11",
+        "winner": "alfworld_222",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_12",
+        "winner": "alfworld_222",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_13",
+        "winner": "alfworld_40",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_14",
+        "winner": "alfworld_126",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "medium_15",
+        "winner": "alfworld_177",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "hard_2",
+        "winner": "alfworld_130",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_3",
+        "winner": "alfworld_295",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_4",
+        "winner": "alfworld_91",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "hard_6",
+        "winner": "alfworld_31",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "hard_7",
+        "winner": "alfworld_109",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_9",
+        "winner": "alfworld_17",
+        "winner_class": "other"
+      },
+      {
+        "query_id": "hard_10",
+        "winner": "alfworld_125",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_11",
+        "winner": "alfworld_39",
+        "winner_class": "sibling"
+      },
+      {
+        "query_id": "hard_13",
+        "winner": "alfworld_258",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "hard_14",
+        "winner": "alfworld_222",
+        "winner_class": "near_miss"
+      },
+      {
+        "query_id": "hard_15",
+        "winner": "alfworld_91",
+        "winner_class": "sibling"
+      }
+    ]
+  }
+}

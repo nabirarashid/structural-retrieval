@@ -1,0 +1,86 @@
+[
+  {
+    "provider": "gemini",
+    "tier": "easy",
+    "n_misses": 439,
+    "anchor_to_gold": {
+      "mean": 0.6524428616549289,
+      "median": 0.65460984720942,
+      "stdev": 0.08953245033772896
+    },
+    "anchor_to_false_positive": {
+      "mean": 0.9079505256913215,
+      "median": 0.942078406119502,
+      "stdev": 0.09886763802054441
+    },
+    "delta_fp_minus_gold": {
+      "mean": 0.2555076640363925,
+      "median": 0.2701692198763622,
+      "stdev": 0.11880399693064023
+    },
+    "pct_misses_where_fp_more_lexically_similar_than_gold": 95.67198177676538
+  },
+  {
+    "provider": "gemini",
+    "tier": "hard",
+    "n_misses": 500,
+    "anchor_to_gold": {
+      "mean": 0.36745671306839445,
+      "median": 0.3682073656247545,
+      "stdev": 0.10572652804509591
+    },
+    "anchor_to_false_positive": {
+      "mean": 0.8834823820154466,
+      "median": 0.9260007799400323,
+      "stdev": 0.11686447825215215
+    },
+    "delta_fp_minus_gold": {
+      "mean": 0.5160256689470522,
+      "median": 0.5251475281584256,
+      "stdev": 0.1639232484606889
+    },
+    "pct_misses_where_fp_more_lexically_similar_than_gold": 99.8
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "easy",
+    "n_misses": 457,
+    "anchor_to_gold": {
+      "mean": 0.6564817329492912,
+      "median": 0.6572097288910425,
+      "stdev": 0.09069374440777932
+    },
+    "anchor_to_false_positive": {
+      "mean": 0.9111933501601889,
+      "median": 0.9493217451673378,
+      "stdev": 0.10182881273555544
+    },
+    "delta_fp_minus_gold": {
+      "mean": 0.2547116172108976,
+      "median": 0.27006158283977333,
+      "stdev": 0.1253918026690667
+    },
+    "pct_misses_where_fp_more_lexically_similar_than_gold": 95.18599562363238
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "hard",
+    "n_misses": 500,
+    "anchor_to_gold": {
+      "mean": 0.36745671306839445,
+      "median": 0.3682073656247545,
+      "stdev": 0.10572652804509591
+    },
+    "anchor_to_false_positive": {
+      "mean": 0.8919530711222543,
+      "median": 0.9397056034893041,
+      "stdev": 0.1180931461914437
+    },
+    "delta_fp_minus_gold": {
+      "mean": 0.5244963580538599,
+      "median": 0.5345462738193503,
+      "stdev": 0.16595365861798628
+    },
+    "pct_misses_where_fp_more_lexically_similar_than_gold": 99.4
+  }
+]

@@ -9,6 +9,11 @@ embeddings_cache/
 *.jsonl
 *.parquet
 
+# vendored third-party content -- not ours to redistribute; fetch from source instead
+MathNet/
+paper/*.pdf
+paper/*.md
+
 # python
 __pycache__/
 *.pyc

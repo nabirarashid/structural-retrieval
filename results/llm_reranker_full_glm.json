@@ -1,0 +1,182 @@
+[
+  {
+    "provider": "gemini",
+    "tier": "easy",
+    "model": "glm-5.2-fp8",
+    "n_queries": 500,
+    "orig_hit1": 0.122,
+    "orig_hit10": 0.976,
+    "llm_reranked_hit1": 0.208,
+    "n_unparsed_responses": 1,
+    "recoverable_gap": 0.854,
+    "gap_closed": 0.086,
+    "share_of_recoverable_gap_closed": 0.10070257611241218,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 7,
+        "orig_hit1_pct": 12.280701754385964,
+        "llm_hit1_n": 10,
+        "llm_hit1_pct": 17.543859649122805
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 14,
+        "orig_hit1_pct": 16.470588235294116,
+        "llm_hit1_n": 13,
+        "llm_hit1_pct": 15.294117647058824
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 40,
+        "orig_hit1_pct": 11.1731843575419,
+        "llm_hit1_n": 81,
+        "llm_hit1_pct": 22.62569832402235
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 10,
+      "well_known_llm_hit1_pct": 17.543859649122805,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 94,
+      "rest_llm_hit1_pct": 21.21896162528217
+    },
+    "elapsed_seconds": 29.843706130981445
+  },
+  {
+    "provider": "gemini",
+    "tier": "hard",
+    "model": "glm-5.2-fp8",
+    "n_queries": 500,
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.554,
+    "llm_reranked_hit1": 0.058,
+    "n_unparsed_responses": 0,
+    "recoverable_gap": 0.554,
+    "gap_closed": 0.058,
+    "share_of_recoverable_gap_closed": 0.10469314079422383,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 4,
+        "llm_hit1_pct": 7.017543859649122
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 8,
+        "llm_hit1_pct": 9.411764705882353
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 17,
+        "llm_hit1_pct": 4.748603351955307
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 4,
+      "well_known_llm_hit1_pct": 7.017543859649122,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 25,
+      "rest_llm_hit1_pct": 5.643340857787811
+    },
+    "elapsed_seconds": 34.51922011375427
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "easy",
+    "model": "glm-5.2-fp8",
+    "n_queries": 500,
+    "orig_hit1": 0.086,
+    "orig_hit10": 0.952,
+    "llm_reranked_hit1": 0.19,
+    "n_unparsed_responses": 1,
+    "recoverable_gap": 0.866,
+    "gap_closed": 0.10400000000000001,
+    "share_of_recoverable_gap_closed": 0.12009237875288685,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 6,
+        "orig_hit1_pct": 10.526315789473683,
+        "llm_hit1_n": 9,
+        "llm_hit1_pct": 15.789473684210526
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 12,
+        "orig_hit1_pct": 14.117647058823529,
+        "llm_hit1_n": 16,
+        "llm_hit1_pct": 18.823529411764707
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 25,
+        "orig_hit1_pct": 6.983240223463687,
+        "llm_hit1_n": 70,
+        "llm_hit1_pct": 19.553072625698324
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 9,
+      "well_known_llm_hit1_pct": 15.789473684210526,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 86,
+      "rest_llm_hit1_pct": 19.41309255079007
+    },
+    "elapsed_seconds": 48.36521601676941
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "hard",
+    "model": "glm-5.2-fp8",
+    "n_queries": 500,
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.21,
+    "llm_reranked_hit1": 0.038,
+    "n_unparsed_responses": 0,
+    "recoverable_gap": 0.21,
+    "gap_closed": 0.038,
+    "share_of_recoverable_gap_closed": 0.18095238095238095,
+    "by_contamination_bucket": {
+      "well_known": {
+        "n": 57,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 5,
+        "llm_hit1_pct": 8.771929824561402
+      },
+      "regional": {
+        "n": 85,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 3,
+        "llm_hit1_pct": 3.5294117647058822
+      },
+      "other": {
+        "n": 358,
+        "orig_hit1_n": 0,
+        "orig_hit1_pct": 0.0,
+        "llm_hit1_n": 11,
+        "llm_hit1_pct": 3.072625698324022
+      }
+    },
+    "pooled_well_known_vs_rest": {
+      "well_known_n": 57,
+      "well_known_llm_hit1_n": 5,
+      "well_known_llm_hit1_pct": 8.771929824561402,
+      "rest_n": 443,
+      "rest_llm_hit1_n": 14,
+      "rest_llm_hit1_pct": 3.160270880361174
+    },
+    "elapsed_seconds": 679.2221989631653
+  }
+]

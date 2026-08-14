@@ -1,0 +1,38 @@
+{
+  "gemini-3.1-flash-lite/gemini-embed": {
+    "well_known_rate": 0.42105263157894735,
+    "rest_rate": 0.2234762979683973,
+    "gap_pts": 19.757633361055003,
+    "ci_lo": 6.748247594154686,
+    "ci_hi": 33.21848639657835,
+    "n_well_known": 57,
+    "n_rest": 443
+  },
+  "gemini-3.1-flash-lite/deepinfra-embed": {
+    "well_known_rate": 0.15789473684210525,
+    "rest_rate": 0.07674943566591422,
+    "gap_pts": 8.114530117619104,
+    "ci_lo": -1.3860837194566558,
+    "ci_hi": 18.64084590709279,
+    "n_well_known": 57,
+    "n_rest": 443
+  },
+  "glm-5.2-fp8/gemini-embed": {
+    "well_known_rate": 0.07017543859649122,
+    "rest_rate": 0.056433408577878104,
+    "gap_pts": 1.3742030018613116,
+    "ci_lo": -5.017623064433092,
+    "ci_hi": 8.84321413013346,
+    "n_well_known": 57,
+    "n_rest": 443
+  },
+  "glm-5.2-fp8/deepinfra-embed": {
+    "well_known_rate": 0.08771929824561403,
+    "rest_rate": 0.03160270880361174,
+    "gap_pts": 5.6116589442002285,
+    "ci_lo": -1.1801512811373809,
+    "ci_hi": 13.932121500138608,
+    "n_well_known": 57,
+    "n_rest": 443
+  }
+}

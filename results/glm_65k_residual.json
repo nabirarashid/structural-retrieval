@@ -1,0 +1,90 @@
+[
+  {
+    "condition": "dumb",
+    "query_id": "bra_2019_7792eb",
+    "completion_tokens": 65536,
+    "finish_reason": "length",
+    "capped": true,
+    "wall_s": 444.2823271751404
+  },
+  {
+    "condition": "dumb",
+    "query_id": "fra_2014_eb9ec4",
+    "completion_tokens": 65536,
+    "finish_reason": "length",
+    "capped": true,
+    "wall_s": 539.4972479343414
+  },
+  {
+    "condition": "dumb",
+    "query_id": "srb_2016_cab572",
+    "completion_tokens": 65536,
+    "finish_reason": "length",
+    "capped": true,
+    "wall_s": 453.268177986145
+  },
+  {
+    "condition": "dumb",
+    "query_id": "svn_2023_c9c438",
+    "completion_tokens": 3648,
+    "finish_reason": "stop",
+    "capped": false,
+    "wall_s": 32.19811034202576
+  },
+  {
+    "condition": "gold",
+    "query_id": "bra_2019_7792eb",
+    "completion_tokens": 65536,
+    "finish_reason": "length",
+    "capped": true,
+    "wall_s": 884.1533150672913
+  },
+  {
+    "condition": "gold",
+    "query_id": "fra_2014_eb9ec4",
+    "completion_tokens": 4101,
+    "finish_reason": "stop",
+    "capped": false,
+    "wall_s": 40.06828808784485
+  },
+  {
+    "condition": "gold",
+    "query_id": "srb_2016_cab572",
+    "completion_tokens": 65536,
+    "finish_reason": "length",
+    "capped": true,
+    "wall_s": 453.6142039299011
+  },
+  {
+    "condition": "gold",
+    "query_id": "tur_2008_22f4a1",
+    "completion_tokens": 11352,
+    "finish_reason": "stop",
+    "capped": false,
+    "wall_s": 98.85655403137207
+  },
+  {
+    "condition": "none",
+    "query_id": "bra_2019_7792eb",
+    "completion_tokens": 65536,
+    "finish_reason": "length",
+    "capped": true,
+    "wall_s": 648.3497850894928
+  },
+  {
+    "condition": "none",
+    "query_id": "fra_2014_eb9ec4",
+    "completion_tokens": 65536,
+    "finish_reason": "length",
+    "capped": true,
+    "wall_s": 615.0089340209961
+  },
+  {
+    "condition": "none",
+    "query_id": "srb_2016_cab572",
+    "completion_tokens": 21573,
+    "finish_reason": "stop",
+    "capped": false,
+    "wall_s": 248.18969798088074
+  }
+]

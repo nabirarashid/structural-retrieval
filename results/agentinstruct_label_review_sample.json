@@ -1,0 +1,422 @@
+[
+  {
+    "trajectory_id": "alfworld_3",
+    "task_description": "put some keychain on sofa.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_4",
+    "task_description": "put a pencil in desk.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_10",
+    "task_description": "put some pen on sidetable.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_12",
+    "task_description": "put some newspaper on garbagecan.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_15",
+    "task_description": "put some cellphone on bed.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_16",
+    "task_description": "put some spraybottle on toilet.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_20",
+    "task_description": "put a soapbottle in toilet.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_21",
+    "task_description": "put a spraybottle in cabinet.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_24",
+    "task_description": "put a keychain in sofa.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_31",
+    "task_description": "put some keychain on desk.",
+    "assigned_task_type": 1,
+    "assigned_task_type_name": "pick_and_place_simple",
+    "rule": "put_a_or_some_X_plain"
+  },
+  {
+    "trajectory_id": "alfworld_6",
+    "task_description": "examine the cellphone with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_9",
+    "task_description": "look at box under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_17",
+    "task_description": "look at pen under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_19",
+    "task_description": "examine the mug with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_36",
+    "task_description": "look at pillow under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_39",
+    "task_description": "look at alarmclock under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_59",
+    "task_description": "examine the alarmclock with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_87",
+    "task_description": "look at laptop under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_99",
+    "task_description": "look at cellphone under the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "look_at_X_under_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_121",
+    "task_description": "examine the alarmclock with the desklamp.",
+    "assigned_task_type": 2,
+    "assigned_task_type_name": "look_at_obj_in_light",
+    "rule": "examine_X_with_desklamp"
+  },
+  {
+    "trajectory_id": "alfworld_8",
+    "task_description": "clean some ladle and put it in cabinet.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_22",
+    "task_description": "put a clean soapbar in cabinet.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_23",
+    "task_description": "clean some potato and put it in microwave.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_26",
+    "task_description": "clean some soapbar and put it in garbagecan.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_28",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_37",
+    "task_description": "put a clean fork in drawer.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_38",
+    "task_description": "put a clean soapbar in garbagecan.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "put_a_clean_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_40",
+    "task_description": "clean some potato and put it in microwave.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_44",
+    "task_description": "clean some apple and put it in microwave.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_46",
+    "task_description": "clean some soapbar and put it in countertop.",
+    "assigned_task_type": 3,
+    "assigned_task_type_name": "pick_clean_then_place_in_recep",
+    "rule": "clean_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_2",
+    "task_description": "heat some plate and put it in countertop.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_18",
+    "task_description": "put a hot tomato in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_29",
+    "task_description": "put a hot potato in sidetable.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_34",
+    "task_description": "heat some cup and put it in cabinet.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_43",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_48",
+    "task_description": "heat some mug and put it in coffeemachine.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_58",
+    "task_description": "put a hot apple in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_62",
+    "task_description": "heat some apple and put it in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_64",
+    "task_description": "put a hot cup in shelf.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "put_a_hot_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_69",
+    "task_description": "heat some egg and put it in garbagecan.",
+    "assigned_task_type": 4,
+    "assigned_task_type_name": "pick_heat_then_place_in_recep",
+    "rule": "heat_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_5",
+    "task_description": "put a cool plate in shelf.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_7",
+    "task_description": "cool some lettuce and put it in garbagecan.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_11",
+    "task_description": "put a cool cup in shelf.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_14",
+    "task_description": "cool some bowl and put it in cabinet.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_30",
+    "task_description": "put a cool bowl in countertop.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_33",
+    "task_description": "cool some tomato and put it in microwave.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_35",
+    "task_description": "cool some tomato and put it in microwave.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_50",
+    "task_description": "cool some cup and put it in microwave.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_52",
+    "task_description": "cool some mug and put it in coffeemachine.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "cool_some_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_54",
+    "task_description": "put a cool cup in microwave.",
+    "assigned_task_type": 5,
+    "assigned_task_type_name": "pick_cool_then_place_in_recep",
+    "rule": "put_a_cool_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_0",
+    "task_description": "find two laptop and put them in bed.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_1",
+    "task_description": "put two cellphone in dresser.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_13",
+    "task_description": "find two spraybottle and put them in toilet.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_25",
+    "task_description": "put two book in diningtable.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_27",
+    "task_description": "put two toiletpaper in cabinet.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_42",
+    "task_description": "find two cd and put them in sidetable.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_45",
+    "task_description": "find two book and put them in bed.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "find_two_X_and_put"
+  },
+  {
+    "trajectory_id": "alfworld_53",
+    "task_description": "put two spraybottle in drawer.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_55",
+    "task_description": "put two book in bed.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in"
+  },
+  {
+    "trajectory_id": "alfworld_56",
+    "task_description": "put two cup in microwave.",
+    "assigned_task_type": 6,
+    "assigned_task_type_name": "pick_two_obj_and_place",
+    "rule": "put_two_X_in"
+  }
+]

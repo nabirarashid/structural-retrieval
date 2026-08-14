@@ -1,0 +1,46 @@
+[
+  {
+    "provider": "gemini",
+    "tier": "easy",
+    "orig_hit1": 0.122,
+    "orig_hit10": 0.976,
+    "dumb_reranked_hit1": 0.044,
+    "recoverable_gap": 0.854,
+    "gap_closed": -0.078,
+    "share_of_recoverable_gap_closed": -0.09133489461358314,
+    "elapsed_seconds": 22.196244955062866
+  },
+  {
+    "provider": "gemini",
+    "tier": "hard",
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.554,
+    "dumb_reranked_hit1": 0.002,
+    "recoverable_gap": 0.554,
+    "gap_closed": 0.002,
+    "share_of_recoverable_gap_closed": 0.003610108303249097,
+    "elapsed_seconds": 30.0079128742218
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "easy",
+    "orig_hit1": 0.086,
+    "orig_hit10": 0.952,
+    "dumb_reranked_hit1": 0.044,
+    "recoverable_gap": 0.866,
+    "gap_closed": -0.041999999999999996,
+    "share_of_recoverable_gap_closed": -0.04849884526558891,
+    "elapsed_seconds": 442.4582209587097
+  },
+  {
+    "provider": "deepinfra",
+    "tier": "hard",
+    "orig_hit1": 0.0,
+    "orig_hit10": 0.21,
+    "dumb_reranked_hit1": 0.0,
+    "recoverable_gap": 0.21,
+    "gap_closed": 0.0,
+    "share_of_recoverable_gap_closed": 0.0,
+    "elapsed_seconds": 55.211085081100464
+  }
+]
