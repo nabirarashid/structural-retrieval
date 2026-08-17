@@ -322,6 +322,12 @@ reranker still gets it wrong — is the same across both domains even where judg
 
 ## 4. Task 3: third reranker judge — infeasibility finding, not a result
 
+> **Superseded 2026-08-17.** Claude Haiku 4.5 was retried once `ANTHROPIC_API_KEY` was added to the
+> project and ran successfully as a full third judge in both domains (0.10–0.85% truncation, well
+> under threshold). `results/FINAL_NUMBERS.md` §1/§2 are authoritative for the Haiku results and
+> the corrected third-judge status; this section is kept as-is below for the historical record of
+> the two failed attempts (credential gap, then DeepSeek's structural failure), not rewritten.
+
 A third math-domain reranker judge (beyond Gemini and GLM) was attempted, specifically to add a
 third data point to the judge-magnitude spread noted throughout §2 and §3.4–3.5 of the full
 writeup. Two candidates were tried; both failed for reasons unrelated to the underlying research
@@ -414,6 +420,8 @@ not narrowed or widened by a third data point that was never obtained.
   reports what's common at the framing level, not a claim of mechanistic identity.
 - **Not** a completed third-judge robustness check for the math-domain reranker findings — Task 3
   was attempted and abandoned; the judge-magnitude spread is still based on two judges only.
+  > **Superseded 2026-08-17** — see the banner in §4. A third judge did succeed; the spread is now
+  > three judges in both domains. `results/FINAL_NUMBERS.md` §1/§2 are authoritative.
 - **Not** evidence that lexical/dumb reranking is a generally good or bad strategy independent of
   dataset construction — §3.3 and §5 are explicit that the math-domain and trajectory-domain results
   point in opposite directions for a structural reason (adversarial vs. incidental surface

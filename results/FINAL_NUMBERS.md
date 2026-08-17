@@ -326,10 +326,15 @@ DeepSeek run used instead. No GLM-vs-DeepSeek solver comparison was ever compute
 5. **Solver-cap increases insufficient on their own:** 8,192→16,384 tokens still left 50% truncated
    on a worst-case-biased paired pretest (down from 80%); 16,384→32,768 in the final run still left
    ~31% truncated (§3 above) — truncation tracks problem difficulty, not just budget.
-6. **Task 3 third-judge infeasibility:** Claude Haiku 4.5 ruled out (no Anthropic API credential
-   anywhere in the project); DeepSeek-v4-flash as reranker judge showed unbounded reasoning — still
-   `finish_reason=length`, empty `content`, at 24,000 tokens / 227 seconds on one query. Third judge
-   dropped entirely; math-domain judge comparison stayed at 2 judges.
+6. **Third judge — two failed attempts, then success (updated 2026-08-17):** Claude Haiku 4.5 was
+   first ruled out for lack of an Anthropic API credential; DeepSeek-v4-flash was tried next and
+   failed structurally as a reranker judge — still `finish_reason=length`, empty `content`, at
+   24,000 tokens / 227 seconds on one query, matching GLM-j's chain-of-thought truncation pattern
+   across a second provider. The comparison was closed at 2 judges at that time. Once
+   `ANTHROPIC_API_KEY` was added, Claude Haiku 4.5 was retried and **succeeded** as a full third
+   judge in both domains (0.10–0.85% truncation, well under threshold) — see §1/§2's Haiku blocks.
+   Not a repair of the original incident; the credential gap and DeepSeek's failure were both real
+   at the time and are kept here as the record of what actually happened, with the resolution noted.
 7. **GLM solver run stall (utility curve):** 6.5 hours for 49% completion vs. ~1.6h predicted, under
    sustained shared-lab-endpoint load — abandoned in favor of a DeepSeek-solver rerun rather than
    waited out.
@@ -349,5 +354,13 @@ pinning back to a mutually-compatible set rather than upgrading further; see 202
 
 - Gemini: **$8.45**
 - DeepSeek: **$3.49**
-- Claude: **$0.00** (no Anthropic credential ever existed in this project; nothing was ever spent here)
-- **Total: $11.94**, across 1,972 recorded API calls
+- Claude: **$5.30** (Claude Haiku 4.5, third reranker judge — §1/§2)
+- **Total: $17.24**, across **4,338** recorded API calls (recomputed directly from
+  `results/SPEND.json`, not restated from the prior $11.94/1,972 figure)
+
+Call-count reconciliation, since it doesn't fall out of the dollar total alone: the 2,365 Claude
+calls break down as 2,354 (the full two-domain run) + 10 (the pilot) + 1 (the trajectory-domain
+pre-estimate probe) — all three billed and recorded, since the pilot and probe used real prompts
+against the live API, not simulated ones. Pre-Haiku total was 1,973 calls (4,338 − 2,365), one more
+than the prior digest's stated 1,972 — a pre-existing rounding/timing discrepancy from before this
+update, not something introduced here.
