@@ -2,15 +2,18 @@
 
 Flat, citable list of every number this project's paper draft would cite, one line each, with a
 95% CI where one was computed. Source file/script named for every line so a number can be checked
-back against raw output. Compiled 2026-08-14, after the last planned experiment (the n=118
-trajectory reranker, `results/task_traj_reranker_n118.json`) landed. **This digest is the
-authoritative numbers source — where it disagrees with `RESULTS_SUMMARY.md` or
-`RETRIEVAL_WRITEUP.md`, this digest wins; discrepancies are listed immediately below.**
+back against raw output. First compiled 2026-08-14; updated 2026-08-17 with Claude Haiku 4.5 as a
+third reranker judge (both domains), a complete-answers-only robustness check on the utility curve,
+and reconciled truncation counts against `paper_draft_v3.md` (found at `results/paper_draft_v3.md`
+as of this update — the note below about it being unfound is now stale, kept for the record of
+what was true at the 08-14 compilation). **This digest is the authoritative numbers source — where
+it disagrees with `RESULTS_SUMMARY.md`, `RETRIEVAL_WRITEUP.md`, or `paper_draft_v3.md`, this digest
+wins; discrepancies are listed immediately below.**
 
-Note on scope: `paper_draft_v3.md`, referenced as already existing, was not found anywhere in this
-repository or searched locations — this digest was compiled from `results/` and the project's raw
-caches directly, not reconciled against that file. If it exists elsewhere, check its numbers against
-this digest before using it.
+Note on scope (as of 2026-08-14, now stale): `paper_draft_v3.md`, referenced as already existing,
+was not found anywhere in this repository or searched locations at that time — this digest was
+compiled from `results/` and the project's raw caches directly, not reconciled against that file.
+It has since been added under `results/` and is now cross-checked (see Discrepancies below).
 
 ## Discrepancies found
 
@@ -27,6 +30,22 @@ this digest before using it.
   it was in fact adopted (MiniLM-L6-v2 is one of the three trajectory embedders used throughout §2).
   **This is exactly the kind of check this digest exists to catch — flag to the author before the
   LaTeX pass.**
+- **Paper Table 1 is missing a bracket, not missing data.** Table 1 shows a bootstrap CI for
+  Gemini-emb/Easy/Hit@1 (`12.2% [9.4, 15.2]`) but not for Qwen-emb/Easy/Hit@1 (`8.6%`, no bracket)
+  — an asymmetry that can't stand as written. `task2b_bootstrap_cis.json` has both:
+  Qwen-emb/Easy/Hit@1 is `8.6% [6.2%, 11.0%]`. The digest below (§1) now includes it; this same gap
+  existed in this digest's own first draft too (copied without checking) and is fixed in both
+  places, not just flagged in one.
+- **Paper §9 Limitations is now stale on the third-judge question — not a fix, a flag for
+  integration.** It currently reads: "one was attempted and abandoned for structural reasons," and
+  §8 incident (6) describes only the DeepSeek attempt. Both were accurate when written. As of this
+  update, Claude Haiku 4.5 was successfully run as a full third judge in both domains (§1 and §2
+  below) — the "third judge" story is no longer "attempted and abandoned," it's "two attempted, one
+  succeeded with a real result": Haiku is the clear outlier in the math domain (tier-inverted
+  relative to both other judges) and closely corroborates Gemini in the trajectory domain (where GLM
+  is the outlier instead). This changes what §9's judge-count caveat should say and adds a citable
+  result to §4/§5, not just a footnote. Per instruction, `paper_draft_v3.md` itself was not touched
+  — this is the flag for the integration pass, not the integration.
 - Everything else: the math-domain and Task 2A/2B/2C numbers below were re-pulled directly from
   their source JSON files and match `RESULTS_SUMMARY.md`/`RETRIEVAL_WRITEUP.md` exactly (both were
   written from the same source files). §3 Utility has no prior writeup to disagree with
@@ -44,7 +63,7 @@ this digest before using it.
 **Baseline retrieval** (`results/baseline_{gemini,deepinfra}[_hard].json`; CIs: `task2b_bootstrap_cis.json`):
 - Gemini-embedding-001, Easy: STRICT Hit@1 12.2%, Hit@5 89.8% [87.0,92.4], Hit@10 97.6% [96.2,98.8]
 - Gemini-embedding-001, Hard: STRICT Hit@1 **0.0%** [0.0,0.0], Hit@5 10.0% [7.4,12.8], Hit@10 55.4% [51.0,59.8]
-- Qwen3-Embedding-8B (DeepInfra), Easy: STRICT Hit@1 8.6%, Hit@5 86.8% [83.8,89.6], Hit@10 95.2% [93.2,97.0]
+- Qwen3-Embedding-8B (DeepInfra), Easy: STRICT Hit@1 8.6% [6.2,11.0], Hit@5 86.8% [83.8,89.6], Hit@10 95.2% [93.2,97.0]
 - Qwen3-Embedding-8B (DeepInfra), Hard: STRICT Hit@1 **0.0%** [0.0,0.0], Hit@5 2.8% [1.4,4.4], Hit@10 21.0% [17.6,24.6]
 - LENIENT Hit@10: 100% (Gemini), 99.0% (DeepInfra) — both tiers, since LENIENT is tier-invariant
 - Gate check vs. paper Table 4 (Easy, Gemini): ours 12.2/89.8/97.6 vs. paper's 11.36/90.68/96.93 (Strict R@1/R@5/R@10) — within ~1pt
@@ -76,6 +95,24 @@ this digest before using it.
 - GLM judge / DeepInfra-embed / Easy: 12.0% [7.3,16.6]
 - GLM judge / DeepInfra-embed / Hard: 18.1% [10.5,26.7]
 
+**LLM reranker, Claude Haiku 4.5 (third judge, terse prompt), all 4 cells, with CIs**
+(`scripts/task2_haiku_reranker_full.py`, `results/task2_haiku_reranker_full.json`; 2,000 calls,
+$0.74–$1.46 running cost per config; truncation audit: 2/2000 capped (0.10%), 2/2000 unparsed
+(0.10%), 2/2000 non-`end_turn` (0.10%) — well under the 10% threshold, proceeded):
+- Gemini-embed / Easy: **58.1%** [52.7,63.3]
+- Gemini-embed / Hard: 5.4% [2.9,8.3]
+- DeepInfra-embed / Easy: **63.3%** [58.2,68.1]
+- DeepInfra-embed / Hard: 6.7% [1.9,12.4]
+
+**Haiku is the clear outlier in the math domain, and not just in magnitude — the direction of its
+tier effect inverts relative to both other judges.** Gemini's hard-tier gains exceed its easy-tier
+gains (44.4% > 20.6%, Gemini-embed); GLM is roughly flat across tiers (10.5% vs 10.1%,
+Gemini-embed). Haiku is the opposite of both: dramatically stronger on easy (58–63%, 1.5–2.8x
+either other judge) and dramatically weaker on hard (5–7%, below even GLM's 10.5–18.1%) — the one
+judge whose hard-tier performance actually degrades the way naive intuition would predict from a
+heavier disguise, while the other two do not. This is a third, independent axis of judge-magnitude
+non-portability beyond what §2 of `RESULTS_SUMMARY.md` already documents from two judges.
+
 **LLM reranker, Gemini CoT prompt — 4 cells, no CI computed** (`llm_reranker_full_cot_gemini.json`,
 `llm_reranker_cot_full_comparison.md`; Task 2B explicitly scoped CoT numbers out of the CI pass):
 - Gemini-embed / Easy: 44.7%
@@ -96,6 +133,14 @@ question). GLM-CoT numbers are excluded from every citable result in this projec
 - Gemini judge / DeepInfra-embed: well_known 15.8%, rest 7.7%, gap +8.1pt [−1.4,+18.6]
 - GLM judge / Gemini-embed: well_known 7.0%, rest 5.6%, gap +1.4pt [−5.0,+8.8]
 - GLM judge / DeepInfra-embed: well_known 8.8%, rest 3.2%, gap +5.6pt [−1.2,+13.9]
+- **Haiku judge / Gemini-embed: well_known 7.0%(n=57), rest 2.5%(n=443), gap +4.5pt [−1.6,+12.0]**
+- **Haiku judge / DeepInfra-embed: well_known 3.5%(n=57), rest 1.1%(n=443), gap +2.4pt [−1.6,+7.9]**
+
+Both Haiku cells are directionally positive, like 3 of the 4 existing cells, and both CIs include
+zero, like those same 3 cells. Haiku does not independently confirm contamination at significance
+in either candidate set — it adds a third judge to the "directionally consistent, not individually
+significant" bucket rather than breaking the tie. The Gemini-judge/Gemini-embed cell remains the
+only one of now six judge/candidate-set combinations whose CI clears zero.
 
 **Deployment divergence, Qwen3-Embedding-8B: DeepInfra vs. the lab deployment** (`deepinfra_vs_labembed.json`/`.md`, `deepinfra_vs_labembed_paired.json`):
 - Raw cosine similarity, 500 identical texts: mean **0.9947**, median 0.9950 (both already unit-norm)
@@ -143,7 +188,11 @@ question). GLM-CoT numbers are excluded from every citable result in this projec
 **LLM reranker, n=118, both judges, all 3 embedders, with bootstrap CIs**
 (`results/task_traj_reranker_n118.json`; 708 calls, net new spend $0.30; truncation 1.1% capped /
 1.3% unparsed, isolated to GLM, diagnosed as GLM's known terse-prompt profile, proceeded per the
-<=10% threshold):
+<=10% threshold). **Exact reconciled counts** (verified directly against the raw cache, all 708
+records): capped 8/708 (1.13%), unparsed 9/708 (1.27%), overlap (both capped and unparsed) 4,
+**union (capped OR unparsed) 13/708 (1.84%)** — the paper's "1.8%" figure is this union, not a sum
+of the two individual rates (which would double-count the 4 overlapping records as 2.4%). Both the
+paper's figure and this digest's individual rates are correct; they measure different things.
 - labembed / Gemini: Hit@1 37.3% (orig 17.8%), share closed 42.6% [27.3,59.3]
 - labembed / GLM: Hit@1 49.2% (orig 17.8%), share closed **68.5%** [50.9,87.5]
 - gemini-embed / Gemini: Hit@1 40.7% (orig 15.3%), share closed 45.5% [31.9,59.7]
@@ -154,6 +203,31 @@ question). GLM-CoT numbers are excluded from every citable result in this projec
 - old_40 vs new_78 split: labembed Gemini 61.5%/36.6%, labembed GLM 69.2%/68.3%, gemini-embed Gemini 62.5%/40.0%, gemini-embed GLM 75.0%/76.0%, MiniLM Gemini 56.3%/60.0%, MiniLM GLM 75.0%/75.0%
 - Failure taxonomy, pooled misses (SIBLING/NEAR_MISS/OTHER/unparsed): labembed-Gemini 85.1%/13.5%/1.4%/0.0% (n=74 miss); labembed-GLM 88.3%/11.7%/0.0%/0.0% (n=60); gemini-Gemini 85.7%/14.3%/0.0%/0.0% (n=70); gemini-GLM 80.0%/14.0%/2.0%/4.0% (n=50); MiniLM-Gemini 74.3%/20.3%/5.4%/0.0% (n=74); MiniLM-GLM 72.3%/7.7%/9.2%/10.8% (n=65)
 - SIBLING (literal same-object duplicate) dominates every cell (72–88%) — structural mirror of math's `own_nm_near_miss`
+
+**LLM reranker, Claude Haiku 4.5 (third judge), all 3 embedders, with CIs**
+(`scripts/task2_haiku_reranker_full.py`, `results/task2_haiku_reranker_full.json`; 354 calls, $3.84
+running cost for this domain; truncation audit: 3/354 capped (0.85%), 3/354 unparsed (0.85%), 3/354
+non-`end_turn` (0.85%) — well under threshold, proceeded):
+- labembed-Qwen3-8B: Hit@1 17.8%→39.0%, share closed 46.3% [30.2,63.0], taxonomy (n_miss=72): SIBLING 84.7%, NEAR_MISS 11.1%, OTHER 2.8%, unparsed 1.4%
+- gemini-embedding-001: Hit@1 15.3%→39.8%, share closed 43.9% [30.4,57.9], taxonomy (n_miss=71): SIBLING 85.9%, NEAR_MISS 12.7%, OTHER 1.4%, unparsed 0.0%
+- MiniLM-L6-v2: Hit@1 9.3%→32.2%, share closed 48.2% [32.2,64.8], taxonomy (n_miss=80): SIBLING 75.0%, NEAR_MISS 17.5%, OTHER 5.0%, unparsed 2.5%
+
+**In the trajectory domain, GLM — not Haiku — is the outlier, confirming the §3.6 finding rather
+than complicating it.** Haiku's share-closed (43.9–48.2%) sits close to Gemini's (42.6–58.9%) on
+every embedder, while GLM's (68.5–75.8%) is well above both, non-overlapping with either. Two
+independent judges (Gemini, Haiku) now converge on the trajectory domain's magnitude; GLM alone
+diverges upward. SIBLING dominance (75–86%) replicates a third time, the same failure-mode
+consistency noted for the other two judges.
+
+**Cross-domain synthesis — which judge is the outlier depends entirely on domain, confirmed with a
+third judge:** in the math domain, Haiku is the clear outlier (dramatically higher than both other
+judges on easy tier, dramatically lower than both on hard tier — a tier-inversion neither Gemini
+nor GLM shows). In the trajectory domain, GLM is the clear outlier (well above both Gemini and
+Haiku on every embedder) while Gemini and Haiku converge closely. No judge is "the odd one out" in
+general — each domain has a different outlier, and it's a different judge each time. This adds a
+third, independent line of evidence (beyond the two-judge magnitude spread already documented in
+`RESULTS_SUMMARY.md` §5) that no single reranking effect size, or even judge ranking, is portable
+across domains.
 
 **Query-set expansion**: 40 original + 78 new (from 134 `hkust-nlp/agentboard` ALFWorld `valid_unseen`
 episodes, 78 unique goal strings) = 118 total, vs. ~150 target — shortfall disclosed, not patched
@@ -210,6 +284,15 @@ solution (`scripts/run_utility_curve_deepseek.py`, `utility_curve_cache/utility_
 - none vs. gold: recovered 10, regressed 13, **p=0.6776** — not significant
 - (Grader B, for robustness: none vs. dumb p=0.3075; none vs. gold p=0.8318 — also not significant either grader)
 - **Neither retrieval condition significantly changes solver accuracy vs. no context, under either grader.** Retrieval headroom exists (10–13 queries move in each direction) but nets out to noise at n=210.
+
+**Robustness check: complete-answers-only subset** (queries with `finish_reason=stop` in all three
+conditions; computed directly from `utility_curve_cache/utility_curve_deepseek_cache.jsonl`, no new
+API calls) — **n=127 of 210 (60.5%)**:
+- none: correct_a 126/127 (99.2%), correct_b 127/127 (100.0%)
+- dumb: correct_a 125/127 (98.4%), correct_b 125/127 (98.4%)
+- gold: correct_a 124/127 (97.6%), correct_b 127/127 (100.0%)
+- McNemar (both graders, both comparisons): 0–2 discordant pairs out of 126–127, p in [0.50, 1.00] — not significant, same conclusion as the full sample
+- **This does not "defuse" the 31%-truncation caveat — it reframes what the caveat means.** Accuracy on the complete-answers subset is near-ceiling (97–100%), not the ~69% headline figure. In the `none` condition, *exactly* 146 of 210 queries were non-truncated and *exactly* 146 were scored correct — every non-truncated answer was right, every truncated one was wrong. The widely-citable "69.5% zero-shot accuracy" is closer to a proxy for "did the derivation finish in time" than a measure of solving ability. The null (retrieval doesn't move accuracy) still holds on the clean subset, but because there is essentially no headroom left once truncation is controlled for — not because retrieval genuinely fails to help a solver with real headroom to close. Report both framings; they are not interchangeable.
 
 **Original 6-condition pilot (superseded, correction banner in `results/rag_pilot.md`)** —
 kept for reference only, not citable as a clean result:

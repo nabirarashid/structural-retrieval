@@ -41,6 +41,7 @@ what each one unlocks:
 | `GEMINI_API_KEY` | `gemini-embedding-001` embeddings; `gemini-3.1-flash-lite` reranker judge; `gemini-3-flash-preview` RAG grader | Yes — [aistudio.google.com](https://aistudio.google.com/apikey) |
 | `DEEPINFRA_API_KEY` | Qwen3-Embedding-8B (DeepInfra-hosted) embeddings; DeepInfra solver comparison | Yes — [deepinfra.com](https://deepinfra.com) |
 | `DEEPSEEK_API_KEY` | `deepseek-v4-flash` as the utility-curve solver (native API, not DeepInfra's checkpoint) | Yes — [platform.deepseek.com](https://platform.deepseek.com) |
+| `ANTHROPIC_API_KEY` | `claude-haiku-4-5` as the third reranker judge (both domains) — see `scripts/task2_haiku_reranker_full.py` | Yes — [console.anthropic.com](https://console.anthropic.com) |
 | `MANTIS_EMBEDDINGS_BASE_URL` | The second Qwen3-Embedding-8B deployment used in the §4 "deployment divergence" comparison | **No — private MIT CSAIL lab host, campus-network only** |
 | `MANTIS_LLM_BASE_URL` | `glm-5.2-fp8` as the second reranker judge / RAG grader B | **No — private MIT CSAIL lab host, campus-network only** |
 
@@ -54,18 +55,17 @@ endpoint. Every other result in the paper uses only publicly-obtainable API acce
 `results/*.json` and `results/*.md` are committed, final, and readable/citable with nothing but a
 text editor. `results/FINAL_NUMBERS.md` is the flat digest of all of them; start there.
 
-**No script in `scripts/` runs end-to-end on a clean clone, and not only because of credentials.**
-Verified directly (`git clone` into a scratch directory, fresh venv, no `.env`): the very first thing
-every script needs is the raw source data under `data/` (math) or the trajectory corpus fetched into
-a local path (`/tmp/proced_mem_bench_check/...` in the scripts as committed) — both gitignored
-correctly (they're the upstream datasets, not ours to vendor), but **this repository does not
-currently contain a script that fetches or rebuilds either one.** `src/data.py` and every trajectory
-script that reads from that scratch path assume the data is already sitting there; neither auto-
-downloads it. This was found by the clean-clone test, not assumed — see "Data" below for exactly
-what's missing and what a fresh setup needs to do about it before anything runs.
+**No script in `scripts/` runs end-to-end on a clean clone with zero setup — but the setup is now
+one command per domain, not a recovery project.** Verified directly (`git clone` into a scratch
+directory, fresh venv, no `.env`): the first thing every script needs is the raw source data under
+`data/` (math) or the trajectory corpus at a local scratch path (trajectory domain) — both
+gitignored correctly (they're the upstream datasets, not ours to vendor). Run the three fetch
+scripts (`scripts/fetch_mathnet_retrieve.py`, `scripts/fetch_procedural_memory_benchmark.py`,
+`scripts/fetch_alfworld_valid_unseen.py` — see "Data" below) and this step is done; none need
+credentials, since all three sources are public.
 
-Once `data/` exists, the next blocker is credentials: every script recomputes its numbers from raw
-embeddings (`embeddings_cache/`) and/or per-query judge/grader responses (`*.jsonl` caches), both
+Once the data is fetched, the next blocker is credentials: every script recomputes its numbers from
+raw embeddings (`embeddings_cache/`) and/or per-query judge/grader responses (`*.jsonl` caches), both
 gitignored (too large to vendor, and the `*.jsonl` caches embed the source datasets' own query/
 problem text in their cached prompts, which isn't ours to redistribute either). `VectorCache`
 (`src/vector_cache.py`) never auto-fetches a missing embedding — every embedding has to be computed
@@ -74,19 +74,21 @@ once via a live API call before any downstream script can read it back. The one 
 rankings for the other two embedders in the same pass, so it still needs at least `GEMINI_API_KEY`
 (or `DEEPINFRA_API_KEY`) to complete a run.
 
-Practically: to regenerate any specific number from scratch, first populate `data/` (see "Data"),
-then get `GEMINI_API_KEY` (cheapest path — it covers embeddings, one reranker judge, and one grader)
-and expect the relevant script to spend a small amount rebuilding the caches it needs before it
-produces new output. Total historical spend
-for every result in this repo was $11.94 (`results/SPEND.json`); no single script comes close to
-that.
+Practically: to regenerate any specific number from scratch, first run the fetch scripts (see
+"Data"), then get `GEMINI_API_KEY` (cheapest path — it covers embeddings, one reranker judge, and
+one grader) and expect the relevant script to spend a small amount rebuilding the caches it needs
+before it produces new output. Total historical spend for every result in this repo was $17.24
+(`results/SPEND.json`); no single script comes close to that.
 
 ## Reproduction: paper section → script → raw output
 
-Mirrors `results/paper_draft_v3.md`'s own section numbers.
+Mirrors `results/paper_draft_v3.md`'s own section numbers. **Run the data-fetch scripts first** (see
+"Data" below) — every row after this one assumes `data/` and the trajectory scratch path already
+exist.
 
 | Paper §, Table/Fig | Script(s) | Raw output |
 |---|---|---|
+| Data setup (run before anything else) | `scripts/fetch_mathnet_retrieve.py`, `scripts/fetch_procedural_memory_benchmark.py`, `scripts/fetch_alfworld_valid_unseen.py` | `data/{easy,medium,hard}/...`, `/tmp/proced_mem_bench_check/...`, `/tmp/alfworld_test.jsonl` — each SHA256/count-verified against what every result below was computed on |
 | §3 Math validation gate | `scripts/run_baseline.py` | `results/baseline_gemini.json` |
 | §3 Trajectory validation gate | `scripts/validate_minilm_reproduction.py` | `results/minilm_validation_gate.json` |
 | §4 Table 1, baseline | `scripts/run_baseline.py`, `scripts/run_hard_tier.py` | `results/baseline_{gemini,deepinfra}[_hard].json` |
@@ -106,7 +108,8 @@ Mirrors `results/paper_draft_v3.md`'s own section numbers.
 | §6 superseded 6-condition pilot | `scripts/run_rag_pilot.py` | `results/rag_pilot.md` (correction banner), `_discarded_glm_solver_pilots/` |
 | §6 abandoned GLM solver run | `scripts/run_utility_curve_glm.py` | `utility_curve_cache/utility_curve_glm_cache.jsonl` (partial, unused) |
 | §8 integrity incidents | no single script — see `results/JOURNEY_LOG.md` for the dated diagnosis of each, and `results/FINAL_NUMBERS.md` §4 for the one-line summary of all eight |
-| Attempted, abandoned third judge | `scripts/task3_deepseek_third_judge.py` | none — infeasibility established by direct probing, not a full run |
+| Third judge, attempt 1 (DeepSeek) — abandoned | `scripts/task3_deepseek_third_judge.py` | none — infeasibility established by direct probing (unbounded reasoning), not a full run |
+| Third judge, attempt 2 (Claude Haiku 4.5) — succeeded, both domains | `scripts/task2_haiku_pilot.py` (10-call pilot), `scripts/task2_haiku_reranker_full.py` | `results/task2_haiku_reranker_full.json` — Haiku is the outlier in the math domain (tier-inverted vs. both other judges), closely corroborates Gemini in the trajectory domain (where GLM is the outlier instead). **Not yet reflected in `paper_draft_v3.md` §8/§9, which still describe the third judge as abandoned — see the flag in `results/FINAL_NUMBERS.md`'s Discrepancies section.** |
 
 **The numbers digest.** `results/FINAL_NUMBERS.md` is the single authoritative, flat list of every
 number the paper cites, with its source file and a 95% CI where one was computed — read it before
@@ -130,29 +133,42 @@ mechanisms — worth stating plainly rather than leaving to infer:
 No dataset files from either source are committed anywhere in this repo (verified directly: a
 full-history `git log` and a working-tree scan of every file, not just tracked ones, turn up none).
 
-**Known gap, found by the clean-clone test, not yet closed:** neither domain currently has a fetch
-script in this repository. `src/data.py` expects `data/{easy,medium,hard}/{corpus.jsonl,
-queries.jsonl,qrels/test.tsv}` (BEIR format) to already exist; the trajectory scripts expect the
-released procedural-memory-benchmark repo already checked out at a local scratch path. Neither is
-downloaded automatically. Until a fetch/build script is added:
+**Fetch scripts (resolved 2026-08-17).** The gap noted by the clean-clone test — no script existed
+to rebuild either domain's data from a fresh clone — is closed. Three scripts, each downloading
+from the real upstream source and verifying every file by SHA256 (and, where content rather than
+byte-identity is what matters downstream, by exact count/text match) against what this project's
+results were actually computed on — **failing loudly, not silently, on any mismatch**:
 
-- **Math**: the raw MathNet dataset is on Hugging Face at
-  [`ShadenA/MathNet`](https://huggingface.co/datasets/ShadenA/MathNet) (`datasets` library,
-  `load_dataset("ShadenA/MathNet", split="train")`). The BEIR-format retrieval split used by this
-  project's `data/` directory (`::eq::`/`::nm::`-suffixed corpus IDs, tiered `easy`/`medium`/`hard`
-  query sets) was built from that raw dataset at some earlier point in this project, but the
-  conversion script itself was not found in this repository during this pass and needs to be either
-  recovered or rewritten before `data/` can be regenerated from a clean clone.
-- **Trajectories**: the source is the released procedural-memory benchmark from Ishant and Krishnan
-  (2025) (arXiv:2511.21730) — no repository URL for it was found anywhere in this codebase either;
-  check the paper itself for the release link.
+```bash
+python3 scripts/fetch_mathnet_retrieve.py           # -> data/{easy,medium,hard}/...
+python3 scripts/fetch_procedural_memory_benchmark.py # -> /tmp/proced_mem_bench_check/...
+python3 scripts/fetch_alfworld_valid_unseen.py       # -> /tmp/alfworld_test.jsonl
+```
 
-**Do not guess at either script** — get the exact HF dataset config / release URL from the paper
-authors or the papers themselves before writing a fetch step, rather than reconstructing the BEIR
-split's exact tiering/ID scheme by inference, which risks silently producing different data from
-what every number in this repository was computed against.
+None require credentials — all three sources are public.
 
-Once obtained, both datasets remain governed by their own licenses, not this repository's — see
+- **Math**: `data/{easy,medium,hard}/{corpus.jsonl,queries.jsonl,qrels/test.tsv}` comes from
+  [`ShadenA/MathNet-Retrieve`](https://huggingface.co/datasets/ShadenA/MathNet-Retrieve) — a
+  **separate** Hugging Face dataset repo from the raw problem corpus (`ShadenA/MathNet`), which
+  only has the underlying problems, not the equivalence/near-miss retrieval pairing. Verified
+  byte-exact (SHA256) against the data every math-domain result in this repo was computed on, all 9
+  files.
+- **Trajectories**: the AgentInstruct/ALFWorld corpus comes from
+  [`github.com/qpiai/Proced_mem_bench`](https://github.com/qpiai/Proced_mem_bench) (Ishant and
+  Krishnan, 2025, arXiv:2511.21730), pinned to the exact commit this project's results were computed
+  against, verified by SHA256 + trajectory/query count on both files every trajectory-domain script
+  reads. The 78 new `valid_unseen` queries (§5 of the paper) come from
+  [`hkust-nlp/agentboard`](https://huggingface.co/datasets/hkust-nlp/agentboard) on Hugging Face —
+  verified by SHA256, episode/unique-goal count, and a full text cross-check against every one of
+  the 78 stored query texts this project used (78/78 confirmed present).
+- **Why this matters beyond the original gap**: the trajectory corpus's local scratch copy actually
+  *disappeared* mid-project — a routine `/tmp` cleanup between sessions cleared it, `.git/config`
+  included, with no fetch script yet to recover it (see the 2026-08-17 entry in `JOURNEY_LOG.md`).
+  These scripts are that fix, not just a clean-clone nicety — re-run them any time `/tmp` gets swept.
+  Confirmed after writing them: re-running the n=118 trajectory reranker end-to-end against
+  freshly-fetched data reproduces `results/task_traj_reranker_n118.json` byte-for-byte.
+
+Both datasets remain governed by their own licenses, not this repository's — see
 `results/paper_draft_v3.md`'s References for full citations:
 
 - MathNet-Retrieve: Alshammari et al., *MathNet*, ICLR 2026 (arXiv:2604.18584)

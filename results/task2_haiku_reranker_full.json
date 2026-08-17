@@ -1,0 +1,107 @@
+{
+  "math": {
+    "gemini/easy": {
+      "n": 500,
+      "orig_h1": 0.122,
+      "reranked_h1": 0.618,
+      "share_closed_pct": 58.07962529274005,
+      "ci_lo": 52.744304106032345,
+      "ci_hi": 63.32612349306851
+    },
+    "gemini/hard": {
+      "n": 500,
+      "orig_h1": 0.0,
+      "reranked_h1": 0.03,
+      "share_closed_pct": 5.415162454873645,
+      "ci_lo": 2.8880866425992777,
+      "ci_hi": 8.303249097472923
+    },
+    "deepinfra/easy": {
+      "n": 500,
+      "orig_h1": 0.086,
+      "reranked_h1": 0.634,
+      "share_closed_pct": 63.27944572748269,
+      "ci_lo": 58.18181818181818,
+      "ci_hi": 68.13953488372094
+    },
+    "deepinfra/hard": {
+      "n": 500,
+      "orig_h1": 0.0,
+      "reranked_h1": 0.014,
+      "share_closed_pct": 6.666666666666667,
+      "ci_lo": 1.9047619047619049,
+      "ci_hi": 12.380952380952381
+    },
+    "contamination": {
+      "gemini": {
+        "well_known_rate": 0.07017543859649122,
+        "rest_rate": 0.024830699774266364,
+        "gap_pts": 4.5344738822224855,
+        "ci_lo": -1.580135440180587,
+        "ci_hi": 12.003485010494632,
+        "n_well_known": 57,
+        "n_rest": 443
+      },
+      "deepinfra": {
+        "well_known_rate": 0.03508771929824561,
+        "rest_rate": 0.011286681715575621,
+        "gap_pts": 2.380103758266999,
+        "ci_lo": -1.580135440180587,
+        "ci_hi": 7.868995287315353,
+        "n_well_known": 57,
+        "n_rest": 443
+      }
+    }
+  },
+  "trajectories": {
+    "reranker": {
+      "labembed-Qwen3-8B": {
+        "n": 118,
+        "orig_h1": 0.17796610169491525,
+        "reranked_h1": 0.3898305084745763,
+        "share_closed_pct": 46.296296296296305,
+        "ci_lo": 30.188679245283012,
+        "ci_hi": 63.04347826086958
+      },
+      "gemini-embedding-001": {
+        "n": 118,
+        "orig_h1": 0.15254237288135594,
+        "reranked_h1": 0.3983050847457627,
+        "share_closed_pct": 43.93939393939394,
+        "ci_lo": 30.434782608695656,
+        "ci_hi": 57.89473684210525
+      },
+      "MiniLM-L6-v2": {
+        "n": 118,
+        "orig_h1": 0.09322033898305085,
+        "reranked_h1": 0.3220338983050847,
+        "share_closed_pct": 48.2142857142857,
+        "ci_lo": 32.20338983050848,
+        "ci_hi": 64.81481481481481
+      }
+    },
+    "taxonomy": {
+      "labembed-Qwen3-8B": {
+        "n_miss": 72,
+        "sibling_pct": 84.72222222222221,
+        "near_miss_pct": 11.11111111111111,
+        "other_pct": 2.7777777777777777,
+        "unparsed_pct": 1.3888888888888888
+      },
+      "gemini-embedding-001": {
+        "n_miss": 71,
+        "sibling_pct": 85.91549295774648,
+        "near_miss_pct": 12.676056338028168,
+        "other_pct": 1.4084507042253522,
+        "unparsed_pct": 0.0
+      },
+      "MiniLM-L6-v2": {
+        "n_miss": 80,
+        "sibling_pct": 75.0,
+        "near_miss_pct": 17.5,
+        "other_pct": 5.0,
+        "unparsed_pct": 2.5
+      }
+    }
+  }
+}

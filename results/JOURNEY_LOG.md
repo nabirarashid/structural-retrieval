@@ -381,3 +381,71 @@ not a results doc; look in `results/*.md` for the actual findings.
 - Write `results/FINAL_NUMBERS.md`, a flat one-line-per-number digest of every citable number
   across both domains plus the utility-curve/RAG pilot work and the project's integrity incidents,
   for the paper draft. Final task of this project.
+
+*(A `results/FINAL_NUMBERS.md`-writing session and a separate "repo publication pass" session —
+secrets audit, mantiscluster→labembed anonymization, LICENSE/README/requirements.txt, clean-clone
+test — both happened between this entry and the next; no journal entry was written for either at
+the time. Flagged here rather than silently left unindexed; backfill if useful later.)*
+
+---
+
+## 2026-08-17 — Four-task gap-fill: math CI fix, utility-null recheck, Haiku third judge, fetch scripts
+
+**Done**
+- Task 0 (free verification, reported before anything else ran): reconciled the paper's "1.8%"
+  n=118 truncation figure against the digest's "1.1%/1.3%" — both correct, the paper's is the union
+  (13/708, 4 records both capped and unparsed) while the digest reported the two individual rates.
+  Confirmed both math-domain embedders have bootstrap CIs on easy-tier Hit@1 in the underlying data
+  (`task2b_bootstrap_cis.json`) — the paper's Table 1 is missing the Qwen-emb bracket, not missing
+  data; same gap existed in `FINAL_NUMBERS.md`'s own first draft, fixed there too.
+- Task 1 (free): recomputed the utility-curve null on the subset complete (non-truncated) in all
+  three conditions (n=127/210). Accuracy jumps to near-ceiling (97–100%) — in the `none` condition,
+  *exactly* the 146 non-truncated queries were the 146 scored correct, no exceptions. The null still
+  holds (no significant McNemar result either grader), but the honest framing shifted: the 69.5%
+  headline accuracy is close to a truncation proxy, not a solving-ability measure, and there's
+  essentially no headroom left once truncation is controlled for — a materially different story than
+  "truncation doesn't matter."
+- Task 2: Claude Haiku 4.5 as a third reranker judge, both domains. Confirmed `ANTHROPIC_API_KEY`
+  had been added to the parent `.env` (not yet synced to the repo-root copy from the portability fix
+  two sessions ago — re-synced). 10-call pilot first (`scripts/task2_haiku_pilot.py`): clean,
+  `stop_reason=end_turn` throughout, no capping, $0.0014/call measured. Pre-estimated the full scope
+  (2,354 calls) from one real probe per domain at ~$5.46 — well under the $15 stop threshold — then
+  ran it (`scripts/task2_haiku_reranker_full.py`; actual cost $5.30). Truncation audit: 0.10% math,
+  0.85% trajectories, both far under threshold. Finding: **Haiku is the outlier in the math domain**
+  (tier-inverted relative to both other judges — dramatically stronger on easy, dramatically weaker
+  on hard, the opposite pattern from Gemini and GLM) **and closely corroborates Gemini in the
+  trajectory domain, where GLM is the outlier instead.** No judge is "the odd one out" in general —
+  each domain has a different outlier, and a different judge each time. This makes the paper's
+  current §8/§9 framing ("one [judge] was attempted and abandoned") stale — flagged in
+  `FINAL_NUMBERS.md`'s Discrepancies section, paper itself not touched per instruction.
+- Task 3: built and verified three fetch scripts, all free, no credentials needed (public sources).
+  Found `ShadenA/MathNet-Retrieve` as a **separate** Hugging Face dataset repo from the raw MathNet
+  corpus (`ShadenA/MathNet`) — resolves the gap flagged two sessions ago, where the raw corpus alone
+  had no equivalence/near-miss pairing fields and reconstructing them via the original LLM-paraphrase
+  pipeline wouldn't have reproduced the exact text. All 9 files verified byte-exact (SHA256) against
+  this project's existing `data/`. Along the way, discovered the trajectory corpus's `/tmp` scratch
+  copy had actually disappeared since the last session — a routine cleanup cleared it, including the
+  cloned repo's own `.git/config` — confirming exactly the fragility the fetch script exists to fix.
+  Restored it via the user-supplied real source (`github.com/qpiai/Proced_mem_bench`), verified
+  count (336 trajectories) and spot-checked content (`alfworld_0`'s task description byte-identical
+  to what was used throughout this project) before trusting it for the Haiku trajectory run. Built
+  the ALFWorld valid_unseen fetch (`hkust-nlp/agentboard`) with a full text cross-check, not just a
+  hash — 78/78 stored query texts confirmed present in the fetched goal set. Final end-to-end proof:
+  re-ran the n=118 trajectory reranker against freshly-fetched data and got a byte-identical
+  `results/task_traj_reranker_n118.json` with zero new API calls.
+- Updated `results/FINAL_NUMBERS.md` (Task 0 reconciliation, Task 1 subset, Task 2 both domains plus
+  a new stale-paper-section flag) and `README.md` (fetch scripts documented in Data + Reproduction,
+  credential table, "known gap" language retired now that it's closed).
+
+**Decided**
+- Report the utility-null's complete-answers-only recheck as a reframing, not a resolution — "the
+  null holds because there's no headroom left" is a different claim than "the null holds despite
+  truncation," and conflating them would overstate what the subset check actually shows.
+- Do not touch `paper_draft_v3.md` — flag every place its current text is now stale (MiniLM gate
+  domain from the prior session, third-judge status from this one, missing Table 1 bracket) in
+  `FINAL_NUMBERS.md`'s Discrepancies section instead, per explicit instruction that integration is a
+  separate, later step.
+
+**Next**
+- None from this task list. Paper integration (folding the digest's corrections and the new Haiku
+  results into `paper_draft_v3.md`) is the user's next step, explicitly deferred.
