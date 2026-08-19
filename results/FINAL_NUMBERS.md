@@ -383,6 +383,19 @@ kept for reference only, not citable as a clean result:
 completion vs. ~1.6h predicted). Kept as a partial cache, explicitly not topped up or reused —
 DeepSeek run used instead. No GLM-vs-DeepSeek solver comparison was ever computed on the overlap.
 
+**Famous-vs-obscure composition of the utility experiment (internal check, not cited in paper per
+pre-commitment)** (`scripts/task_utility_fame_split.py`, `results/utility_fame_split.md`; zero API
+calls; `well_known` = query_id prefix in `{imo, usa, apm}`, same definition as Task 2C). Decided
+before any data was computed: this split enters the paper only if it falsifies a sentence in the
+paper text; otherwise it's meeting-prep material only, no wording changes based on direction.
+- All 210 utility queries: well_known 30, rest 180
+- Complete-in-all-three subset (n=127): well_known 20, rest 107
+- Zero-shot failures (`none`, Grader A, n=64): well_known 6, rest 58 — matches paper §6's stated 64 exactly
+- `none`-condition accuracy: Grader A well_known 24/30 (80.0%) vs rest 122/180 (67.8%); Grader B well_known 23/30 (76.7%) vs rest 124/180 (68.9%) — both gaps under the 15pt threshold set for this check, no significance test computed
+- `none`-condition truncation: well_known 8/30 (26.7%) vs rest 56/180 (31.1%)
+- Complete-127 `none`-condition accuracy (does fame composition drive the 97.6–100% ceiling?): Grader A well_known 20/20 (100.0%) vs rest 106/107 (99.1%), diff 0.9pt; Grader B well_known 20/20 (100.0%) vs rest 107/107 (100.0%), diff 0.0pt — ceiling is not fame-driven
+- **Verdict: no paper sentence affected** — the one finding that could have mattered (item above) is consistent with, not contradictory to, §6's existing headroom explanation. Stays meeting-prep material only.
+
 ---
 
 ## 4. Integrity incidents (8), one line each
