@@ -14,6 +14,8 @@ embeddings_cache/
 MathNet/
 paper/*.pdf
 paper/*.md
+# ...except this project's own paper, once its PDF export lands (see README's paper-link block)
+!paper/paper.pdf
 
 # python
 __pycache__/

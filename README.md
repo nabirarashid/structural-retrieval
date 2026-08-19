@@ -1,20 +1,26 @@
+<!-- RELEASE GATE: do not push public until (1) this TODO is filled,
+(2) paper/paper.pdf is regenerated with final acknowledgments/byline,
+(3) the author explicitly says push. -->
+
 # Retrieved but not ranked: surface-form bias in structural retrieval
 
-Code, results, and reproduction materials for the paper of the same name (Nabira Rashid, 2026;
-paper: `results/paper.md`). We study retrieval that requires matching *structure* while ignoring
-*surface form* (same underlying technique/procedure, different wording) in two unrelated domains
-under one shared protocol: competition mathematics (MathNet-Retrieve, 500 queries against a
-117,088-item corpus) and embodied-agent trajectories (ALFWorld-derived, 118 queries against 336
-trajectories). In both domains, embedding retrieval tracks literal surface content over structure
-whenever the two are separable: total failure in mathematics (0% rank-1 under heavy disguise, with
-the right answer sitting lower in the list nearly every time), and sub-chance retrieval in
-trajectories once gold requires generalizing past the query's literal object and container. A cheap
-lexical reranker control flips sign between the two domains (hurts in mathematics, helps in
-trajectories), a one-bit diagnostic of whether a benchmark's surface variation is adversarial or
-incidental, and an LLM reranker recovers substantial ground in both, though its magnitude is not
-portable across domains: three independent judges each show a different outlier judge per domain,
-with paired bootstrap differences excluding zero in every configuration. See the paper
-(`results/paper.md`) for the full claim set.
+**Paper PDF:** `paper/paper.pdf` — [PDF pending final export]
+arXiv version pending.
+
+## Abstract
+
+Embedding retrieval is typically validated on tasks where surface form and semantic content align. We study the case where they are deliberately separated, retrieving items that share underlying structure while differing in surface form, in two unrelated domains under one protocol: competition mathematics (MathNet-Retrieve; 500 queries against a 117,088-item corpus) and embodied-agent trajectories (ALFWorld-derived; 118 queries against 336 trajectories). In mathematics the failure is total and precisely located: strict Hit@1 at the heaviest disguise tier is 0.0% for both production embedders (bootstrap 95% CI [0.0, 0.0]) while the correct item sits in the top 10 nearly always, and in 95.2 to 99.8% of misses the winning candidate is more lexically similar to the query than the correct answer. In trajectories, where surface variation is incidental rather than adversarial, the same models sit at or near hypergeometric chance when gold requires a different target object, and fall below chance for all three embedders once gold requires a different object and receptacle, indicating that retrieval anchors on literal tokens rather than task structure. A lexical reranker control hurts in mathematics yet helps in trajectories (closing 26 to 36% of the recoverable gap, CIs excluding zero); which sign it takes turns out to depend on how the benchmark's surface variation was constructed, adversarial or incidental, so the control doubles as a cheap diagnostic. An LLM reranker recovers 5 to 63% of the gap in mathematics and 43 to 76% in trajectories, with direction replicating across three independently trained judges (all twenty-one judge-by-configuration cells positive) while nothing about magnitude transfers: effect sizes, tier profiles, and even which judge is the outlier all change with domain, with paired bootstrap differences between judges excluding zero in every configuration. Reranking gains in mathematics concentrate on well-known competitions (+19.8 points, CI [+6.7, +33.2] in one of six judge-by-candidate cells), so part, though not all, of the recovery reflects memorization. Finally, in a paired downstream experiment (210 queries, two graders at 96 to 99% agreement), oracle retrieval was statistically indistinguishable from adversarially bad retrieval (McNemar p = 0.678), and a complete-answers-only analysis shows why: the solver's 69.5% zero-shot accuracy is largely a truncation proxy, with 97 to 100% accuracy on answers that finish within budget, leaving retrieval almost no headroom to act on.
+
+## Findings at a glance
+
+- Embedding retrieval tracks literal surface content over structure in both domains: 0% strict Hit@1 under heavy disguise in math (with the answer sitting in the top 10), and below-chance retrieval in trajectories once gold excludes the query's literal tokens.
+- The lexical-control sign flip: the same cheap reranker hurts in math and helps in trajectories, so its sign diagnoses whether a benchmark's surface variation is adversarial or incidental, a free diagnostic any evaluation should report.
+- LLM reranking recovers real gap in both domains, but only the direction is portable: magnitudes, tier profiles, and even which judge is the outlier all change with domain and query style.
+
+This repository contains the code, results, and reproduction materials behind the paper (Nabira
+Rashid, 2026; full text: `results/paper.md`). Two deliberately unlike domains, competition
+mathematics and embodied-agent trajectories, are evaluated under one shared protocol, so what
+follows is meant to generalize past a single benchmark's quirks.
 
 ## Setup
 
@@ -78,8 +84,11 @@ rankings for the other two embedders in the same pass, so it still needs at leas
 Practically: to regenerate any specific number from scratch, first run the fetch scripts (see
 "Data"), then get `GEMINI_API_KEY` (cheapest path: it covers embeddings, one reranker judge, and
 one grader) and expect the relevant script to spend a small amount rebuilding the caches it needs
-before it produces new output. Total historical spend for every result in this repo was $17.24
-(`results/SPEND.json`); no single script comes close to that.
+before it produces new output. Total historical cost of every result in this repo was $17.24 across
+4,338 API calls (`results/SPEND.json`). Every publicly re-runnable result needs only public API keys
+and costs well under that in total; two result families (all `glm-5.2-fp8` numbers and the
+deployment-divergence comparison) used private lab endpoints and are not independently re-runnable,
+as marked above.
 
 ## Reproduction: paper section → script → raw output
 
@@ -118,6 +127,17 @@ number the paper cites, with its source file and a 95% CI where one was computed
 citing any number from a section-specific `.md` file, since it's the most recently reconciled
 source and states explicitly where it corrects an earlier document. `results/RESULTS_SUMMARY.md`
 and `results/RETRIEVAL_WRITEUP.md` are the narrative writeups the digest was checked against.
+
+## Evaluation integrity
+
+This project surfaced eight documented data-integrity incidents during development, most involving
+silent truncation that parsed as valid output and would have shipped as a clean number without a
+dedicated audit. Standing practice since: finish-reason audits after every generation run,
+per-condition truncation reporting wherever a budget cap exists, and recomputation verified against
+frozen aggregates before any number is trusted. Full incident-by-incident detail is in
+`results/paper.md` Section 8, with the one-line summary of all eight in `results/FINAL_NUMBERS.md`
+Section 4. These practices, not their absence, are why the numbers in this repository can be
+trusted.
 
 ## Data
 
@@ -192,3 +212,7 @@ above, see "Data".
   archivePrefix = {arXiv}
 }
 ```
+
+## Acknowledgments
+
+TODO: finalized after coordination with the lab. Do not fill before then.
