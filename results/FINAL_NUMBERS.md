@@ -99,6 +99,44 @@ It has since been added under `results/` and is now cross-checked (see Discrepan
   on the earlier pretests, but **not resolved**. Accuracy numbers in §3 should be read with this
   caveat, consistent with this project's standing truncation-disclosure rule.
 
+## Global consistency audit (2026-08-18)
+
+**Pre-committed rule, recorded verbatim:** "findings change the paper ONLY if they falsify a
+sentence in it; report everything either way." Final pre-submission stress-test, zero API calls.
+Script: `scripts/task_global_consistency_audit.py`; full narrated report:
+`results/global_consistency_audit.md`.
+
+- **Integer-numerator sweep**: every checkable percentage in `results/paper.md` with a simple-count
+  denominator (Tables 1/4, old_40/new_78 splits, taxonomy ranges, lexical-similarity range, GLM-CoT
+  truncation, dumb-reranker share-lost, all utility-experiment percentages, RAG-pilot §8 figures)
+  rounds correctly to an integer count. Zero failures across ~20 checked claims.
+- **Roll-up checks**: trajectory old_40 + new_78 = pooled holds exactly for baseline and all 3
+  judges' reranked Hit@1 (18/18 cells); all 21 judge-by-configuration cells (12 math + 9 trajectory)
+  satisfy hits+misses=n, taxonomy sums to n_miss (9/9 trajectory cells), and recomputed share-closed
+  matches the paper's Table 2/5 to within 0.15pt; all 10 dumb-reranker cells check out; the
+  deployment-divergence table's 6 cells sum to n=500 exactly, and its hard-tier Hit@10 McNemar
+  p-value (0.00014495849609375) exactly matches the paper's stated 0.00014; all four utility McNemar
+  tables (none-vs-gold, none-vs-dumb, both graders) sum to their stated marginals, with Grader A's
+  discordant counts (13/10 and 11/8) and recomputed p-values (0.678, 0.648) matching the paper
+  exactly.
+- **Truncation overlap**: union of the three utility conditions' truncated-query sets is exactly
+  83 = 210−127, confirming the complementary-partition relationship. Triple overlap (52) is 8.4x
+  higher than the 6.2 expected under independence — supports, doesn't contradict, §8 incident (5)'s
+  "truncation tracks problem difficulty" reading.
+- **Definition-drift**: `well_known` is defined identically in the contamination and fame-split
+  scripts; the utility pool (210, 30 well_known) is a strict subset of the math hard-tier pool (500,
+  57 well_known). The `medium_13` "chill" relabel (task_type 4→5) is confirmed to propagate from its
+  single canonical source (`results/task1_expanded_tier_labels.json`) to every downstream consumer
+  (baseline scoring, reranker gold, taxonomy) — no script recomputes it independently without the
+  override.
+- **Determinism**: one cell per bootstrap family reruns byte-identical to its stored JSON, using
+  each script's own actual documented seed (12345 for baseline/share-closed CIs, 98765 for
+  contamination CIs, 42 for paired-diff CIs — the task's framing of "seed 42" for all four families
+  was only accurate for the last one; noted in the full report rather than silently forced).
+- **Verdict: zero failures. Nothing found falsifies a sentence in `results/paper.md`, so per the
+  pre-commitment rule, the paper is not touched.** The one open item remains the §6 exact-alignment
+  sentence already flagged above (2026-08-18 entry) from the prior reconciliation task.
+
 ---
 
 ## 1. Math domain (MathNet-Retrieve, n=500, seed=42)
