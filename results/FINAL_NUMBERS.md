@@ -77,6 +77,18 @@ It has since been added under `results/` and is now cross-checked (see Discrepan
   Gemini-generated paraphrases is a possible unmeasured contributor to Gemini-j's mathematics
   advantage and to the one significant contamination cell." The exact-model-vs-family distinction is
   preserved rather than glossed over.
+- **Paper §6's exact-alignment claim overclaims "same set" when only the counts match — not fixed,
+  flagged for integration.** `results/paper.md` §6: "the alignment is exact under Grader A: the 146
+  answers that finished and the 146 answers scored correct are the same set; every completed answer
+  was right and every truncated one wrong." Query-ID-level reconciliation (2026-08-18, prompted by a
+  subgroup arithmetic mismatch in the `results/utility_fame_split.md` internal check: well_known
+  `none`-condition correct count of 24 exceeded its complete count of 22) found this is false as a
+  literal set claim: 2 queries are correct despite truncation (`apm_2015_af5968`, `imo_2015_bab8ff`)
+  and 2 are wrong despite finishing (`irn_2025_912017`, `mem_2023_1807d4`) — a symmetric 4-query swap
+  that keeps both totals at 146 while breaking "same set" and "every completed answer was right." 206
+  of 210 `none`-condition queries do align exactly. See §3 below and `results/utility_fame_split.md`
+  for the full reconciliation. Per instruction, `results/paper.md` itself was not touched — this is
+  the flag for the integration pass, not the integration.
 - Everything else: the math-domain and Task 2A/2B/2C numbers below were re-pulled directly from
   their source JSON files and match `RESULTS_SUMMARY.md`/`RETRIEVAL_WRITEUP.md` exactly (both were
   written from the same source files). §3 Utility has no prior writeup to disagree with
@@ -369,7 +381,7 @@ API calls) — **n=127 of 210 (60.5%)**:
 - dumb: correct_a 125/127 (98.4%), correct_b 125/127 (98.4%)
 - gold: correct_a 124/127 (97.6%), correct_b 127/127 (100.0%)
 - McNemar (both graders, both comparisons): 0–2 discordant pairs out of 126–127, p in [0.50, 1.00] — not significant, same conclusion as the full sample
-- **This does not "defuse" the 31%-truncation caveat — it reframes what the caveat means.** Accuracy on the complete-answers subset is near-ceiling (97–100%), not the ~69% headline figure. In the `none` condition, *exactly* 146 of 210 queries were non-truncated and *exactly* 146 were scored correct — every non-truncated answer was right, every truncated one was wrong. The widely-citable "69.5% zero-shot accuracy" is closer to a proxy for "did the derivation finish in time" than a measure of solving ability. The null (retrieval doesn't move accuracy) still holds on the clean subset, but because there is essentially no headroom left once truncation is controlled for — not because retrieval genuinely fails to help a solver with real headroom to close. Report both framings; they are not interchangeable.
+- **This does not "defuse" the 31%-truncation caveat — it reframes what the caveat means.** Accuracy on the complete-answers subset is near-ceiling (97–100%), not the ~69% headline figure. In the `none` condition, *exactly* 146 of 210 queries were non-truncated and *exactly* 146 were scored correct — matching **counts**, but, **corrected 2026-08-18** (see `results/utility_fame_split.md`'s reconciliation), **not the same set**: query-ID-level recount from the raw cache shows a 4-query symmetric swap — 2 queries scored correct despite truncation (`apm_2015_af5968`, `imo_2015_bab8ff`, both well_known) and 2 scored wrong despite finishing (`irn_2025_912017`, `mem_2023_1807d4`, neither well_known) — that keeps both totals at 146 while breaking literal "every non-truncated answer was right, every truncated one was wrong." 206 of 210 queries do align exactly (206 = 210 − 4 discordant); this digest's own prior phrasing here was imprecise in the same way the paper's §6 sentence is (flagged separately below, not edited, since it's a paper file). The widely-citable "69.5% zero-shot accuracy" is closer to a proxy for "did the derivation finish in time" than a measure of solving ability. The null (retrieval doesn't move accuracy) still holds on the clean subset, but because there is essentially no headroom left once truncation is controlled for — not because retrieval genuinely fails to help a solver with real headroom to close. Report both framings; they are not interchangeable.
 
 **Original 6-condition pilot (superseded, correction banner in `results/rag_pilot.md`)** —
 kept for reference only, not citable as a clean result:
@@ -394,7 +406,25 @@ paper text; otherwise it's meeting-prep material only, no wording changes based 
 - `none`-condition accuracy: Grader A well_known 24/30 (80.0%) vs rest 122/180 (67.8%); Grader B well_known 23/30 (76.7%) vs rest 124/180 (68.9%) — both gaps under the 15pt threshold set for this check, no significance test computed
 - `none`-condition truncation: well_known 8/30 (26.7%) vs rest 56/180 (31.1%)
 - Complete-127 `none`-condition accuracy (does fame composition drive the 97.6–100% ceiling?): Grader A well_known 20/20 (100.0%) vs rest 106/107 (99.1%), diff 0.9pt; Grader B well_known 20/20 (100.0%) vs rest 107/107 (100.0%), diff 0.0pt — ceiling is not fame-driven
-- **Verdict: no paper sentence affected** — the one finding that could have mattered (item above) is consistent with, not contradictory to, §6's existing headroom explanation. Stays meeting-prep material only.
+- **Reconciliation, 2026-08-18** (`scripts/task_utility_fame_split.py` re-run at query-ID level): the
+  well_known group's `none`-condition correct count (24) exceeds its non-capped/complete count (22)
+  — impossible if "146 correct" and "146 complete" were literally the same set, as §6 claims. Direct
+  set comparison over all 210 `none`-condition records confirms they are **not** the same set: 2
+  queries scored correct despite truncation (`apm_2015_af5968`, `imo_2015_bab8ff`, both well_known —
+  this is exactly the source of the well_known 24-vs-22 gap) and 2 scored wrong despite finishing
+  (`irn_2025_912017`, `mem_2023_1807d4`, both rest — the mirror-image source of rest's 122-vs-124
+  gap). Both totals still land on 146 (146 correct, 146 complete) because the swap is symmetric, which
+  is why the aggregate count matched even though the per-query sets don't. All figures in items 1–6
+  above (24, 22-implied, 8, 122, 124, and the complete-127 splits) were independently re-verified and
+  are correct as computed; nothing above was a computation error.
+- **Verdict, revised:** the paper **is** affected. `results/paper.md` §6 states "the alignment is
+  exact under Grader A: the 146 answers that finished and the 146 answers scored correct are the same
+  set; every completed answer was right and every truncated one wrong" — this is falsified by the 4
+  discordant query IDs above (206 of 210 do align exactly; 4 do not). Per the pre-commitment rule,
+  this crosses the bar to enter the paper — flagged here as a correction candidate for the
+  integration pass; `results/paper.md` itself was **not** edited (paper files are out of scope for
+  this task). The digest's own prior phrasing of the same claim (this section, above) has been
+  corrected directly, since the digest is not a paper file.
 
 ---
 
