@@ -1,6 +1,6 @@
 """Task 3: fetch script for the trajectory-domain corpus.
 
-Source: github.com/qpiai/Proced_mem_bench (Ishant and Krishnan, 2025,
+Source: github.com/qpiai/Proced_mem_bench (Kohar and Krishnan, 2025,
 arXiv:2511.21730). Clones into /tmp/proced_mem_bench_check, the path every
 trajectory-domain script in this repo already expects -- deliberately
 kept as-is rather than relocated into the repo, since a broad path change

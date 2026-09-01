@@ -176,7 +176,7 @@ None require credentials: all three sources are public.
   byte-exact (SHA256) against the data every math-domain result in this repo was computed on, all 9
   files.
 - **Trajectories**: the AgentInstruct/ALFWorld corpus comes from
-  [`github.com/qpiai/Proced_mem_bench`](https://github.com/qpiai/Proced_mem_bench) (Ishant and
+  [`github.com/qpiai/Proced_mem_bench`](https://github.com/qpiai/Proced_mem_bench) (Kohar and
   Krishnan, 2025, arXiv:2511.21730), pinned to the exact commit this project's results were computed
   against, verified by SHA256 + trajectory/query count on both files every trajectory-domain script
   reads. The 78 new `valid_unseen` queries (§5 of the paper) come from
@@ -194,7 +194,7 @@ Both datasets remain governed by their own licenses, not this repository's; see 
 References for full citations:
 
 - MathNet-Retrieve: Alshammari et al., *MathNet*, ICLR 2026 (arXiv:2604.18584)
-- Procedural-memory benchmark / ALFWorld trajectories: Ishant and Krishnan (2025) (arXiv:2511.21730), building on Shridhar et al., *ALFWorld*, ICLR 2021 (arXiv:2010.03768)
+- Procedural-memory benchmark / ALFWorld trajectories: Kohar and Krishnan (2025) (arXiv:2511.21730), building on Shridhar et al., *ALFWorld*, ICLR 2021 (arXiv:2010.03768)
 
 ## License
 

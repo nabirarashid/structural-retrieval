@@ -34,7 +34,7 @@ Our contributions:
 
 ## 2. Related work
 
-**Structural retrieval benchmarks.** MathNet (Alshammari et al., 2026) showed that 27 embedding models fail mathematical-equivalence retrieval (Recall@1 below 5%) while recall remains high, attributing failure to superficial overlap; it did not test reranking. The procedural-memory benchmark of Ishant and Krishnan (2025) found an analogous generalization cliff for trajectory retrieval on ALFWorld (Shridhar et al., 2021), but tested a single 384-dimensional encoder (Reimers and Gurevych, 2019), derived relevance labels from an LLM judge with modest human agreement (Cohen's kappa 0.178), and named two-stage retrieval as future work. We supply that stage on their released data, with modern embedders, scored against exhaustive task-type labels rather than judged pools, which also sidesteps a pool-coverage artifact we document in their protocol.
+**Structural retrieval benchmarks.** MathNet (Alshammari et al., 2026) showed that 27 embedding models fail mathematical-equivalence retrieval (Recall@1 below 5%) while recall remains high, attributing failure to superficial overlap; it did not test reranking. The procedural-memory benchmark of Kohar and Krishnan (2025) found an analogous generalization cliff for trajectory retrieval on ALFWorld (Shridhar et al., 2021), but tested a single 384-dimensional encoder (Reimers and Gurevych, 2019), derived relevance labels from an LLM judge with modest human agreement (Cohen's kappa 0.178), and named two-stage retrieval as future work. We supply that stage on their released data, with modern embedders, scored against exhaustive task-type labels rather than judged pools, which also sidesteps a pool-coverage artifact we document in their protocol.
 
 **Retrieve-then-rerank** is standard information retrieval (Nogueira and Cho, 2019). Our contribution is not the architecture but its evaluation under structural rather than topical relevance, with controls specific to LLM judges.
 
@@ -101,7 +101,7 @@ Model shorthand throughout: **Gemini-emb** (gemini-embedding-001), **Qwen-emb** 
 
 ## 5. Domain 2: agent trajectories
 
-**Setup.** The released benchmark of Ishant and Krishnan (2025): 336 AgentInstruct ALFWorld trajectories. Queries: 118 in total, comprising the 40 original human-paraphrased coverage-balanced queries plus 78 added from ALFWorld's public valid_unseen split (every unique goal string available at a lightweight public source; the planned 150 was unreachable without a heavy simulation dependency, a shortfall we report rather than patch). Gold is scored against ALFWorld's six task types, assigned by a rule classifier over the templated task text and human-verified on stratified 60-item samples of both corpus and queries, with zero disagreements in both audits. Benchmark corrections, documented in the repository: one released query relabeled on an unambiguous verb conflict ("chill" implies cooling, not heating); the release's silently defaulting task-type field bypassed in favor of our own mapping; the paper's 78-trajectory expert corpus is absent from the release, so all results use the AgentInstruct corpus.
+**Setup.** The released benchmark of Kohar and Krishnan (2025): 336 AgentInstruct ALFWorld trajectories. Queries: 118 in total, comprising the 40 original human-paraphrased coverage-balanced queries plus 78 added from ALFWorld's public valid_unseen split (every unique goal string available at a lightweight public source; the planned 150 was unreachable without a heavy simulation dependency, a shortfall we report rather than patch). Gold is scored against ALFWorld's six task types, assigned by a rule classifier over the templated task text and human-verified on stratified 60-item samples of both corpus and queries, with zero disagreements in both audits. Benchmark corrections, documented in the repository: one released query relabeled on an unambiguous verb conflict ("chill" implies cooling, not heating); the release's silently defaulting task-type field bypassed in favor of our own mapping; the paper's 78-trajectory expert corpus is absent from the release, so all results use the AgentInstruct corpus.
 
 **Tiers.** STRICT requires the same task type and a different target object (the disguise requirement). A harsher variant (ii) additionally requires a different receptacle. LENIENT accepts any same-task-type trajectory. Chance is computed per query via the exact hypergeometric tail, since gold-set sizes vary (mean strict set 51.2 of 336).
 
@@ -186,7 +186,7 @@ Thanks to the Agents and Reasoning team at the MIT CSAIL Kellis Lab for mentorsh
 
 Alshammari, S., Wen, K., Zainal, A., Hamilton, M., Safaei, N., Albarakati, S., Freeman, W. T., and Torralba, A. (2026). MathNet: A Global Multimodal Benchmark for Mathematical Reasoning and Retrieval. ICLR 2026. arXiv:2604.18584.
 
-Ishant, K., and Krishnan, A. (2025). A Benchmark for Procedural Memory Retrieval in Language Agents. arXiv:2511.21730. *(Author names to be re-verified against the arXiv record at the LaTeX pass.)*
+Kohar, I., and Krishnan, A. (2025). A Benchmark for Procedural Memory Retrieval in Language Agents. arXiv:2511.21730.
 
 Nogueira, R., and Cho, K. (2019). Passage Re-ranking with BERT. arXiv:1901.04085.
 
