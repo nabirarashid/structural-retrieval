@@ -5,7 +5,7 @@ arXiv version pending.
 
 ## Abstract
 
-Embedding retrieval is typically validated on tasks where surface form and semantic content align. We study the case where they are deliberately separated, retrieving items that share underlying structure while differing in surface form, in two unrelated domains under one protocol: competition mathematics (MathNet-Retrieve; 500 queries against a 117,088-item corpus) and embodied-agent trajectories (ALFWorld-derived; 118 queries against 336 trajectories). In mathematics the failure is total and precisely located: strict Hit@1 at the heaviest disguise tier is 0.0% for both production embedders (bootstrap 95% CI [0.0, 0.0]) while the correct item sits in the top 10 nearly always, and in 95.2 to 99.8% of misses the winning candidate is more lexically similar to the query than the correct answer. In trajectories, where surface variation is incidental rather than adversarial, the same models sit at or near hypergeometric chance when gold requires a different target object, and fall below chance for all three embedders once gold requires a different object and receptacle, indicating that retrieval anchors on literal tokens rather than task structure. A lexical reranker control hurts in mathematics yet helps in trajectories (closing 26 to 36% of the recoverable gap, CIs excluding zero); which sign it takes turns out to depend on how the benchmark's surface variation was constructed, adversarial or incidental, so the control doubles as a cheap diagnostic. An LLM reranker recovers 5 to 63% of the gap in mathematics and 43 to 76% in trajectories, with direction replicating across three independently trained judges (all twenty-one judge-by-configuration cells positive) while nothing about magnitude transfers: effect sizes, tier profiles, and even which judge is the outlier all change with domain, with paired bootstrap differences between judges excluding zero in every configuration. Reranking gains in mathematics concentrate on well-known competitions (+19.8 points, CI [+6.7, +33.2] in one of six judge-by-candidate cells), so part, though not all, of the recovery reflects memorization. Finally, in a paired downstream experiment (210 queries, two graders at 96 to 99% agreement), oracle retrieval was statistically indistinguishable from adversarially bad retrieval (McNemar p = 0.678), and a complete-answers-only analysis shows why: the solver's 69.5% zero-shot accuracy is largely a truncation proxy, with 97 to 100% accuracy on answers that finish within budget, leaving retrieval almost no headroom to act on.
+Embedding retrieval is usually validated where surface form and meaning point the same way. We study the case where they are pulled apart on purpose, retrieving items that share underlying structure but not wording, in two unrelated domains under one protocol: competition mathematics (MathNet-Retrieve; 500 queries against a 117,088-item corpus) and embodied-agent trajectories (ALFWorld-derived; 118 queries against 336 trajectories). In mathematics the failure is complete and easy to locate. Strict Hit@1 at the heaviest disguise tier is 0.0% for both production embedders (bootstrap 95% CI [0.0, 0.0]), the correct item sits in the top 10 nearly always, and in 95.2 to 99.8% of misses the candidate that wins is more lexically similar to the query than the correct answer. In trajectories, where surface variation is incidental rather than adversarial, the same models land at or near hypergeometric chance when gold must involve a different target object, and below chance for all three embedders once gold must involve a different object and receptacle: retrieval is anchoring on literal tokens rather than task structure. A lexical reranker control hurts in mathematics and helps in trajectories (closing 26 to 36% of the recoverable gap, CIs excluding zero). Which sign it takes depends on how each benchmark's surface variation was built, adversarial or incidental, and that makes the control a cheap diagnostic. An LLM reranker recovers 5 to 63% of the gap in mathematics and 43 to 76% in trajectories. Direction replicates across three independently trained judges (all twenty-one judge-by-configuration cells positive), and nothing about magnitude transfers: effect sizes, tier profiles, and even which judge is the outlier all change with domain, with paired bootstrap differences between judges excluding zero in every configuration. Mathematics reranking gains concentrate on well-known competitions (+19.8 points, CI [+6.7, +33.2] in one of six judge-by-candidate cells), so part of the recovery, though not all of it, is memorization. Finally, in a paired downstream experiment (210 queries, two graders at 96 to 99% agreement), oracle retrieval was statistically indistinguishable from adversarially bad retrieval (McNemar p = 0.678), and a complete-answers-only analysis explains why: the solver's 69.5% zero-shot accuracy is largely a truncation proxy, with 97 to 100% accuracy on answers that finish within budget, which leaves retrieval almost no headroom to act on.
 
 ## Findings at a glance
 
@@ -14,7 +14,7 @@ Embedding retrieval is typically validated on tasks where surface form and seman
 - LLM reranking recovers real gap in both domains, but only the direction is portable: magnitudes, tier profiles, and even which judge is the outlier all change with domain and query style.
 
 This repository contains the code, results, and reproduction materials behind the paper (Nabira
-Rashid, 2026; full text: `results/paper.md`). Two deliberately unlike domains, competition
+Rashid and Manolis Kellis, 2026; full text: `results/paper.md`). Two deliberately unlike domains, competition
 mathematics and embodied-agent trajectories, are evaluated under one shared protocol, so what
 follows is meant to generalize past a single benchmark's quirks.
 
@@ -23,8 +23,8 @@ follows is meant to generalize past a single benchmark's quirks.
 Requires Python 3.11+ (developed on 3.12) and, for the free/cached analyses below, nothing else.
 
 ```bash
-git clone <this-repo-url>
-cd embedding-benchmark
+git clone https://github.com/nabirarashid/structural-retrieval
+cd structural-retrieval
 python3 -m venv .venv
 .venv/bin/python3 -m pip install -r requirements.txt
 cp .env.example .env   # only needed if you plan to re-run generation, not to read results
@@ -41,7 +41,7 @@ what each one unlocks:
 
 | Variable | Unlocks | Public? |
 |---|---|---|
-| `GEMINI_API_KEY` | `gemini-embedding-001` embeddings; `gemini-3.1-flash-lite` reranker judge; `gemini-3-flash-preview` RAG grader | Yes: [aistudio.google.com](https://aistudio.google.com/apikey) |
+| `GEMINI_API_KEY` | `gemini-embedding-001` embeddings; `gemini-3.1-flash-lite` reranker judge and utility grader A (`gemini-3-flash-preview` appears only in the superseded pilot) | Yes: [aistudio.google.com](https://aistudio.google.com/apikey) |
 | `DEEPINFRA_API_KEY` | Qwen3-Embedding-8B (DeepInfra-hosted) embeddings; DeepInfra solver comparison | Yes: [deepinfra.com](https://deepinfra.com) |
 | `DEEPSEEK_API_KEY` | `deepseek-v4-flash` as the utility-curve solver (native API, not DeepInfra's checkpoint) | Yes: [platform.deepseek.com](https://platform.deepseek.com) |
 | `ANTHROPIC_API_KEY` | `claude-haiku-4-5` as the third reranker judge (both domains): see `scripts/task2_haiku_reranker_full.py` | Yes: [console.anthropic.com](https://console.anthropic.com) |
@@ -201,7 +201,7 @@ above, see "Data".
 
 ```bibtex
 @article{rashid2026retrieved,
-  author        = {Rashid, Nabira},
+  author        = {Rashid, Nabira and Kellis, Manolis},
   title         = {Retrieved but not ranked: surface-form bias in structural retrieval, from mathematics to agent trajectories},
   year          = {2026},
   eprint        = {TODO: arXiv ID (assign at submission)},
