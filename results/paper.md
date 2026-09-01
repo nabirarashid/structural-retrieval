@@ -206,7 +206,7 @@ Across two unlike domains, embedding retrieval tracks literal surface content ov
 
 ## 12. Reproducibility
 
-Seed 42 in mathematics; all 118 available trajectory queries used, so no query sampling. All raw results, per-query cached judge and grader responses, spend logs, correction banners, and both benchmark-correction patches are in the repository; `results/FINAL_NUMBERS.md` is the authoritative flat digest of every number cited here with its source file, and `results/RESULTS_SUMMARY.md` maps each section to its script and raw output. Total experiment cost was $17.24 across 4,338 recorded API calls. The repository is available at [REPO-URL].
+Seed 42 in mathematics; all 118 available trajectory queries used, so no query sampling. All raw results, per-query cached judge and grader responses, spend logs, correction banners, and both benchmark-correction patches are in the repository; `results/FINAL_NUMBERS.md` is the authoritative flat digest of every number cited here with its source file, and `results/RESULTS_SUMMARY.md` maps each section to its script and raw output. Total experiment cost was $17.24 across 4,338 recorded API calls. The repository is available at https://github.com/nabirarashid/structural-retrieval.
 
 ---
 
