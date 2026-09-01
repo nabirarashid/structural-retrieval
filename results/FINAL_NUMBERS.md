@@ -4,20 +4,20 @@ Flat, citable list of every number this project's paper draft would cite, one li
 95% CI where one was computed. Source file/script named for every line so a number can be checked
 back against raw output. First compiled 2026-08-14; updated 2026-08-17 with Claude Haiku 4.5 as a
 third reranker judge (both domains), a complete-answers-only robustness check on the utility curve,
-and reconciled truncation counts against `paper_draft_v3.md` (found at `results/paper_draft_v3.md`
+and reconciled truncation counts against `paper.md` (found at `results/paper.md`
 as of this update — the note below about it being unfound is now stale, kept for the record of
 what was true at the 08-14 compilation). **This digest is the authoritative numbers source — where
-it disagrees with `RESULTS_SUMMARY.md`, `RETRIEVAL_WRITEUP.md`, or `paper_draft_v3.md`, this digest
+it disagrees with `RESULTS_SUMMARY.md`, `RETRIEVAL_WRITEUP.md`, or `paper.md`, this digest
 wins; discrepancies are listed immediately below.**
 
-Note on scope (as of 2026-08-14, now stale): `paper_draft_v3.md`, referenced as already existing,
+Note on scope (as of 2026-08-14, now stale): `paper.md`, referenced as already existing,
 was not found anywhere in this repository or searched locations at that time — this digest was
 compiled from `results/` and the project's raw caches directly, not reconciled against that file.
 It has since been added under `results/` and is now cross-checked (see Discrepancies below).
 
 ## Discrepancies found
 
-- **`paper_draft_v3.md` mislabels the MiniLM validation-gate domain — this digest corrects it.**
+- **`paper.md` mislabels the MiniLM validation-gate domain — this digest corrects it.**
   The paper's §3 states "A MiniLM gate for the mathematics domain failed (MAP 0.630 versus the
   published 0.795)... it appears only in the trajectory domain, whose gate it passed." Only one
   MiniLM gate file exists anywhere in this codebase (`results/minilm_validation_gate.json`,
@@ -49,7 +49,7 @@ It has since been added under `results/` and is now cross-checked (see Discrepan
   succeeded with a real result": Haiku is the clear outlier in the math domain (tier-inverted
   relative to both other judges) and closely corroborates Gemini in the trajectory domain (where GLM
   is the outlier instead). This changes what §9's judge-count caveat should say and adds a citable
-  result to §4/§5, not just a footnote. Per instruction, `paper_draft_v3.md` itself was not touched
+  result to §4/§5, not just a footnote. Per instruction, `paper.md` itself was not touched
   — this is the flag for the integration pass, not the integration.
   **Resolved (2026-08-17):** `results/paper.md` §9 now reads "one further candidate proved
   structurally infeasible" (singular, Section 8's incident 6) rather than describing the third judge

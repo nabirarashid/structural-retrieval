@@ -1,10 +1,6 @@
-<!-- RELEASE GATE: do not push public until (1) this TODO is filled,
-(2) paper/paper.pdf is regenerated with final acknowledgments/byline,
-(3) the author explicitly says push. -->
-
 # Retrieved but not ranked: surface-form bias in structural retrieval
 
-**Paper PDF:** `paper/paper.pdf` — [PDF pending final export]
+**Paper PDF:** [`paper/paper.pdf`](paper/paper.pdf)
 arXiv version pending.
 
 ## Abstract
@@ -215,4 +211,4 @@ above, see "Data".
 
 ## Acknowledgments
 
-TODO: finalized after coordination with the lab. Do not fill before then.
+Thanks to Anas Maarouf for access to the lab-hosted embedding and language-model endpoints used in parts of this study and for feedback on the draft, to Pranava Kumar for early discussions of the team's evaluation priorities that helped shape the direction, and to the Agents and Reasoning team at the MIT CSAIL Kellis Lab for mentorship and compute infrastructure.
