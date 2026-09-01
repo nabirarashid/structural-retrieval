@@ -383,7 +383,7 @@ not a results doc; look in `results/*.md` for the actual findings.
   for the paper draft. Final task of this project.
 
 *(A `results/FINAL_NUMBERS.md`-writing session and a separate "repo publication pass" session —
-secrets audit, mantiscluster→labembed anonymization, LICENSE/README/requirements.txt, clean-clone
+secrets audit, the lab embedding host→labembed anonymization, LICENSE/README/requirements.txt, clean-clone
 test — both happened between this entry and the next; no journal entry was written for either at
 the time. Flagged here rather than silently left unindexed; backfill if useful later.)*
 
