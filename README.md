@@ -1,7 +1,7 @@
 # Retrieved but not ranked: surface-form bias in structural retrieval
 
 **Paper PDF:** [`paper/paper.pdf`](paper/paper.pdf)
-arXiv version pending.
+arXiv: https://arxiv.org/abs/2609.01556
 
 ## Abstract
 
@@ -204,7 +204,7 @@ above, see "Data".
   author        = {Rashid, Nabira and Kellis, Manolis},
   title         = {Retrieved but not ranked: surface-form bias in structural retrieval, from mathematics to agent trajectories},
   year          = {2026},
-  eprint        = {TODO: arXiv ID (assign at submission)},
+  eprint        = {2609.01556},
   archivePrefix = {arXiv}
 }
 ```
